@@ -1,0 +1,3018 @@
+  <!doctype html><html><head><!-- frame-runtime --><base href="/_f/1787929815-f8c1/"><script>window.__FRAME_PREAMBLE={"v":1,"capabilities":{"artifact":"artifact.D_F1mx8d.js","assets":"assets.8Gk803W0.js","comments":"comments.GLuHR3zP.js","db":"db.h-3sndFg.js","downloads":"downloads.C3GSvEDP.js","embed":"embed.CxGAyc-v.js","mcp":"mcp.Bvma3qD7.js","network":"network.B5UA9Su4.js","notifications":"notifications.ssU4jy7G.js","permissions":"permissions.BNySkLV5.js","room":"room.BMMoe2BY.js","sample":"sample.BW2Uysoh.js","self":"artifact.D_F1mx8d.js","user":"user.BpKav-Rf.js"},"transforms":"_transforms.DSB5x63f.js","comments":"_comments.BoakUwmM.js","translate":"_translate.5HCW4BJh.js"}</script><script>(function(){"use strict";var te=["light","dark","system"],re=/^[A-Za-z0-9_-]{1,64}$/,$=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,ne=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function oe(e){const t=e.toLowerCase();return t.startsWith("data-")||t.startsWith("aria-")||ne.has(t)}var Be="http://www.w3.org/1999/xhtml",se="http://www.w3.org/2000/svg",ae=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),ie=new Set(["script","style"]);function ce(e){const t=e.localName.toLowerCase();return e.namespaceURI==="http://www.w3.org/1999/xhtml"?!ae.has(t):e.namespaceURI===se?!ie.has(t):!1}function M(e,t){return e===t||(e===160||e===32)&&(t===160||t===32)}function le(e,t){const r=e.length,n=t.length;let s=0;for(;s<r&&s<n&&M(e.charCodeAt(s),t.charCodeAt(s));)s++;let o=0;for(;o<r-s&&o<n-s&&M(e.charCodeAt(r-1-o),t.charCodeAt(n-1-o));)o++;return{p:s,s:o}}function ue(e,t){const r=e.firstChild;if(e.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){e.textContent=t;return}const n=r.data,s=n.length,o=t.length,{p:i,s:c}=le(n,t);i===s&&c===0&&s===o||r.replaceData(i,s-i-c,t.slice(i,o-c));const h=r.data,p=e.ownerDocument.getSelection?.()??null,w=p!==null&&p.rangeCount>0&&(p.anchorNode===r||p.focusNode===r)?{anchor:p.anchorNode,anchorOffset:p.anchorOffset,focus:p.focusNode,focusOffset:p.focusOffset}:null;let m=-1,g=-1;for(let f=0;f<h.length&&f<t.length;f++){const v=h.charCodeAt(f),b=t.charCodeAt(f);v!==b&&M(v,b)&&(m<0&&(m=f),g=f)}const a=m>=0;if(a&&r.replaceData(m,g-m+1,t.slice(m,g+1)),a&&w!==null&&w.anchor!==null&&w.focus!==null)try{p.setBaseAndExtent(w.anchor,w.anchorOffset,w.focus,w.focusOffset)}catch{}}var fe=new Set(["html","head","body","frameset"]);function de(e){return e.namespaceURI==="http://www.w3.org/1999/xhtml"&&fe.has(e.localName)}function pe(e){if(e===null||typeof e!="object")return!1;const t=e;if(typeof t.target!="string"||!re.test(t.target)||t.text!==void 0&&typeof t.text!="string")return!1;if(t.attrsSet!==void 0){if(t.attrsSet===null||typeof t.attrsSet!="object")return!1;for(const[r,n]of Object.entries(t.attrsSet))if(!$.test(r)||typeof n!="string")return!1}if(t.attrsRemoved!==void 0){if(!Array.isArray(t.attrsRemoved))return!1;for(const r of t.attrsRemoved)if(typeof r!="string"||!$.test(r))return!1}return!0}function me(e,t){if(e===null||typeof e!="object")return!1;const{seq:r,elements:n}=e;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let s=0;s<n.length;s++)if(!t(n[s]))return!1;return!0}function he(e){return e===null||typeof e!="object"?!1:me(e.__frame_patch,pe)}function _e(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_init;return t!==null&&typeof t=="object"}function ve(e){return e!==null&&typeof e=="object"&&e.__frame_size_poke===!0}function ye(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_theme;if(t===null||typeof t!="object")return!1;const r=t.theme;return typeof r=="string"&&te.includes(r)}var A=/^[\w.-]+\.js$/;function we(e,t,r){return r?"inert":typeof t=="string"&&A.test(t)?e?[t]:"inert":e?"inert":"framed"}function ge(){return{post(e,t){parent.postMessage(e,t)},on(e){const t=r=>{r.source===parent&&e(r.data,r.origin,r.isTrusted)};return addEventListener("message",t),()=>removeEventListener("message",t)}}}function be(){return{post:()=>{},on:()=>()=>{}}}var j="__frame_scroll",Ee=150,Ae=310,Se=160,Te=3e4;function ke(){let e=0,t=!1,r=!1,n=!1,s=0,o=null;const i=l=>{try{sessionStorage.setItem(j,JSON.stringify({y:l}))}catch{}},c=()=>{if(clearTimeout(e),o===null)return;const l=o;o=null,i(l)},h=()=>{if(t){t=!1;return}r=!0,o=scrollY,clearTimeout(e),e=setTimeout(c,Ee)};try{addEventListener("scroll",h,{passive:!0}),addEventListener("pagehide",c)}catch{}const p=()=>{let l;try{l=sessionStorage.getItem(j)}catch{return null}if(l===null)return null;let _;try{_=JSON.parse(l)}catch{_=null}const d=_?.y;if(!(typeof d=="number"&&Number.isFinite(d)&&d>=0)){try{sessionStorage.removeItem(j)}catch{}return null}return d};let w=!1;const m=l=>{try{const _=scrollY;scrollTo({top:l,left:0,behavior:"instant"}),s=l,n=!0,clearTimeout(e),o=null,i(l);const d=scrollY;d!==_&&(t=!0),d!==l&&!w&&(w=!0,addEventListener("load",()=>{try{if(scrollY===d){const T=p();m(T!==null?T:s)}}catch{}},{once:!0}))}catch{}},g=()=>{try{return!!location.hash}catch{return!0}};let a=!1;const f=()=>{try{if(a||innerWidth>Ae||innerHeight>Se)return;a=!0;const l=Date.now(),_=()=>{try{removeEventListener("resize",_)}catch{}if(Date.now()-l>Te||r||g())return;const d=p();m(d!==null?d:s)};addEventListener("resize",_)}catch{}};let v=!1,b=!1;return{restore(){if(v||(v=!0,g()))return;const l=p();l!==null&&(m(l),f())},promoted(){if(b||(b=!0,g()))return;const l=p();l!==null?(m(l),f()):n&&m(s)}}}function Re(e,t,r,n){let s=null;try{s=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:h=>h})??null}catch{}const o=window.Worker,i=o?.prototype,c=Object.freeze({Worker:o,workerOn:i?.addEventListener,workerPost:i?.postMessage,workerTerminate:i?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,policy:s,origins:t});r(e).then(h=>h?.bootTopLevel?h.bootTopLevel(c,n):n.settle()).catch(()=>n.settle())}var De="modulepreload",Ie=function(e){return"/"+e},Ue={},Le=function(t,r,n){let s=Promise.resolve();function o(i){const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=i,window.dispatchEvent(c),!c.defaultPrevented)throw i}return s.then(i=>{for(const c of i||[])c.status==="rejected"&&o(c.reason);return t().catch(o)})},Oe=window===top,q=Object.getOwnPropertyDescriptor(window,"claude"),k=we(Oe,window.__FRAME_PREAMBLE?.topLevel,q?.writable===!1),N=typeof k=="object"&&k[0],y=N?be():ge();(function(){const e=Object.defineProperty,t=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let s=0;s<r.length;s++){const o=r[s];try{e(t,o,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[o]}catch{}try{e(t,o,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[o]=="function"&&n++}if(n&&k==="framed")try{y.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Pe=1e4,Y=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function X(e){for(const t of Y)if(t.endsWith(":*"))try{const r=new URL(e);if(`${r.protocol}//${r.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}var R=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),B=window.__FRAME_PREAMBLE?.transforms,D=window.__FRAME_PREAMBLE?.comments,I=window.__FRAME_PREAMBLE?.translate;function S(e){return Le(()=>import("/_runtime/"+e),void 0)}function G(e,t){return{contract:e.contract,changes:new Set(e.changes??[]),flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:new Map,shellOrigin:t,mount:x,hooks:O,pipe:()=>({wrap:(r,n)=>(...s)=>{try{return n(...s)}catch(o){return Promise.reject(o)}}})}}var L=null,E=null;function V(e,t,r){try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var U=!1,O={editBefore:null,edit:null};function Ce(e,t,r=!1){const n=[];let s;if(r)try{O.editBefore?.(e)}catch{}for(const o of e.elements){const i=document.querySelector(`[data-id="${o.target}"]`);if(!i){s=o.target;break}if([...Object.keys(o.attrsSet??{}),...o.attrsRemoved??[]].some(c=>!oe(c))){s=o.target;break}if(o.text!==void 0&&(!ce(i)||de(i))){s=o.target;break}for(const[c,h]of Object.entries(o.attrsSet??{}))if(!J(i,c)){try{i.setAttribute(c,h)}catch{}Z(i,c,h)}for(const c of o.attrsRemoved??[])J(i,c)||(i.removeAttribute(c),Z(i,c,null));typeof o.text=="string"&&ue(i,o.text),n.push(o.target)}if(r)try{O.edit?.(e.seq,n,s)}catch{}if(s!==void 0){y.post({__frame_patch_miss:{seq:e.seq}},t);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:e.seq,targets:n}}))}catch{}}function Z(e,t,r){if(!(e instanceof HTMLInputElement))return;const n=t.toLowerCase();n==="checked"?e.checked=r!==null:n==="value"&&e.type!=="file"&&(e.value=r??"")}function J(e,t){const r=t.toLowerCase(),n=e;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${e.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function Q(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,U=!0):U&&(delete t.dataset.theme,t.style.colorScheme="",U=!1)}var P=new Map;function Me(){let e;const t={u:new Promise(r=>{e=r}),r:r=>{t.done=!0,e(r)},done:!1,nulled:!1};return t}function F(){for(const e of P.values())e.done||(e.nulled=!0,e.r(null))}var je=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),x=(e,t)=>{const r=P.get(e);if(!r||r.done){r?.nulled&&E&&y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:e}},E);return}const n=typeof t=="function"?Object.setPrototypeOf(t,je):Object.assign(Object.create(null),t);typeof n.then=="function"&&delete n.then,r.r(Object.freeze(n))};function ee(){const e=q?.value??{};V(window,"claude",e);for(const t of Object.keys(R)){if(e[t]!==void 0){V(e,t,e[t]);continue}P.set(t,Me())}if(e.use===void 0){const t=r=>{if(typeof r!="string"||!Object.hasOwn(R,r))return Promise.resolve(null);const n=P.get(r);return n?n.u:Promise.resolve(e[r]??null)};try{Object.defineProperty(e,"use",{value:t,writable:!0,configurable:!0,enumerable:!1})}catch{}}}if(k==="framed"){const e=B&&A.test(B)?S(B).catch(()=>{}):Promise.resolve(void 0),t=a=>{if(a.type==="auxclick"&&a.button!==1)return;const f=a.target,v=f&&f.closest?f.closest("a[href],area[href]"):null;if(!v)return;const b=v.getAttribute("href");if(!b)return;let l;try{l=new URL(b,document.baseURI)}catch{return}if((l.protocol==="http:"||l.protocol==="https:")&&l.origin!==location.origin){a.preventDefault();const _=(v.getAttribute("target")??"").toLowerCase(),d=a.type==="auxclick"||a.metaKey||a.ctrlKey||a.shiftKey||a.altKey||!["","_self","_top","_parent"].includes(_);y.post({__frame_nav:!0,url:l.href,newTab:d},"*")}};addEventListener("click",t,!0),addEventListener("auxclick",t,!0);const r={},n=a=>{a.isTrusted&&(r.pointer=!0)},s=a=>{a.isTrusted&&(r.click=!0)};addEventListener("pointermove",n,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0}),e.then(a=>{a?.wireNav&&(a.wireNav(),removeEventListener("click",t,!0),removeEventListener("auxclick",t,!0),removeEventListener("pointermove",n,!0),removeEventListener("click",s,!0),a.wireEngagement?.(r))});let o=null;try{o=ke()}catch{}ee();let i=null,c=null,h=0;const p=y.on((a,f)=>{X(f)&&_e(a)&&(i=a.__frame_init,E=f,p(),clearTimeout(h),c?.())});y.post({__frame_connect:!0},"*");const w=new Promise(a=>{c=a,h=setTimeout(()=>{p(),a()},Pe)}),m=document.readyState==="loading"?new Promise(a=>document.addEventListener("DOMContentLoaded",()=>a(),{once:!0})):Promise.resolve();m.then(()=>{try{o?.restore()}catch{}});const g={cb:null};y.on((a,f)=>{if(X(f)&&ve(a)){try{o?.promoted()}catch{}g.cb?.()}}),w.then(async()=>{if(!i||!E){F();return}Q(i.theme);const a=E;let f=!1,v=!1;y.on((u,z,C)=>{if(z!==a)return;ye(u)&&Q(u.__frame_theme.theme),he(u)&&Ce(u.__frame_patch,a,C);const H=u?.__fc_mode;H&&typeof H=="object"&&!f&&D&&A.test(D)&&(f=!0,S(D).then(K=>K.install?.(a,H.on===!0)).catch(()=>{}));const W=u?.__ft_cmd;W&&typeof W=="object"&&!v&&I&&A.test(I)&&(v=!0,S(I).then(K=>K.install?.(a,W)).catch(()=>{}))});const b=Object.keys(i.capabilities??{}).filter(u=>Object.hasOwn(R,u)).map(u=>[u,R[u]]).filter(u=>typeof u[1]=="string"&&A.test(u[1])),l=await Promise.allSettled(b.map(([,u])=>S(u))),_=await e,d=E;if(_?.buildBoot||y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},d),_?.buildBoot)try{L=_.buildBoot(i,_.TRANSFORMS??{},{shellOrigin:d,mount:x,hooks:O},u=>y.post({__frame_cap_telemetry:u},d))}catch{y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},d),L=G(i,d)}else L=G(i,d);const T=u=>y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:u}},d),Ne=L;l.forEach((u,z)=>{const C=b[z][0];if(u.status!=="fulfilled"){T(C);return}try{u.value?.install?.(Ne)}catch{T(C)}}),F(),await m,y.post({__frame_ready:!0},E),e.then(u=>u?.installSizeReporter?.(d,g))})}else N&&(ee(),Re(N,Y,S,{settle:F,mount:x}))})();</script><!-- /frame-runtime --><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<title>Heavy Iron Year One</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Mono:wght@400;500&display=swap">
+
+<style>
+/* ── TOKENS ── */
+:root {
+  --ground:        #F4EFE6;
+  --ground-2:      #EDEAE0;
+  --surface:       #FFFCF7;
+  --border:        #D4C8B5;
+  --border-subtle: #E8E0D0;
+  --text-1:        #1A1410;
+  --text-2:        #5C4F43;
+  --text-3:        #8C7D6E;
+  --accent:        #C85D08;
+  --accent-bg:     #FDF0E6;
+  --accent-border: #F4C99A;
+  --positive:      #1D6E45;
+  --positive-bg:   #EAF5EE;
+  --negative:      #9C2A1A;
+  --negative-bg:   #FAECEA;
+  --warning:       #7A5A06;
+  --tag-bg:        #EDE8E0;
+  --tag-text:      #5C4F43;
+  --mono-bg:       #F0ECE4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:        #141210;
+    --ground-2:      #1C1916;
+    --surface:       #201E1B;
+    --border:        #3A342C;
+    --border-subtle: #2A2520;
+    --text-1:        #F0EBE2;
+    --text-2:        #A09080;
+    --text-3:        #6A5E52;
+    --accent:        #E8720C;
+    --accent-bg:     #2A1A08;
+    --accent-border: #6A3808;
+    --positive:      #4CAF7A;
+    --positive-bg:   #0C2018;
+    --negative:      #E07060;
+    --negative-bg:   #200E0C;
+    --warning:       #D4A020;
+    --tag-bg:        #2A2520;
+    --tag-text:      #A09080;
+    --mono-bg:       #1A1714;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground:        #141210;
+  --ground-2:      #1C1916;
+  --surface:       #201E1B;
+  --border:        #3A342C;
+  --border-subtle: #2A2520;
+  --text-1:        #F0EBE2;
+  --text-2:        #A09080;
+  --text-3:        #6A5E52;
+  --accent:        #E8720C;
+  --accent-bg:     #2A1A08;
+  --accent-border: #6A3808;
+  --positive:      #4CAF7A;
+  --positive-bg:   #0C2018;
+  --negative:      #E07060;
+  --negative-bg:   #200E0C;
+  --warning:       #D4A020;
+  --tag-bg:        #2A2520;
+  --tag-text:      #A09080;
+  --mono-bg:       #1A1714;
+}
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+body {
+  background: var(--ground);
+  color: var(--text-1);
+  font-family: 'Source Serif 4', Georgia, serif;
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+/* ── MASTHEAD ── */
+.masthead {
+  background: var(--ground-2);
+  border-bottom: 1px solid var(--border);
+  padding: 48px 24px 36px;
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.masthead-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.2rem, 8vw, 6rem);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--text-1);
+  line-height: 0.92;
+  text-wrap: balance;
+}
+
+.masthead-title span.slash {
+  color: var(--accent);
+}
+
+.masthead-sub {
+  font-size: 1.05rem;
+  color: var(--text-2);
+  max-width: 560px;
+  margin: 18px auto 0;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.constraint-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  color: var(--accent);
+  border-radius: 3px;
+  padding: 6px 14px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── LEGAL FOUNDATION ── */
+.legal-bar {
+  background: var(--accent-bg);
+  border-bottom: 2px solid var(--accent);
+  padding: 20px 24px;
+}
+
+.legal-bar-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.legal-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.legal-text strong {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.legal-text p {
+  font-size: 0.9rem;
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+/* ── TABS ── */
+.tabs-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.tabs {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0 8px;
+}
+.tabs::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 14px 18px 11px;
+  cursor: pointer;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.tab-btn:hover { color: var(--text-1); }
+
+.tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ── MAIN CONTENT ── */
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ── SECTION TYPOGRAPHY ── */
+.section-head {
+  margin-bottom: 32px;
+}
+
+.section-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--border);
+  display: block;
+  margin-bottom: -8px;
+}
+
+.section-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--text-1);
+  text-wrap: balance;
+  line-height: 1;
+}
+
+.section-desc {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  color: var(--text-2);
+  max-width: 640px;
+  font-weight: 300;
+}
+
+h3.block-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 12px;
+}
+
+/* ── OVERVIEW TABLE ── */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+  .compare-grid { grid-template-columns: 1fr; }
+}
+
+.compare-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.compare-card::before {
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  background: var(--accent);
+}
+
+.compare-card.best::before { background: var(--positive); }
+
+.compare-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 6px;
+}
+
+.compare-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: var(--text-1);
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.compare-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+}
+
+.compare-stat:last-of-type { border-bottom: none; }
+
+.stat-label { color: var(--text-3); font-size: 0.8rem; }
+
+.stat-val {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-1);
+}
+
+.stat-val.green { color: var(--positive); }
+.stat-val.orange { color: var(--accent); }
+
+/* ── FINANCIAL TABLE ── */
+.fin-table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+.fin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.fin-table thead {
+  background: var(--ground-2);
+}
+
+.fin-table thead th {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  text-align: left;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.fin-table th:not(:first-child),
+.fin-table td:not(:first-child) {
+  text-align: right;
+}
+
+.fin-table tbody tr {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.fin-table tbody tr:last-child { border-bottom: none; }
+
+.fin-table tbody tr:hover { background: var(--ground-2); }
+
+.fin-table td {
+  padding: 10px 16px;
+  color: var(--text-2);
+  font-size: 0.85rem;
+}
+
+.fin-table td.mono {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.fin-table tr.subtotal {
+  background: var(--ground-2);
+}
+.fin-table tr.subtotal td {
+  color: var(--text-1);
+  font-weight: 600;
+}
+
+.fin-table tr.profit td {
+  background: var(--positive-bg);
+  color: var(--positive);
+  font-weight: 600;
+}
+
+.fin-table tr.profit td.mono {
+  font-family: 'DM Mono', monospace;
+}
+
+.fin-table tr.cost-row td { color: var(--text-2); }
+
+.fin-table .revenue-label { color: var(--positive); }
+.fin-table .cost-label { color: var(--negative); }
+
+/* ── VERDICT BOX ── */
+.verdict {
+  margin-top: 32px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.verdict-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.verdict-head {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.verdict-body {
+  font-size: 0.92rem;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+/* ── SCENARIO TOGGLE ── */
+.scenario-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.scenario-btn {
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 6px 14px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--tag-text);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.scenario-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.scenario-content { display: none; }
+.scenario-content.active { display: block; }
+
+/* ── MACHINE CARDS ── */
+.machine-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.machine-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 560px) {
+  .machine-card { grid-template-columns: 1fr; }
+}
+
+.machine-rank {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--border);
+  line-height: 1;
+  float: left;
+  margin-right: 16px;
+}
+
+.machine-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--text-1);
+  margin-bottom: 4px;
+}
+
+.machine-models {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-3);
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+
+.machine-desc {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.55;
+  max-width: 480px;
+}
+
+.machine-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 180px;
+}
+
+.mstat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mstat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.mstat-val {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-1);
+  font-weight: 500;
+}
+
+.mstat-val.green { color: var(--positive); }
+.mstat-val.orange { color: var(--accent); }
+
+.stars {
+  color: var(--accent);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.verdict-tag {
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin-top: 8px;
+}
+
+.verdict-tag.buy-first {
+  background: var(--positive-bg);
+  color: var(--positive);
+  border: 1px solid var(--positive);
+}
+
+.verdict-tag.strong-second {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+}
+
+.verdict-tag.conditional {
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border: 1px solid var(--border);
+}
+
+/* ── COMBO COMPARE CARD ── */
+.combo-compare-card {
+  background: var(--surface);
+  border: 1px solid var(--accent-border);
+  border-top: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 28px 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 720px) {
+  .combo-compare-card { grid-template-columns: 1fr; }
+}
+
+.combo-badge {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: var(--accent);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.combo-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 1.55rem;
+  text-transform: uppercase;
+  color: var(--text-1);
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.combo-desc {
+  font-size: 0.875rem;
+  color: var(--text-2);
+  line-height: 1.55;
+  max-width: 360px;
+  margin-bottom: 14px;
+}
+
+.combo-tab-link {
+  background: none;
+  border: 1px solid var(--accent-border);
+  border-radius: 3px;
+  padding: 6px 14px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.combo-tab-link:hover {
+  background: var(--accent-bg);
+}
+
+.combo-compare-streams {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.combo-stream {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 120px;
+}
+
+.combo-stream-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.combo-stream-val {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: var(--text-1);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+
+.combo-stream-val-big {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.combo-stream-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--text-3);
+  line-height: 1.4;
+}
+
+.combo-stream-plus {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--border);
+  flex-shrink: 0;
+  padding-top: 14px;
+}
+
+.combo-stream-total {
+  padding-left: 16px;
+  border-left: 2px solid var(--accent-border);
+}
+
+/* ── S179 STRIP ── */
+.s179-strip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--warning);
+  border-radius: 0 4px 4px 0;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.s179-eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--warning);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.s179-note {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  margin-bottom: 20px;
+  max-width: 560px;
+  line-height: 1.5;
+}
+
+.s179-scenarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 640px) {
+  .s179-scenarios { grid-template-columns: 1fr; }
+}
+
+.s179-col {
+  background: var(--ground-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: 3px;
+  padding: 14px;
+}
+
+.s179-col-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-3);
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.s179-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 4px 0;
+  font-size: 0.8rem;
+  color: var(--text-2);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.s179-row:last-child { border-bottom: none; }
+
+.s179-row .mono {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.s179-save { color: var(--warning); }
+
+.s179-total {
+  font-weight: 600;
+  color: var(--text-1);
+  margin-top: 2px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border) !important;
+}
+
+.s179-boost {
+  color: var(--positive);
+  font-weight: 600;
+}
+
+.s179-boost-accent {
+  color: var(--accent) !important;
+}
+
+.s179-disclaimer {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-3);
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* ── HOT/NOT ── */
+.hot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+@media (max-width: 500px) { .hot-grid { grid-template-columns: 1fr; } }
+
+.hot-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.hot-card.hot {
+  border-top: 3px solid var(--positive);
+}
+
+.hot-card.not {
+  border-top: 3px solid var(--negative);
+}
+
+.hot-card-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.hot-card.hot .hot-card-title { color: var(--positive); }
+.hot-card.not .hot-card-title { color: var(--negative); }
+
+.hot-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+
+.hot-item:last-child { border-bottom: none; }
+
+.hot-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.hot .hot-dot { background: var(--positive); }
+.not .hot-dot { background: var(--negative); }
+
+/* ── DIVIDER ── */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 36px 0;
+}
+
+/* ── TAX BOX ── */
+.tax-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 28px;
+  margin: 24px 0;
+}
+
+.tax-box h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--text-1);
+  margin-bottom: 8px;
+}
+
+.tax-example {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.tax-stat {
+  padding: 16px;
+  background: var(--ground-2);
+  border-radius: 3px;
+  border: 1px solid var(--border-subtle);
+}
+
+.tax-stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tax-stat-val {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--text-1);
+  display: block;
+  font-variant-numeric: tabular-nums;
+}
+
+.tax-stat-val.green { color: var(--positive); }
+
+/* ── CALL-OUT BLOCK ── */
+.callout {
+  background: var(--ground-2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 18px 20px;
+  margin: 20px 0;
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.6;
+}
+
+.callout strong {
+  color: var(--text-1);
+  font-weight: 600;
+}
+
+/* ── FOOTER ── */
+.doc-footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 24px 48px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text-3);
+  letter-spacing: 0.1em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+</style>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <span class="eyebrow">Business Feasibility Proposals — Year One</span>
+  <h1 class="masthead-title">Heavy Iron<span class="slash"> / </span>Year One</h1>
+  <p class="masthead-sub">Three ways to profit from heavy machinery before you're ever allowed to rent or sell a single machine.</p>
+  <div class="constraint-pill">&#x26A0; Constraint Active: No Renting · No Selling · 12 Months</div>
+</div>
+
+<!-- LEGAL FOUNDATION BAR -->
+<div class="legal-bar">
+  <div class="legal-bar-inner">
+    <div class="legal-icon">&#x2696;&#xFE0F;</div>
+    <div class="legal-text">
+      <strong>The Legal Foundation — Read This First</strong>
+      <p><strong>Renting</strong> means a customer takes possession of your machine and pays you for access to it. <strong>Providing a service</strong> means you (or your employee) operate the machine and the customer pays for the outcome — the hole dug, the debris cleared, the operator trained. These are legally distinct in every state. The three proposals below operate entirely in the service model. The restriction never becomes an issue.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TAB NAV -->
+<div class="tabs-wrapper">
+  <div class="tabs" role="tablist">
+    <button class="tab-btn active" role="tab" onclick="switchTab('overview', this)">Overview</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('p1', this)">Proposal 1: Site Services</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('p2', this)">Proposal 2: Training Academy</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('p3', this)">Proposal 3: Dirt & Materials</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('combo', this)">Combo: Services + Training</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('govbid', this)">Gov't Bidding</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('vetedge', this)">&#9733; Veteran Edge</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('machines', this)">Machine Guide</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('timeline', this)">&#x25B6; Year One Timeline</button>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- ════════════════ OVERVIEW ════════════════ -->
+  <div id="tab-overview" class="tab-panel active">
+
+    <div class="section-head">
+      <span class="section-num">00</span>
+      <h2 class="section-title">How Three Models Stack Up</h2>
+      <p class="section-desc">Every number below assumes Year One — no renting, no selling. Base-case machines are bought at auction pricing (down 15–25% from 2022). SDVOSB veterans unlock GSAxcess federal surplus pricing at 5–20% of replacement cost — see the Flywheel strip below and the ★ Veteran Edge tab.</p>
+    </div>
+
+    <h3 class="block-label">Year-One Comparison — 1 Machine Each</h3>
+    <div class="compare-grid">
+
+      <div class="compare-card">
+        <div class="compare-label">Proposal 1</div>
+        <div class="compare-name">Site Services & Excavation</div>
+        <div class="compare-stat"><span class="stat-label">Machine Buy-In</span><span class="stat-val">~$85,000</span></div>
+        <div class="compare-stat"><span class="stat-label">Gross Revenue</span><span class="stat-val green">$240–400K</span></div>
+        <div class="compare-stat"><span class="stat-label">Est. Net Profit</span><span class="stat-val green">$120–267K</span></div>
+        <div class="compare-stat"><span class="stat-label">Payback Period</span><span class="stat-val orange">3–5 months</span></div>
+        <div class="compare-stat"><span class="stat-label">Startup Complexity</span><span class="stat-val">Low–Medium</span></div>
+      </div>
+
+      <div class="compare-card">
+        <div class="compare-label">Proposal 2</div>
+        <div class="compare-name">Heavy Equipment Training Academy</div>
+        <div class="compare-stat"><span class="stat-label">Machine Buy-In</span><span class="stat-val">~$115,000</span></div>
+        <div class="compare-stat"><span class="stat-label">Gross Revenue</span><span class="stat-val green">$396–528K</span></div>
+        <div class="compare-stat"><span class="stat-label">Est. Net Profit</span><span class="stat-val green">$236–368K</span></div>
+        <div class="compare-stat"><span class="stat-label">Payback Period</span><span class="stat-val orange">2–4 months</span></div>
+        <div class="compare-stat"><span class="stat-label">Startup Complexity</span><span class="stat-val">Medium</span></div>
+      </div>
+
+      <div class="compare-card">
+        <div class="compare-label">Proposal 3</div>
+        <div class="compare-name">Material Extraction & Sales</div>
+        <div class="compare-stat"><span class="stat-label">Machine Buy-In</span><span class="stat-val">~$85,000</span></div>
+        <div class="compare-stat"><span class="stat-label">Gross Revenue</span><span class="stat-val green">$330–440K</span></div>
+        <div class="compare-stat"><span class="stat-label">Est. Net Profit</span><span class="stat-val green">$127–237K</span></div>
+        <div class="compare-stat"><span class="stat-label">Payback Period</span><span class="stat-val orange">4–8 months</span></div>
+        <div class="compare-stat"><span class="stat-label">Startup Complexity</span><span class="stat-val">Medium–High</span></div>
+      </div>
+
+    </div>
+
+    <!-- COMBO CARD -->
+    <div class="combo-compare-card">
+      <div class="combo-compare-left">
+        <div class="combo-badge">Best Overall</div>
+        <div class="combo-name">Combo: Site Services + Training Academy</div>
+        <p class="combo-desc">Two revenue streams, one machine fleet, one shared cost base. Service work fills the weekdays; training cohorts fill the gaps. Each side makes the other stronger.</p>
+        <button class="combo-tab-link" onclick="switchTab('combo', document.querySelector('[onclick*=\'combo\']'))">See full breakdown ↗</button>
+      </div>
+      <div class="combo-compare-streams">
+        <div class="combo-stream">
+          <div class="combo-stream-label">Service Arm</div>
+          <div class="combo-stream-val">$220,000</div>
+          <div class="combo-stream-sub">22 hrs/wk @ $200/hr</div>
+        </div>
+        <div class="combo-stream-plus">+</div>
+        <div class="combo-stream">
+          <div class="combo-stream-label">Training Arm</div>
+          <div class="combo-stream-val">$348,000</div>
+          <div class="combo-stream-sub">48 students @ $6,000 + grants</div>
+        </div>
+        <div class="combo-stream-plus">=</div>
+        <div class="combo-stream combo-stream-total">
+          <div class="combo-stream-label">Net Profit Y1</div>
+          <div class="combo-stream-val combo-stream-val-big">$350,100</div>
+          <div class="combo-stream-sub">299% ROI on $117K machines · Payback ~4 mo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- S179 STRIP -->
+    <div class="s179-strip">
+      <div class="s179-strip-head">
+        <span class="s179-eyebrow">Section 179 Tax Play — Applies to Every Model</span>
+        <p class="s179-note">Equipment placed in service this year qualifies for an immediate full deduction — on top of whatever the machine earns. Run this math before you write the check.</p>
+      </div>
+      <div class="s179-scenarios">
+        <div class="s179-col">
+          <div class="s179-col-label">Proposal 1 — Site Services</div>
+          <div class="s179-row"><span>Machine cost</span><span class="mono">$85,000</span></div>
+          <div class="s179-row"><span>S179 deduction</span><span class="mono">$85,000</span></div>
+          <div class="s179-row"><span>Tax saved (35%)</span><span class="mono s179-save">$29,750</span></div>
+          <div class="s179-row s179-total"><span>Effective cost</span><span class="mono">$55,250</span></div>
+          <div class="s179-row s179-boost"><span>Y1 net (boosted)</span><span class="mono">$198,950</span></div>
+        </div>
+        <div class="s179-col">
+          <div class="s179-col-label">Proposal 2 — Training Academy</div>
+          <div class="s179-row"><span>Machine cost</span><span class="mono">$115,000</span></div>
+          <div class="s179-row"><span>S179 deduction</span><span class="mono">$115,000</span></div>
+          <div class="s179-row"><span>Tax saved (35%)</span><span class="mono s179-save">$40,250</span></div>
+          <div class="s179-row s179-total"><span>Effective cost</span><span class="mono">$74,750</span></div>
+          <div class="s179-row s179-boost"><span>Y1 net (boosted)</span><span class="mono">$383,510</span></div>
+        </div>
+        <div class="s179-col">
+          <div class="s179-col-label">Combo — Services + Training</div>
+          <div class="s179-row"><span>Machine cost</span><span class="mono">$117,000</span></div>
+          <div class="s179-row"><span>S179 deduction</span><span class="mono">$117,000</span></div>
+          <div class="s179-row"><span>Tax saved (35%)</span><span class="mono s179-save">$40,950</span></div>
+          <div class="s179-row s179-total"><span>Effective cost</span><span class="mono">$76,050</span></div>
+          <div class="s179-row s179-boost"><span>Y1 net (boosted)</span><span class="mono s179-boost-accent">$391,050</span></div>
+        </div>
+      </div>
+      <p class="s179-disclaimer">Bracket assumed: 35%. Bonus depreciation in 2026 is 20% (phasing out — this window closes). Verify with a CPA before purchasing.</p>
+    </div>
+
+    <!-- FLYWHEEL STRIP -->
+    <div class="s179-strip" style="border-color:var(--positive); background:var(--positive-bg);">
+      <div class="s179-strip-head">
+        <span class="s179-eyebrow" style="color:var(--positive);">★ The Flywheel — SDVOSB Veterans Only (GSAxcess.gov · P.L. 115-416)</span>
+        <p class="s179-note">Service-Disabled Veteran-Owned Businesses get priority access to federal surplus equipment at 5–20% of replacement cost. Work it for 365 days. Sell on Day 366 at market rate. Reinvest. Repeat — at scale.</p>
+      </div>
+      <div class="s179-scenarios" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));">
+
+        <div class="s179-col">
+          <div class="s179-col-label">Market Buy-In</div>
+          <div class="s179-row"><span>Cat 320 at auction</span><span class="mono">$85,000</span></div>
+          <div class="s179-row"><span>Year 1 service net</span><span class="mono">$80,000</span></div>
+          <div class="s179-row"><span>Day 366 sale</span><span class="mono">$0 (keep it)</span></div>
+          <div class="s179-row s179-total"><span>Year 1 total return</span><span class="mono">$80,000</span></div>
+          <div class="s179-row s179-boost"><span>ROI on machine cost</span><span class="mono">94%</span></div>
+        </div>
+
+        <div class="s179-col" style="border-color:var(--positive);">
+          <div class="s179-col-label" style="color:var(--positive);">GSAxcess Buy-In (SDVOSB)</div>
+          <div class="s179-row"><span>Same machine via GSAxcess</span><span class="mono" style="color:var(--positive);">$34,500</span></div>
+          <div class="s179-row"><span>Year 1 service net</span><span class="mono">$80,000</span></div>
+          <div class="s179-row"><span>Day 366 sale (40% of replacement)</span><span class="mono" style="color:var(--positive);">+$57,500</span></div>
+          <div class="s179-row s179-total"><span>Year 1 total return</span><span class="mono" style="color:var(--positive);">$137,500</span></div>
+          <div class="s179-row s179-boost"><span>ROI on machine cost</span><span class="mono s179-boost-accent" style="color:var(--positive);">398%</span></div>
+        </div>
+
+        <div class="s179-col">
+          <div class="s179-col-label">The Loop — Year 2 Reinvest</div>
+          <div class="s179-row"><span>Reinvest $92K sale proceeds</span><span class="mono">2–3 machines</span></div>
+          <div class="s179-row"><span>Year 2 service net (×3)</span><span class="mono">$240,000</span></div>
+          <div class="s179-row"><span>Year 2 sales (Day 730)</span><span class="mono">$276,000</span></div>
+          <div class="s179-row s179-total"><span>Year 2 total return</span><span class="mono">$412,500+</span></div>
+          <div class="s179-row s179-boost"><span>Compound growth</span><span class="mono s179-boost-accent">3× Year 1</span></div>
+        </div>
+
+      </div>
+      <p class="s179-disclaimer">Flywheel applies only to verified SDVOSB businesses. GSAxcess equipment carries a 1-year no-sell / no-rent restriction — confirmed with an attorney before purchase. See <button onclick="switchTab('vetedge', this); event.stopPropagation();" style="background:none; border:none; color:var(--positive); font-size:inherit; font-weight:700; cursor:pointer; text-decoration:underline; padding:0;">★ Veteran Edge tab</button> for full breakdown, checklist, and Year 3+ compound table.</p>
+    </div>
+
+    <hr class="divider">
+
+    <h3 class="block-label">2026 Market Snapshot</h3>
+    <div class="hot-grid">
+      <div class="hot-card hot">
+        <div class="hot-card-title">&#x1F525; Hot Right Now</div>
+        <div class="hot-item"><span class="hot-dot"></span>Excavators (20–35 ton) — highest demand, fastest service bookings</div>
+        <div class="hot-item"><span class="hot-dot"></span>Compact Track Loaders — fastest-moving used inventory in 2026</div>
+        <div class="hot-item"><span class="hot-dot"></span>Crawler Dozers — land clearing boom across the Sun Belt</div>
+        <div class="hot-item"><span class="hot-dot"></span>Mini Excavators — most versatile per dollar, urban jobs</div>
+        <div class="hot-item"><span class="hot-dot"></span>Operator shortage — more job openings than certified operators nationwide</div>
+      </div>
+      <div class="hot-card not">
+        <div class="hot-card-title">&#x2744;&#xFE0F; Slow Right Now</div>
+        <div class="hot-item"><span class="hot-dot"></span>Tower cranes — commercial high-rise market softer in 2026</div>
+        <div class="hot-item"><span class="hot-dot"></span>Large scrapers — heavy highway funding delays</div>
+        <div class="hot-item"><span class="hot-dot"></span>Asphalt pavers — municipal budget contractions</div>
+        <div class="hot-item"><span class="hot-dot"></span>Trenchers (standalone) — softer residential start numbers</div>
+        <div class="hot-item"><span class="hot-dot"></span>Used prices overall — down 15–25% from 2022 peak (buyer advantage)</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Why the falling used price market is a gift:</strong> Prices are down from the 2021–2022 supply-chain inflation peak but service demand has not dropped proportionally. That gap — cheap acquisition, strong service rates — is where the ROI lives. The operator shortage means customers are actively looking for someone to just <em>show up and do the work.</em>
+    </div>
+
+    <hr class="divider">
+    <div class="tax-box">
+      <h3>Section 179 — The Bonus Nobody Talks About</h3>
+      <p style="font-size:0.9rem; color:var(--text-2); margin-top:8px; line-height:1.6;">
+        Under IRS Section 179, a business can deduct the <em>full cost</em> of qualifying equipment in the year it's placed in service. This is on top of whatever the machine earns. Buy it cheap and deduct it immediately.
+      </p>
+      <div class="tax-example">
+        <div class="tax-stat">
+          <span class="tax-stat-label">2026 S179 Limit</span>
+          <span class="tax-stat-val">$1.25M</span>
+        </div>
+        <div class="tax-stat">
+          <span class="tax-stat-label">Machine Purchase</span>
+          <span class="tax-stat-val">$200K</span>
+        </div>
+        <div class="tax-stat">
+          <span class="tax-stat-label">Immediate Deduction</span>
+          <span class="tax-stat-val">$200K</span>
+        </div>
+        <div class="tax-stat">
+          <span class="tax-stat-label">Tax Saved (35% bracket)</span>
+          <span class="tax-stat-val green">$70,000</span>
+        </div>
+        <div class="tax-stat">
+          <span class="tax-stat-label">Effective Machine Cost</span>
+          <span class="tax-stat-val green">$130K</span>
+        </div>
+        <div class="tax-stat">
+          <span class="tax-stat-label">Bonus Depreciation 2026</span>
+          <span class="tax-stat-val">20%</span>
+        </div>
+      </div>
+      <p style="font-size:0.8rem; color:var(--text-3); margin-top:14px; font-style:italic;">Consult a CPA before purchasing. Section 179 requires the equipment to be used in a business — exactly what these proposals establish. Bonus depreciation is phasing down (20% in 2026, 0% in 2027 under current law). This year is a window.</p>
+    </div>
+
+  </div><!-- /overview -->
+
+
+  <!-- ════════════════ PROPOSAL 1 ════════════════ -->
+  <div id="tab-p1" class="tab-panel">
+
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Site Services &amp; Excavation Company</h2>
+      <p class="section-desc">Buy the machine. Operate it yourself or hire an operator. Bill jobs by the hour or by the project. The customer pays for <em>work done</em> — never for the machine itself. Nothing about this touches a rental restriction.</p>
+    </div>
+
+    <h3 class="block-label">What You Actually Do</h3>
+    <div class="callout">
+      Land clearing · Site preparation · Utility trenching · Pond digging · Demolition · Drainage work · Driveway building · Foundation excavation · Debris removal · Road grading
+    </div>
+    <p style="font-size:0.9rem; color:var(--text-2); margin-bottom:24px; line-height:1.6;">An excavator is the single most versatile piece of iron on a jobsite. With the right attachments — a bucket swap, a thumb, a hydraulic breaker — one machine does all of the above. Your service rate bundles the machine, fuel, transportation, and your operator into one line item. The customer has no idea what the machine cost you. They know what the hole costs them.</p>
+
+    <h3 class="block-label">Choose Your Scenario</h3>
+    <div class="scenario-bar">
+      <button class="scenario-btn active" onclick="switchScenario('p1', 'owner', this)">Owner-Operated</button>
+      <button class="scenario-btn" onclick="switchScenario('p1', 'hired', this)">Hire an Operator</button>
+    </div>
+
+    <div id="p1-owner" class="scenario-content active">
+      <h3 class="block-label" style="margin-top:8px;">Scenario A — Owner Operates the Machine (Lower Cost, Full Control)</h3>
+      <div class="fin-table-wrap">
+        <table class="fin-table">
+          <thead>
+            <tr>
+              <th>Line Item</th>
+              <th>Basis</th>
+              <th>Annual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--positive); background:var(--positive-bg);">REVENUE</td>
+            </tr>
+            <tr>
+              <td>Excavation / site service billings</td>
+              <td class="mono">24 hrs/wk × $200/hr × 50 wks</td>
+              <td class="mono revenue-label">$240,000</td>
+            </tr>
+            <tr class="subtotal">
+              <td>Gross Revenue</td>
+              <td></td>
+              <td class="mono">$240,000</td>
+            </tr>
+            <tr>
+              <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--negative); background:var(--negative-bg);">OPERATING COSTS</td>
+            </tr>
+            <tr>
+              <td>Diesel fuel</td>
+              <td class="mono">$20/hr × 1,200 hrs</td>
+              <td class="mono">$24,000</td>
+            </tr>
+            <tr>
+              <td>Commercial insurance (GL + inland marine)</td>
+              <td class="mono">Annual policy</td>
+              <td class="mono">$14,000</td>
+            </tr>
+            <tr>
+              <td>Machine maintenance &amp; wear parts</td>
+              <td class="mono">~8% of machine value</td>
+              <td class="mono">$6,800</td>
+            </tr>
+            <tr>
+              <td>Transport (lowboy trailer / truck)</td>
+              <td class="mono">~$150/move × 100 moves</td>
+              <td class="mono">$15,000</td>
+            </tr>
+            <tr>
+              <td>Marketing / sales (Google ads, signage)</td>
+              <td class="mono">Monthly</td>
+              <td class="mono">$6,000</td>
+            </tr>
+            <tr>
+              <td>Business / admin / accounting</td>
+              <td class="mono">Annual</td>
+              <td class="mono">$5,000</td>
+            </tr>
+            <tr class="subtotal">
+              <td>Total Operating Costs</td>
+              <td></td>
+              <td class="mono">$70,800</td>
+            </tr>
+            <tr class="profit">
+              <td><strong>Year-One Net Profit</strong></td>
+              <td></td>
+              <td class="mono"><strong>$169,200</strong></td>
+            </tr>
+            <tr>
+              <td style="font-size:0.8rem; color:var(--text-3);">Machine purchase (one-time, not in P&amp;L)</td>
+              <td class="mono" style="color:var(--text-3);">Cat 320 / Komatsu PC210 at auction</td>
+              <td class="mono" style="color:var(--text-3);">$85,000</td>
+            </tr>
+            <tr>
+              <td style="font-size:0.8rem; color:var(--positive);">Machine payback period</td>
+              <td></td>
+              <td class="mono" style="color:var(--positive);">~6 months</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout"><strong>Billing note:</strong> $200/hr is the market rate for an excavator + operator service in most US markets (2026). Some markets (Southeast, Midwest) run $170–190. Urban / Northeast runs $230–280. 24 billable hours per week is conservative — 60% utilization while building a customer base in year one. Weeks 40–52 should push 32–36 hrs/week as reputation grows.</div>
+    </div>
+
+    <div id="p1-hired" class="scenario-content">
+      <h3 class="block-label" style="margin-top:8px;">Scenario B — Hire a Licensed Operator, You Run Sales &amp; Business</h3>
+      <div class="fin-table-wrap">
+        <table class="fin-table">
+          <thead>
+            <tr>
+              <th>Line Item</th>
+              <th>Basis</th>
+              <th>Annual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--positive); background:var(--positive-bg);">REVENUE</td>
+            </tr>
+            <tr>
+              <td>Excavation / site service billings</td>
+              <td class="mono">30 hrs/wk × $200/hr × 50 wks</td>
+              <td class="mono revenue-label">$300,000</td>
+            </tr>
+            <tr class="subtotal">
+              <td>Gross Revenue</td>
+              <td></td>
+              <td class="mono">$300,000</td>
+            </tr>
+            <tr>
+              <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--negative); background:var(--negative-bg);">OPERATING COSTS</td>
+            </tr>
+            <tr>
+              <td>Operator wages (licensed, W2)</td>
+              <td class="mono">$30/hr × 1,500 hrs</td>
+              <td class="mono">$45,000</td>
+            </tr>
+            <tr>
+              <td>Operator payroll tax / benefits</td>
+              <td class="mono">~20% burden</td>
+              <td class="mono">$9,000</td>
+            </tr>
+            <tr>
+              <td>Diesel fuel</td>
+              <td class="mono">$20/hr × 1,500 hrs</td>
+              <td class="mono">$30,000</td>
+            </tr>
+            <tr>
+              <td>Commercial insurance (GL + inland marine)</td>
+              <td class="mono">Annual policy</td>
+              <td class="mono">$16,000</td>
+            </tr>
+            <tr>
+              <td>Machine maintenance &amp; wear parts</td>
+              <td class="mono">~8% of machine value</td>
+              <td class="mono">$6,800</td>
+            </tr>
+            <tr>
+              <td>Transport (lowboy)</td>
+              <td class="mono">$150/move × 130 moves</td>
+              <td class="mono">$19,500</td>
+            </tr>
+            <tr>
+              <td>Marketing / sales</td>
+              <td class="mono">Monthly spend</td>
+              <td class="mono">$9,000</td>
+            </tr>
+            <tr>
+              <td>Admin / accounting / LLC costs</td>
+              <td class="mono">Annual</td>
+              <td class="mono">$6,000</td>
+            </tr>
+            <tr class="subtotal">
+              <td>Total Operating Costs</td>
+              <td></td>
+              <td class="mono">$141,300</td>
+            </tr>
+            <tr class="profit">
+              <td><strong>Year-One Net Profit</strong></td>
+              <td></td>
+              <td class="mono"><strong>$158,700</strong></td>
+            </tr>
+            <tr>
+              <td style="font-size:0.8rem; color:var(--text-3);">Machine purchase (one-time)</td>
+              <td class="mono" style="color:var(--text-3);">Cat 320 at auction</td>
+              <td class="mono" style="color:var(--text-3);">$85,000</td>
+            </tr>
+            <tr>
+              <td style="font-size:0.8rem; color:var(--positive);">Machine payback period</td>
+              <td></td>
+              <td class="mono" style="color:var(--positive);">~7 months</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout"><strong>Scenario B advantage:</strong> Owner can sell more jobs while the operator runs the machine — scalable. This model sets up adding a 2nd machine in Year 2 without starting over. The hired operator scenario allows pushing utilization to 75% (30 hrs billable/week) because someone else is doing the physical work.</div>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x2705;</div>
+      <div>
+        <div class="verdict-head">Verdict: Lowest Barrier, Fastest Path to Revenue</div>
+        <div class="verdict-body">This is the most straightforward model. No licensing beyond a standard contractor's license in most states. No special facility. The operator shortage means GCs, homeowners, and developers are already looking for someone. Call 10 general contractors in the area with an excavator and you will have work within 30 days. Year-one net of $120K–$170K on an $85K machine is a 141–200% ROI before tax benefits. If Section 179 applies, add $29,750–$70,000 back to the bottom line depending on the tax bracket.</div>
+      </div>
+    </div>
+
+  </div><!-- /p1 -->
+
+
+  <!-- ════════════════ PROPOSAL 2 ════════════════ -->
+  <div id="tab-p2" class="tab-panel">
+
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Heavy Equipment Operator Training Academy</h2>
+      <p class="section-desc">There are more than 400,000 unfilled equipment operator positions in the US right now. Schools that train operators are <em>booked out</em>. The equipment is your classroom. Tuition, not rent, is the revenue model.</p>
+    </div>
+
+    <h3 class="block-label">Why This Works</h3>
+    <div class="callout">
+      You are not renting the excavator to students. You are providing a credentialed educational service that uses the equipment as an instructional tool — the same way a welding school uses welders and a culinary school uses ovens. This is legal under every state's framework. Tuition revenue is the income. No restriction applies.
+    </div>
+
+    <div class="callout" style="margin-top:12px;">
+      <strong>Industry tuition benchmarks (2026):</strong> Earthmover School (FL) — $3,900–$7,500 per course. Performance Training Solutions — $4,500–$8,000 depending on specialty. VocationalTrainingHQ average — $5,200 per student for a 2-week program. These are not made up — they are what people <em>pay right now.</em>
+    </div>
+
+    <h3 class="block-label" style="margin-top:28px;">Program Structure</h3>
+    <div class="fin-table-wrap" style="margin-bottom:24px;">
+      <table class="fin-table">
+        <thead>
+          <tr><th>Parameter</th><th>Conservative</th><th>Moderate</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tuition per student</td><td class="mono">$4,500</td><td class="mono">$5,500</td></tr>
+          <tr><td>Students per session</td><td class="mono">6</td><td class="mono">8</td></tr>
+          <tr><td>Sessions per year</td><td class="mono">11</td><td class="mono">12</td></tr>
+          <tr><td>Annual students</td><td class="mono">66</td><td class="mono">96</td></tr>
+          <tr class="profit"><td><strong>Gross Revenue</strong></td><td class="mono"><strong>$297,000</strong></td><td class="mono"><strong>$528,000</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="block-label">Full P&amp;L — Moderate Scenario</h3>
+    <div class="fin-table-wrap">
+      <table class="fin-table">
+        <thead>
+          <tr><th>Line Item</th><th>Basis</th><th>Annual</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--positive); background:var(--positive-bg);">REVENUE</td>
+          </tr>
+          <tr>
+            <td>Student tuition (8 students × 12 sessions)</td>
+            <td class="mono">96 students × $5,500</td>
+            <td class="mono revenue-label">$528,000</td>
+          </tr>
+          <tr class="subtotal"><td>Gross Revenue</td><td></td><td class="mono">$528,000</td></tr>
+          <tr>
+            <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--negative); background:var(--negative-bg);">OPERATING COSTS</td>
+          </tr>
+          <tr><td>Lead instructor salary (NCCO certified preferred)</td><td class="mono">Full-time W2</td><td class="mono">$72,000</td></tr>
+          <tr><td>Instructor payroll burden</td><td class="mono">~22%</td><td class="mono">$15,840</td></tr>
+          <tr><td>Fuel (training uses moderate engine hours)</td><td class="mono">Estimated annual</td><td class="mono">$14,000</td></tr>
+          <tr><td>Machine maintenance — training accelerates wear</td><td class="mono">~12% of machine value</td><td class="mono">$13,800</td></tr>
+          <tr><td>Commercial + professional liability insurance</td><td class="mono">Training school policy</td><td class="mono">$24,000</td></tr>
+          <tr><td>Marketing (Google, trade schools, veterans programs)</td><td class="mono">Monthly</td><td class="mono">$18,000</td></tr>
+          <tr><td>Accreditation / state licensing</td><td class="mono">One-time + annual</td><td class="mono">$5,500</td></tr>
+          <tr><td>Land / facility lease (if needed)</td><td class="mono">Simple outdoor yard, rural</td><td class="mono">$12,000</td></tr>
+          <tr><td>Safety gear, curriculum materials, admin</td><td class="mono">Per student ~$100</td><td class="mono">$9,600</td></tr>
+          <tr class="subtotal"><td>Total Operating Costs</td><td></td><td class="mono">$184,740</td></tr>
+          <tr class="profit">
+            <td><strong>Year-One Net Profit</strong></td>
+            <td></td>
+            <td class="mono"><strong>$343,260</strong></td>
+          </tr>
+          <tr>
+            <td style="font-size:0.8rem; color:var(--text-3);">Machines needed: 1 excavator + 1 skid steer</td>
+            <td class="mono" style="color:var(--text-3);">Auction</td>
+            <td class="mono" style="color:var(--text-3);">$115,000</td>
+          </tr>
+          <tr>
+            <td style="font-size:0.8rem; color:var(--positive);">Machine payback period</td>
+            <td></td>
+            <td class="mono" style="color:var(--positive);">~4 months</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="block-label" style="margin-top:28px;">Revenue Multipliers You Can Stack On</h3>
+    <div class="fin-table-wrap">
+      <table class="fin-table">
+        <thead>
+          <tr><th>Add-On Revenue Stream</th><th>How It Works</th><th>Additional Annual Revenue</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Veterans &amp; workforce development grants</td><td>Many states reimburse tuition for vets — zero cost to student, full tuition to school</td><td class="mono positive" style="color:var(--positive);">$30,000–$80,000</td></tr>
+          <tr><td>OSHA 10 / OSHA 30 add-on training</td><td>Tack a 1-day OSHA cert onto every session</td><td class="mono" style="color:var(--positive);">$9,600/yr (96 students × $100)</td></tr>
+          <tr><td>Corporate group bookings</td><td>Contractors send their crews for recertification</td><td class="mono" style="color:var(--positive);">$20,000–$60,000</td></tr>
+          <tr><td>NCCO prep course add-on</td><td>National certification exam prep — premium tier</td><td class="mono" style="color:var(--positive);">$500/student = $48,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x1F3C6;</div>
+      <div>
+        <div class="verdict-head">Verdict: Highest ROI of the Three — But Needs Setup Time</div>
+        <div class="verdict-body">On paper this is the strongest model — $343K net on $115K in machines is a 298% ROI before tax benefits. The catch is the startup ramp: getting state approval, hiring an instructor, and filling the first two or three cohorts takes 60–90 days. Build the curriculum and marketing during that window. Once you have a waiting list, this model is self-funding and difficult to compete with. Veteran-focused marketing can accelerate both enrollment and grant revenue dramatically.</div>
+      </div>
+    </div>
+
+  </div><!-- /p2 -->
+
+
+  <!-- ════════════════ PROPOSAL 3 ════════════════ -->
+  <div id="tab-p3" class="tab-panel">
+
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Material Extraction &amp; Sales</h2>
+      <p class="section-desc">You don't sell or rent the machine. You sell what the machine produces. Fill dirt, topsoil, gravel, and aggregate are commodities with real market pricing — and there is constant demand from developers, landscapers, and contractors who need material hauled in or taken out.</p>
+    </div>
+
+    <h3 class="block-label">How It Works</h3>
+    <div class="callout">
+      <strong>Two-sided revenue:</strong> Contractors and homeowners <em>pay you to haul away</em> excess dirt and debris from their sites. Simultaneously, developers and landscapers pay you to <em>deliver fill material</em> to their sites. You're making money on both ends of the same cubic yard. This is the dirt broker model, and it's been around forever for good reason.
+    </div>
+
+    <h3 class="block-label" style="margin-top:24px;">2026 Fill Material Pricing (Current Market)</h3>
+    <div class="fin-table-wrap" style="margin-bottom:24px;">
+      <table class="fin-table">
+        <thead>
+          <tr><th>Material</th><th>Gate / Pit Price (per CY)</th><th>Delivered Price (per CY)</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Fill dirt (clean)</td><td class="mono">$8–$15</td><td class="mono">$20–$35</td><td style="font-size:0.8rem; color:var(--text-3);">Most abundant, highest volume</td></tr>
+          <tr><td>Topsoil</td><td class="mono">$14–$28</td><td class="mono">$30–$55</td><td style="font-size:0.8rem; color:var(--text-3);">Landscaping demand is strong</td></tr>
+          <tr><td>Sandy loam / sand</td><td class="mono">$12–$22</td><td class="mono">$25–$45</td><td style="font-size:0.8rem; color:var(--text-3);">Good for drainage applications</td></tr>
+          <tr><td>Gravel / crushed stone</td><td class="mono">$18–$35</td><td class="mono">$35–$65</td><td style="font-size:0.8rem; color:var(--text-3);">Higher margin, lower volume</td></tr>
+          <tr><td>Demolition debris removal</td><td class="mono">(You get paid to take it)</td><td class="mono">$12–$28/CY</td><td style="font-size:0.8rem; color:var(--text-3);">Revenue on haul-away</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="block-label">Choose Land Scenario</h3>
+    <div class="scenario-bar">
+      <button class="scenario-btn active" onclick="switchScenario('p3', 'royalty', this)">Landowner Revenue Share</button>
+      <button class="scenario-btn" onclick="switchScenario('p3', 'owned', this)">Own the Land</button>
+    </div>
+
+    <div id="p3-royalty" class="scenario-content active">
+      <h3 class="block-label" style="margin-top:8px;">Scenario A — Extracting From a Landowner's Property (Revenue Share)</h3>
+      <div class="callout">Find a landowner who wants their land cleared or graded. You do it for free (or discounted) in exchange for the right to sell the material extracted. Standard split: landowner gets 20–30% of gate sales. You keep the rest.</div>
+      <div class="fin-table-wrap" style="margin-top:16px;">
+        <table class="fin-table">
+          <thead><tr><th>Line Item</th><th>Basis</th><th>Annual</th></tr></thead>
+          <tbody>
+            <tr>
+              <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--positive); background:var(--positive-bg);">REVENUE</td>
+            </tr>
+            <tr><td>Fill dirt gate sales</td><td class="mono">200 CY/day × $11 × 200 days</td><td class="mono revenue-label">$440,000</td></tr>
+            <tr class="subtotal"><td>Gross Revenue</td><td></td><td class="mono">$440,000</td></tr>
+            <tr>
+              <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--negative); background:var(--negative-bg);">COSTS</td>
+            </tr>
+            <tr><td>Landowner royalty (25% of gate)</td><td class="mono">25% × $440,000</td><td class="mono">$110,000</td></tr>
+            <tr><td>Operator wages</td><td class="mono">$32/hr × 1,600 hrs</td><td class="mono">$51,200</td></tr>
+            <tr><td>Diesel fuel</td><td class="mono">$20/hr × 1,600 hrs</td><td class="mono">$32,000</td></tr>
+            <tr><td>Machine maintenance</td><td class="mono">8% of machine value</td><td class="mono">$6,800</td></tr>
+            <tr><td>Insurance (commercial, bonded)</td><td class="mono">Annual</td><td class="mono">$13,000</td></tr>
+            <tr><td>Site access / environmental compliance</td><td class="mono">Permits, testing</td><td class="mono">$5,000</td></tr>
+            <tr><td>Admin / accounting</td><td class="mono">Annual</td><td class="mono">$5,000</td></tr>
+            <tr class="subtotal"><td>Total Costs</td><td></td><td class="mono">$223,000</td></tr>
+            <tr class="profit"><td><strong>Year-One Net Profit</strong></td><td></td><td class="mono"><strong>$217,000</strong></td></tr>
+            <tr><td style="font-size:0.8rem; color:var(--text-3);">Machine cost (one-time)</td><td class="mono" style="color:var(--text-3);">Excavator at auction</td><td class="mono" style="color:var(--text-3);">$85,000</td></tr>
+            <tr><td style="font-size:0.8rem; color:var(--positive);">Machine payback</td><td></td><td class="mono" style="color:var(--positive);">~5 months</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="p3-owned" class="scenario-content">
+      <h3 class="block-label" style="margin-top:8px;">Scenario B — Own the Land (Maximum Margin)</h3>
+      <div class="callout">No royalty. Every cubic yard of material you sell is 100% yours. If your friend has land already, or can acquire land with value as a dirt source, this is the cleanest model.</div>
+      <div class="fin-table-wrap" style="margin-top:16px;">
+        <table class="fin-table">
+          <thead><tr><th>Line Item</th><th>Basis</th><th>Annual</th></tr></thead>
+          <tbody>
+            <tr>
+              <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--positive); background:var(--positive-bg);">REVENUE</td>
+            </tr>
+            <tr><td>Fill dirt gate sales</td><td class="mono">200 CY/day × $11 × 200 days</td><td class="mono revenue-label">$440,000</td></tr>
+            <tr class="subtotal"><td>Gross Revenue</td><td></td><td class="mono">$440,000</td></tr>
+            <tr>
+              <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--negative); background:var(--negative-bg);">COSTS</td>
+            </tr>
+            <tr><td>Operator wages</td><td class="mono">$32/hr × 1,600 hrs</td><td class="mono">$51,200</td></tr>
+            <tr><td>Diesel fuel</td><td class="mono">$20/hr × 1,600 hrs</td><td class="mono">$32,000</td></tr>
+            <tr><td>Machine maintenance</td><td class="mono">8% of machine value</td><td class="mono">$6,800</td></tr>
+            <tr><td>Insurance (commercial, bonded)</td><td class="mono">Annual</td><td class="mono">$13,000</td></tr>
+            <tr><td>Environmental compliance / permits</td><td class="mono">Annual</td><td class="mono">$6,000</td></tr>
+            <tr><td>Admin / accounting</td><td class="mono">Annual</td><td class="mono">$5,000</td></tr>
+            <tr class="subtotal"><td>Total Costs</td><td></td><td class="mono">$114,000</td></tr>
+            <tr class="profit"><td><strong>Year-One Net Profit</strong></td><td></td><td class="mono"><strong>$326,000</strong></td></tr>
+            <tr><td style="font-size:0.8rem; color:var(--text-3);">Machine cost (one-time)</td><td class="mono" style="color:var(--text-3);">Excavator at auction</td><td class="mono" style="color:var(--text-3);">$85,000</td></tr>
+            <tr><td style="font-size:0.8rem; color:var(--positive);">Machine payback</td><td></td><td class="mono" style="color:var(--positive);">~3 months</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x26A0;&#xFE0F;</div>
+      <div>
+        <div class="verdict-head">Verdict: High Ceiling, But Needs a Source</div>
+        <div class="verdict-body">This model wins on margin if you own the land. The challenge is securing a reliable extraction site — you need to find the property (owned or shared), pull environmental permits, and line up buyers before you start moving earth. Plan 45–60 days of setup. The DirtMatch platform and regional construction material brokers are your fastest path to buyers. Once running, this is repeatable and has no labor-intensive job quoting — just load trucks and count yards.</div>
+      </div>
+    </div>
+
+  </div><!-- /p3 -->
+
+
+  <!-- ════════════════ COMBO MODEL ════════════════ -->
+  <div id="tab-combo" class="tab-panel">
+
+    <div class="section-head">
+      <span class="section-num">1+2</span>
+      <h2 class="section-title">Combo: Site Services <span class="slash">&amp;</span> Training Academy</h2>
+      <p class="section-desc">Run both models under one LLC, on the same machines. Service jobs fill the weekdays. Training cohorts run on a two-week block schedule. Each stream fills the other's dead time — and they actively make each other stronger.</p>
+    </div>
+
+    <h3 class="block-label">Why This Works Better Than Either Alone</h3>
+
+    <div class="fin-table-wrap" style="margin-bottom:28px;">
+      <table class="fin-table">
+        <thead>
+          <tr><th>The Synergy</th><th>How It Plays Out</th><th>Dollar Impact</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Real-site training premium</strong></td>
+            <td style="font-size:0.85rem; color:var(--text-2);">Students train on actual client job sites alongside your operator. Real-world hours = higher tuition justified, stronger job-placement rates, better word-of-mouth</td>
+            <td class="mono" style="color:var(--positive);">+$500–1,000/student</td>
+          </tr>
+          <tr>
+            <td><strong>Dead-time elimination</strong></td>
+            <td style="font-size:0.85rem; color:var(--text-2);">Rainy week, slow bidding season, machine between jobs — training cohort fills it. Service slow? Run a 2-week cohort. No idle iron.</td>
+            <td class="mono" style="color:var(--positive);">+$35,000–50,000/yr</td>
+          </tr>
+          <tr>
+            <td><strong>Operator pipeline</strong></td>
+            <td style="font-size:0.85rem; color:var(--text-2);">Top students from your school become your next employees as you scale. You trained them yourself, on your machines, to your standards. Zero recruiting cost.</td>
+            <td class="mono" style="color:var(--positive);">$15,000–30,000 saved</td>
+          </tr>
+          <tr>
+            <td><strong>Shared overhead</strong></td>
+            <td style="font-size:0.85rem; color:var(--text-2);">One LLC. One insurance policy (combined GL + professional). One machine maintenance budget. One admin spend. Costs don't double — they barely move.</td>
+            <td class="mono" style="color:var(--positive);">$25,000–40,000 saved</td>
+          </tr>
+          <tr>
+            <td><strong>Client credibility loop</strong></td>
+            <td style="font-size:0.85rem; color:var(--text-2);">GCs and developers see you running training = they trust you're serious. School students become referrals for your service work. Two brands, one flywheel.</td>
+            <td class="mono" style="color:var(--positive);">Unquantified, real</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="block-label">Equipment Required</h3>
+    <div class="callout">
+      <strong>Machine 1 — Cat 320 (or equivalent 20–30 ton excavator)</strong> → Primary service machine Mon–Thu. Training machine on cohort weeks, Fridays, and weather days.<br><br>
+      <strong>Machine 2 — Compact Track Loader (Cat 299 / Bobcat T870)</strong> → Supports service jobs and gives training students a second machine to rotate through, which justifies the tuition premium and keeps all 8 students active simultaneously rather than waiting for a turn on one machine.<br><br>
+      <strong>Total acquisition:</strong> ~$85,000 excavator + ~$32,000 CTL = <strong>$117,000</strong>
+    </div>
+
+    <h3 class="block-label" style="margin-top:28px;">Scheduling Model — Block Rotation</h3>
+    <div class="fin-table-wrap" style="margin-bottom:28px;">
+      <table class="fin-table">
+        <thead>
+          <tr><th>Month</th><th>Weeks 1–2</th><th>Weeks 3–4</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="mono">Jan–Feb</td><td>Service contracting</td><td>Cohort #1 (8 students)</td><td style="font-size:0.8rem; color:var(--text-3);">Slow season = more training time, less competition for service jobs</td></tr>
+          <tr><td class="mono">Mar–Apr</td><td>Service contracting</td><td>Cohort #2 (8 students)</td><td style="font-size:0.8rem; color:var(--text-3);">Spring boom starts — push service hours, weekend cohort if needed</td></tr>
+          <tr><td class="mono">May–Jun</td><td>Service contracting</td><td>Cohort #3 (8 students)</td><td style="font-size:0.8rem; color:var(--text-3);">Peak service season — consider a Saturday cohort supplement</td></tr>
+          <tr><td class="mono">Jul–Aug</td><td>Service contracting</td><td>Cohort #4 (8 students)</td><td style="font-size:0.8rem; color:var(--text-3);">High heat = afternoon machine limits; morning service, afternoon classroom</td></tr>
+          <tr><td class="mono">Sep–Oct</td><td>Service contracting</td><td>Cohort #5 (8 students)</td><td style="font-size:0.8rem; color:var(--text-3);">Best weather months — maximum service utilization, Fri cohort optional</td></tr>
+          <tr><td class="mono">Nov–Dec</td><td>Service contracting</td><td>Cohort #6 (8 students)</td><td style="font-size:0.8rem; color:var(--text-3);">Year-end push on service; veteran enrollment programs peak in fall</td></tr>
+          <tr class="subtotal"><td colspan="2"><strong>Annual Totals</strong></td><td><strong>6 cohorts × 8 students = 48 students</strong></td><td style="font-size:0.8rem; color:var(--text-3);">Conservative count — add weekend sessions and you hit 72–80</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="block-label">Combined Year-One P&amp;L</h3>
+    <div class="fin-table-wrap">
+      <table class="fin-table">
+        <thead>
+          <tr><th>Line Item</th><th>Basis</th><th>Annual</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--positive); background:var(--positive-bg);">REVENUE — SERVICE ARM</td>
+          </tr>
+          <tr>
+            <td>Excavation &amp; site service billings</td>
+            <td class="mono">22 hrs/wk × $200/hr × 50 wks</td>
+            <td class="mono revenue-label">$220,000</td>
+          </tr>
+          <tr class="subtotal"><td>Service Subtotal</td><td></td><td class="mono">$220,000</td></tr>
+
+          <tr>
+            <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--positive); background:var(--positive-bg);">REVENUE — TRAINING ARM</td>
+          </tr>
+          <tr>
+            <td>Tuition — 6 cohorts (real-site premium included in rate)</td>
+            <td class="mono">48 students × $6,000</td>
+            <td class="mono revenue-label">$288,000</td>
+          </tr>
+          <tr>
+            <td>Veteran / workforce grants (conservative est.)</td>
+            <td class="mono">10 of 48 students funded externally</td>
+            <td class="mono revenue-label">$60,000</td>
+          </tr>
+          <tr class="subtotal"><td>Training Subtotal</td><td></td><td class="mono">$348,000</td></tr>
+
+          <tr class="subtotal" style="background:var(--accent-bg);">
+            <td style="color:var(--accent);"><strong>Combined Gross Revenue</strong></td>
+            <td></td>
+            <td class="mono" style="color:var(--accent);"><strong>$568,000</strong></td>
+          </tr>
+
+          <tr>
+            <td colspan="3" style="padding:8px 16px; font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--negative); background:var(--negative-bg);">COMBINED OPERATING COSTS</td>
+          </tr>
+          <tr><td>Lead instructor / operator (dual-role hire)</td><td class="mono">$80,000 salary</td><td class="mono">$80,000</td></tr>
+          <tr><td>Payroll burden (taxes, basic benefits)</td><td class="mono">~22%</td><td class="mono">$17,600</td></tr>
+          <tr><td>Diesel fuel — both machines, mixed use</td><td class="mono">Combined estimate</td><td class="mono">$38,000</td></tr>
+          <tr><td>Machine maintenance — 2 machines, heavy use</td><td class="mono">~10% of fleet value</td><td class="mono">$11,700</td></tr>
+          <tr><td>Combined insurance (GL + professional liability + inland marine)</td><td class="mono">Combined policy discount vs. separate</td><td class="mono">$28,000</td></tr>
+          <tr><td>Transport (lowboy, moves for service jobs)</td><td class="mono">$150 × 80 moves</td><td class="mono">$12,000</td></tr>
+          <tr><td>Marketing (service leads + student recruitment)</td><td class="mono">Shared budget</td><td class="mono">$14,000</td></tr>
+          <tr><td>Accreditation / state licensing (training)</td><td class="mono">One-time amortized</td><td class="mono">$5,500</td></tr>
+          <tr><td>Safety gear, curriculum materials, PPE per student</td><td class="mono">$75 × 48 students</td><td class="mono">$3,600</td></tr>
+          <tr><td>Business admin / accounting / LLC</td><td class="mono">Annual</td><td class="mono">$7,500</td></tr>
+          <tr class="subtotal"><td>Total Operating Costs</td><td></td><td class="mono">$217,900</td></tr>
+
+          <tr class="profit">
+            <td><strong>Year-One Net Profit</strong></td>
+            <td></td>
+            <td class="mono"><strong>$350,100</strong></td>
+          </tr>
+          <tr>
+            <td style="font-size:0.8rem; color:var(--text-3);">Total machine investment (one-time)</td>
+            <td class="mono" style="color:var(--text-3);">Excavator + CTL at auction</td>
+            <td class="mono" style="color:var(--text-3);">$117,000</td>
+          </tr>
+          <tr>
+            <td style="font-size:0.8rem; color:var(--positive);">Machine fleet payback period</td>
+            <td></td>
+            <td class="mono" style="color:var(--positive);">~4 months</td>
+          </tr>
+          <tr>
+            <td style="font-size:0.8rem; color:var(--positive);">Year-one ROI on machines</td>
+            <td></td>
+            <td class="mono" style="color:var(--positive);">299%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="block-label" style="margin-top:28px;">Side-by-Side: Solo vs. Combo</h3>
+    <div class="fin-table-wrap" style="margin-bottom:24px;">
+      <table class="fin-table">
+        <thead>
+          <tr><th>Model</th><th>Machine Cost</th><th>Gross Revenue</th><th>Net Profit Y1</th><th>ROI</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Proposal 1 only — Site Services</td>
+            <td class="mono">$85,000</td>
+            <td class="mono">$240,000</td>
+            <td class="mono">$169,200</td>
+            <td class="mono">199%</td>
+          </tr>
+          <tr>
+            <td>Proposal 2 only — Training Academy</td>
+            <td class="mono">$115,000</td>
+            <td class="mono">$528,000</td>
+            <td class="mono">$343,260</td>
+            <td class="mono">298%</td>
+          </tr>
+          <tr class="profit">
+            <td><strong>Combo — Both Together</strong></td>
+            <td class="mono"><strong>$117,000</strong></td>
+            <td class="mono"><strong>$568,000</strong></td>
+            <td class="mono"><strong>$350,100</strong></td>
+            <td class="mono"><strong>299%</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <strong>Why the combo beats running them separately:</strong> Adding a CTL to the excavator costs $32K more than Proposal 1 alone, but shared overhead means costs don't scale linearly. Insurance, admin, and transport are largely fixed. The CTL also unlocks higher service billing because you can handle more job types simultaneously. The 6-cohort conservative training count assumes only block scheduling — a single dedicated Saturday cohort per month bumps students to 72 and gross revenue to ~$650K.
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x1F4A5;</div>
+      <div>
+        <div class="verdict-head">Verdict: The Best Version of Both Businesses</div>
+        <div class="verdict-body">The combo model outperforms either solo on ROI because two revenue streams share one cost base. The scheduling is manageable — service dominates the calendar, training fills the gaps. The real-site training angle is a legitimate differentiator that no school without active contracting operations can match. If your friend has the capital for two machines and can hire one good dual-role operator/instructor, this is the path. Start with Proposal 1 in month one while the training side gets licensed. By month three, both streams are running. By month twelve, you've got a waiting list for cohorts and a full service calendar — and a roster of trained operators ready to crew a second service rig in Year Two.</div>
+      </div>
+    </div>
+
+  </div><!-- /combo -->
+
+
+  <!-- ════════════════ GOVERNMENT BIDDING ════════════════ -->
+  <div id="tab-govbid" class="tab-panel">
+
+    <div class="section-head">
+      <span class="section-num">&#x1F3DB;</span>
+      <h2 class="section-title">Government Bidding Jobs</h2>
+      <p class="section-desc">When any government body — city, county, state, or federal — needs construction work done, they are legally required to open it to competitive bids. That means any licensed, bonded contractor can win the contract. Government pays more, pays reliably, and has an endless supply of work.</p>
+    </div>
+
+    <h3 class="block-label">This Is a Revenue Multiplier, Not a Standalone Model</h3>
+    <div class="callout">
+      Government bidding stacks on top of whichever proposal you choose. You don't stop doing private work — you add government contracts to fill gaps in your schedule and command a higher rate. Think of it as upgrading 20–40% of your annual hours from $200/hr private jobs to $250–280/hr government-rate jobs.
+    </div>
+
+    <h3 class="block-label" style="margin-top:28px;">The Three Tiers — Start Here, Not There</h3>
+    <div class="machine-grid" style="margin-top:12px;">
+
+      <div class="machine-card" style="border-top:3px solid var(--positive);">
+        <div>
+          <span class="machine-rank" style="color:var(--positive);">T1</span>
+          <div class="machine-name">Local Municipality — City &amp; County</div>
+          <div class="machine-models">Roads · Drainage · Parks · Public Utilities · Demolition</div>
+          <div class="machine-desc">This is where you start. City and county contracts are smaller (often $10K–$100K), have the lowest bonding requirements, pay the fastest (30–60 day net), and have the least paperwork. Many municipalities have no bonding requirement at all under $50,000. You can register and bid within 30 days of forming your LLC. Search your county's procurement portal — most post bids publicly. This is real money that most small contractors ignore because they think government work is too complicated.</div>
+          <div class="verdict-tag buy-first">Start Here — Year One</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Typical Contract Size</span><span class="mstat-val orange">$8K–$80K</span></div>
+          <div class="mstat"><span class="mstat-label">Bonding Required</span><span class="mstat-val">Often none &lt;$50K</span></div>
+          <div class="mstat"><span class="mstat-label">Pay Speed</span><span class="mstat-val green">30–60 days</span></div>
+          <div class="mstat"><span class="mstat-label">Rate Premium</span><span class="mstat-val green">+15–25%</span></div>
+          <div class="mstat"><span class="mstat-label">Complexity</span><span class="stars">★☆☆☆☆</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card">
+        <div>
+          <span class="machine-rank">T2</span>
+          <div class="machine-name">State DOT &amp; Agencies</div>
+          <div class="machine-models">Highway Maintenance · Bridge Work · State Park Projects · Utility Infrastructure</div>
+          <div class="machine-desc">State Department of Transportation work is where mid-size contractors live. Contracts run $100K–$2M+, prevailing wage is required (meaning the government sets minimum pay rates for workers — this gets passed to the client in your bid, it doesn't come out of your profit), and you need a performance bond — typically from a surety company, costs about 1–3% of the contract value. Requires 6–12 months of past performance to bid competitively. Build your Tier 1 record first, then move here in Year Two.</div>
+          <div class="verdict-tag strong-second">Year Two Target</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Typical Contract Size</span><span class="mstat-val orange">$100K–$2M</span></div>
+          <div class="mstat"><span class="mstat-label">Bonding Required</span><span class="mstat-val">Yes — performance bond</span></div>
+          <div class="mstat"><span class="mstat-label">Pay Speed</span><span class="mstat-val">45–90 days</span></div>
+          <div class="mstat"><span class="mstat-label">Rate Premium</span><span class="mstat-val green">+25–40%</span></div>
+          <div class="mstat"><span class="mstat-label">Complexity</span><span class="stars">★★★☆☆</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card">
+        <div>
+          <span class="machine-rank">T3</span>
+          <div class="machine-name">Federal — USACE, FHWA, Military</div>
+          <div class="machine-models">Corps of Engineers · Federal Highway · Base Construction · FEMA Disaster Recovery</div>
+          <div class="machine-desc">The highest-paying tier and the hardest to enter. Federal contracts require SAM.gov registration (free, 10–14 days), Davis-Bacon prevailing wages, both performance and payment bonds, and a track record of past performance. FEMA disaster recovery work is the exception — after a major storm or disaster, FEMA fast-tracks smaller contracts to local operators, often skipping normal bonding requirements. If a hurricane hits your region, this window opens fast. Otherwise, target federal in Year Three.</div>
+          <div class="verdict-tag conditional">Year Three — or FEMA Opportunity</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Typical Contract Size</span><span class="mstat-val orange">$500K–$10M+</span></div>
+          <div class="mstat"><span class="mstat-label">Bonding Required</span><span class="mstat-val">Yes — both bonds</span></div>
+          <div class="mstat"><span class="mstat-label">Pay Speed</span><span class="mstat-val">60–120 days</span></div>
+          <div class="mstat"><span class="mstat-label">Rate Premium</span><span class="mstat-val green">+30–50%</span></div>
+          <div class="mstat"><span class="mstat-label">Complexity</span><span class="stars">★★★★★</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <h3 class="block-label">Set-Aside Programs — Your Competitive Advantage</h3>
+    <div class="callout" style="margin-bottom:16px;">
+      The government reserves a percentage of contracts for businesses owned by certain groups — veterans, minorities, women, businesses in economically disadvantaged areas. These set-aside contracts have far fewer bidders. If your friend qualifies for even one, his win rate skyrockets.
+    </div>
+    <div class="fin-table-wrap">
+      <table class="fin-table">
+        <thead><tr><th>Program</th><th>Who Qualifies</th><th>What It Means</th><th>Where to Register</th></tr></thead>
+        <tbody>
+          <tr><td><strong>SDVOSB</strong> — Service-Disabled Veteran-Owned</td><td>Veteran with service-connected disability, owns 51%+</td><td>Access to contracts reserved only for SDVOSBs — dramatically fewer competitors</td><td class="mono">SAM.gov + VA VETBIZ</td></tr>
+          <tr><td><strong>VOSB</strong> — Veteran-Owned</td><td>Any veteran, owns 51%+</td><td>Similar to SDVOSB, slightly broader pool</td><td class="mono">SAM.gov + VA VETBIZ</td></tr>
+          <tr><td><strong>8(a) Business Development</strong></td><td>Socially &amp; economically disadvantaged individual, owns 51%+</td><td>9-year program with direct award contracts (no bidding required on some)</td><td class="mono">SBA.gov</td></tr>
+          <tr><td><strong>HUBZone</strong></td><td>Business located in a Historically Underutilized Business Zone</td><td>10% price preference on all federal contracts, plus set-aside access</td><td class="mono">SAM.gov HUBZone map</td></tr>
+          <tr><td><strong>WOSB</strong> — Women-Owned Small Business</td><td>Woman owns and controls 51%+</td><td>Set-aside contracts in industries where women are underrepresented — includes construction</td><td class="mono">SAM.gov</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="divider">
+
+    <h3 class="block-label">Revenue Impact — Adding Gov't Bidding to Proposal 1</h3>
+    <div class="fin-table-wrap">
+      <table class="fin-table">
+        <thead>
+          <tr><th>Line Item</th><th>Private Only (P1)</th><th>P1 + Gov't Bidding</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Private service hours billed</td><td class="mono">24 hrs/wk × 50 wks</td><td class="mono">18 hrs/wk × 50 wks</td></tr>
+          <tr><td>Private revenue @ $200/hr</td><td class="mono">$240,000</td><td class="mono">$180,000</td></tr>
+          <tr><td>Gov't contract hours billed</td><td class="mono">—</td><td class="mono">6 hrs/wk × 50 wks</td></tr>
+          <tr><td>Gov't revenue @ $255/hr (prevailing wage premium)</td><td class="mono">—</td><td class="mono">$76,500</td></tr>
+          <tr class="subtotal"><td>Gross Revenue</td><td class="mono">$240,000</td><td class="mono">$256,500</td></tr>
+          <tr><td>Additional costs: bonding</td><td class="mono">—</td><td class="mono">$4,000</td></tr>
+          <tr><td>Additional costs: certified payroll admin</td><td class="mono">—</td><td class="mono">$5,500</td></tr>
+          <tr><td>Additional costs: bid prep &amp; registration time</td><td class="mono">—</td><td class="mono">$2,000</td></tr>
+          <tr><td>All other costs (same as P1)</td><td class="mono">$70,800</td><td class="mono">$70,800</td></tr>
+          <tr class="subtotal"><td>Total Costs</td><td class="mono">$70,800</td><td class="mono">$82,300</td></tr>
+          <tr class="profit">
+            <td><strong>Net Profit</strong></td>
+            <td class="mono"><strong>$169,200</strong></td>
+            <td class="mono"><strong>$174,200</strong></td>
+          </tr>
+          <tr>
+            <td style="font-size:0.8rem; color:var(--text-3);">Note: Gov't work is harder to win in Y1 — budget for 50% win rate on bids. As reputation builds, win rate improves significantly.</td>
+            <td colspan="2"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="block-label" style="margin-top:28px;">How to Start — The 30-Day Checklist</h3>
+    <div class="callout">
+      <strong>Week 1:</strong> Form LLC, get EIN from IRS.gov (free, instant online), open business checking account.<br><br>
+      <strong>Week 2:</strong> Register on SAM.gov (free — takes 7–14 days to activate). Bookmark your county's procurement / purchasing portal. Search for active bids in excavation, site work, drainage, and demolition.<br><br>
+      <strong>Week 3:</strong> Get a Certificate of Insurance naming the relevant government entity as additionally insured (your insurance agent does this in 24 hours). Get a business license from your city/county.<br><br>
+      <strong>Week 4:</strong> Submit your first bid. Start with a county road repair or drainage ditch job — scope is simple, competition is manageable. You will not win your first bid. That is fine. The act of bidding teaches you the format, the pricing, and the market faster than anything else.
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x1F3DB;&#xFE0F;</div>
+      <div>
+        <div class="verdict-head">Verdict: Low Risk, Meaningful Upside — Do It Alongside Everything Else</div>
+        <div class="verdict-body">The registration is free. The first bid costs nothing but time. Government contracts pay more per hour than private work and they pay reliably — no chasing invoices, no bounced checks. The downside is slower payments (30–90 days) and more paperwork. Stack it on top of whichever proposal makes sense. Even one or two county contracts in Year One builds the past-performance record that unlocks bigger bids in Year Two and Year Three. If your friend qualifies for any set-aside program, register immediately — that alone can change the entire business trajectory.</div>
+      </div>
+    </div>
+
+  </div><!-- /govbid -->
+
+
+  <!-- ════════════════ VETERAN EDGE ════════════════ -->
+  <div id="tab-vetedge" class="tab-panel">
+
+    <div class="section-head">
+      <span class="section-num" style="color:var(--positive);">★</span>
+      <h2 class="section-title">The Veteran Edge — An Unfair Advantage (Legally)</h2>
+      <p class="section-desc">The 15% acquisition theory is no longer a theory. It has a name, a website, and a federal law behind it. This tab explains what it is, what it unlocks, and why it compounds into something no non-veteran competitor can touch.</p>
+    </div>
+
+    <!-- ── VERIFIED ACQUISITION ── -->
+    <div class="callout" style="border-color:var(--positive); background:var(--positive-bg); margin-bottom:24px;">
+      <strong style="color:var(--positive); font-size:1rem;">✓ VERIFIED: The 15% Acquisition Path Is Real. It's Called GSAxcess.gov.</strong>
+      <p style="margin-top:8px; font-size:0.9rem; line-height:1.65;">Every year, federal agencies — the military, the Army Corps of Engineers, the Forest Service, the Department of Transportation — retire equipment from their fleets. Rather than auction it publicly, they must first offer it to priority groups. Service-Disabled Veteran-Owned businesses are at the top of that priority list, backed by <strong>Public Law 115-416 (Veterans Small Business Enhancement Act of 2018)</strong>. The portal is <strong>gsaxcess.gov</strong>. The prices are set as a percentage of original government acquisition cost — routinely 5–20% of what that machine would cost new on the open market.</p>
+    </div>
+
+    <div class="two-col" style="gap:20px; margin-bottom:28px;">
+      <div class="surface-box" style="border-left:4px solid var(--positive);">
+        <p class="block-label" style="color:var(--positive); margin-bottom:10px;">What Flows Through GSAxcess</p>
+        <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:7px; font-size:0.88rem; color:var(--text-2); line-height:1.5;">
+          <li>⚙ Excavators, dozers, graders, loaders from military base fleet rotations</li>
+          <li>⚙ Federal highway project equipment (Army Corps, FHWA)</li>
+          <li>⚙ National forest &amp; park service machinery</li>
+          <li>⚙ GSA motor pool and construction equipment</li>
+          <li>⚙ Any federal agency that replaced its working fleet</li>
+          <li style="color:var(--text-3); font-size:0.8rem; margin-top:4px;">Condition varies — independent inspection is mandatory before purchase</li>
+        </ul>
+      </div>
+      <div class="surface-box" style="border-left:4px solid var(--accent);">
+        <p class="block-label" style="color:var(--accent); margin-bottom:10px;">Priority Order at GSAxcess</p>
+        <div style="display:flex; flex-direction:column; gap:7px; font-size:0.88rem; line-height:1.5;">
+          <div style="display:flex; gap:10px; align-items:flex-start;"><span style="font-weight:800; color:var(--positive); min-width:28px;">1.</span><span>State &amp; local governments</span></div>
+          <div style="display:flex; gap:10px; align-items:flex-start;"><span style="font-weight:800; color:var(--positive); min-width:28px;">2.</span><span><strong>Veteran-Owned Small Businesses</strong> (VOSB / SDVOSB) — Public Law 115-416</span></div>
+          <div style="display:flex; gap:10px; align-items:flex-start;"><span style="font-weight:800; color:var(--text-2); min-width:28px;">3.</span><span>Eligible nonprofits</span></div>
+          <div style="display:flex; gap:10px; align-items:flex-start;"><span style="font-weight:800; color:var(--text-3); min-width:28px;">4.</span><span>General public (at remaining inventory, often at higher markup)</span></div>
+          <p style="font-size:0.78rem; color:var(--text-3); margin-top:6px;">Source: 40 U.S.C. § 549 as amended by P.L. 115-416</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ── SDVOSB STATUS ── -->
+    <h3 class="block-label" style="margin-bottom:16px;">SDVOSB Status — What It Actually Unlocks</h3>
+    <p style="font-size:0.9rem; color:var(--text-2); line-height:1.65; margin-bottom:20px;"><strong>SDVOSB</strong> stands for Service-Disabled Veteran-Owned Small Business. With 51%+ ownership and a service-connected disability rating, this designation is registered through the VA's Veteran Small Business Certification (VetCert) program at <strong>veteransbusinesscertification.va.gov</strong> and then SAM.gov. Once active, it opens four separate competitive advantages simultaneously.</p>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; margin-bottom:28px;">
+
+      <div class="surface-box" style="padding:18px 20px;">
+        <p style="font-weight:700; font-size:0.95rem; color:var(--text-1); margin-bottom:8px;">① GSAxcess Priority Access</p>
+        <p style="font-size:0.85rem; color:var(--text-2); line-height:1.6;">Acquire heavy equipment at 5–20% of replacement cost before the general public ever sees it. This is the engine of the whole model.</p>
+      </div>
+
+      <div class="surface-box" style="padding:18px 20px;">
+        <p style="font-weight:700; font-size:0.95rem; color:var(--text-1); margin-bottom:8px;">② Federal Set-Aside Contracts</p>
+        <p style="font-size:0.85rem; color:var(--text-2); line-height:1.6;">Certain federal contracts are <em>reserved exclusively</em> for SDVOSBs. No non-veteran competitor can bid. Sole-source awards go up to <strong>$4.5M for services</strong>, no competition required.</p>
+      </div>
+
+      <div class="surface-box" style="padding:18px 20px;">
+        <p style="font-weight:700; font-size:0.95rem; color:var(--text-1); margin-bottom:8px;">③ VA Veterans First Program</p>
+        <p style="font-size:0.85rem; color:var(--text-2); line-height:1.6;">The VA is legally required to contract with SDVOSBs before considering any other source. Site clearing, infrastructure maintenance, campus construction — all eligible.</p>
+      </div>
+
+      <div class="surface-box" style="padding:18px 20px;">
+        <p style="font-weight:700; font-size:0.95rem; color:var(--text-1); margin-bottom:8px;">④ P&amp;T Tax Advantages</p>
+        <p style="font-size:0.85rem; color:var(--text-2); line-height:1.6;">100% Permanent &amp; Total (P&amp;T) rating: VA disability comp is <em>federal income tax free</em>. Alabama fully exempts P&amp;T veterans from property tax. Combined with Section 179 on the business side, the effective cost basis is dramatically lower.</p>
+      </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <!-- ── THE FLYWHEEL ── -->
+    <h3 class="block-label" style="margin-bottom:6px;">The Flywheel — How This Compounds Year Over Year</h3>
+    <p style="font-size:0.88rem; color:var(--text-2); line-height:1.65; margin-bottom:20px;">A flywheel is a self-reinforcing loop. In this model: acquire cheap → work the machine → sell at market on Day 366 → reinvest the proceeds into more machines → repeat at scale. Each cycle, the fleet grows and the returns compound.</p>
+
+    <div style="background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:24px 28px; margin-bottom:24px;">
+      <p class="block-label" style="margin-bottom:18px; color:var(--accent);">Flywheel Math — One Excavator (Cat 320 via GSAxcess)</p>
+      <div class="fin-table-wrap">
+        <table class="fin-table">
+          <thead>
+            <tr><th>Step</th><th>Description</th><th style="text-align:right;">Amount</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color:var(--text-3); font-size:0.8rem; font-variant-numeric:tabular-nums;">Day 1</td>
+              <td>Acquire Cat 320 via GSAxcess at ~15% of $230,000 replacement</td>
+              <td class="mono" style="color:var(--negative); text-align:right;">–$34,500</td>
+            </tr>
+            <tr>
+              <td style="color:var(--text-3); font-size:0.8rem;">Days 1–365</td>
+              <td>Year 1 service revenue (conservative; owner-operated rate)</td>
+              <td class="mono" style="color:var(--text-1); text-align:right;">$150,000</td>
+            </tr>
+            <tr>
+              <td style="color:var(--text-3); font-size:0.8rem;">Days 1–365</td>
+              <td>Operating costs (fuel, insurance, maintenance)</td>
+              <td class="mono" style="color:var(--negative); text-align:right;">–$70,000</td>
+            </tr>
+            <tr>
+              <td style="color:var(--text-3); font-size:0.8rem;">Day 365</td>
+              <td>Year 1 service net profit</td>
+              <td class="mono" style="color:var(--positive); text-align:right; font-weight:600;">$80,000</td>
+            </tr>
+            <tr>
+              <td style="color:var(--text-3); font-size:0.8rem;">Day 366</td>
+              <td>Sell excavator at 40% of replacement (conservative used market)</td>
+              <td class="mono" style="color:var(--text-1); text-align:right;">$92,000</td>
+            </tr>
+            <tr>
+              <td style="color:var(--text-3); font-size:0.8rem;">Day 366</td>
+              <td>Net gain on sale ($92,000 − $34,500 acquisition cost)</td>
+              <td class="mono" style="color:var(--positive); text-align:right; font-weight:600;">$57,500</td>
+            </tr>
+            <tr class="profit">
+              <td><strong>Year 1 Total</strong></td>
+              <td><strong>Service net + sale gain</strong></td>
+              <td class="mono" style="text-align:right; font-size:1.05rem;"><strong>$137,500</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:18px;">
+        <div style="text-align:center; padding:12px; background:var(--positive-bg); border-radius:4px;">
+          <div style="font-family:'DM Mono',monospace; font-size:1.3rem; font-weight:500; color:var(--positive);">398%</div>
+          <div style="font-size:0.75rem; color:var(--text-3); margin-top:4px;">Year 1 ROI</div>
+        </div>
+        <div style="text-align:center; padding:12px; background:var(--accent-bg); border-radius:4px;">
+          <div style="font-family:'DM Mono',monospace; font-size:1.3rem; font-weight:500; color:var(--accent);">~7 wks</div>
+          <div style="font-size:0.75rem; color:var(--text-3); margin-top:4px;">Payback period</div>
+        </div>
+        <div style="text-align:center; padding:12px; background:var(--surface); border:1px solid var(--border); border-radius:4px;">
+          <div style="font-family:'DM Mono',monospace; font-size:1.3rem; font-weight:500; color:var(--text-1);">$92K</div>
+          <div style="font-size:0.75rem; color:var(--text-3); margin-top:4px;">Reinvest into Year 2</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:24px 28px; margin-bottom:24px;">
+      <p class="block-label" style="margin-bottom:16px; color:var(--positive);">Flywheel Growth — The Compound Loop</p>
+      <div class="fin-table-wrap">
+        <table class="fin-table">
+          <thead>
+            <tr><th>Year</th><th>Machines in Fleet</th><th>GSAxcess Cost In</th><th>Service Net</th><th>Sale Proceeds (Day 366)</th><th>Total Cash Generated</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1</strong></td>
+              <td>1 (Excavator)</td>
+              <td class="mono">$34,500</td>
+              <td class="mono">$80,000</td>
+              <td class="mono">$92,000</td>
+              <td class="mono" style="color:var(--positive);">$137,500</td>
+            </tr>
+            <tr>
+              <td><strong>2</strong></td>
+              <td>2–3 (reinvest $92K)</td>
+              <td class="mono">$69,000–$103,500</td>
+              <td class="mono">$160,000–$240,000</td>
+              <td class="mono">$184,000–$276,000</td>
+              <td class="mono" style="color:var(--positive);">$275,000–$412,500</td>
+            </tr>
+            <tr class="profit">
+              <td><strong>3+</strong></td>
+              <td>4–6 (fully compounding)</td>
+              <td class="mono">$138K–$207K</td>
+              <td class="mono">$320K–$480K</td>
+              <td class="mono">$368K–$552K</td>
+              <td class="mono"><strong>$550K–$825K+</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.8rem; color:var(--text-3); margin-top:12px; line-height:1.5;">Year 2+ assumes each prior sale's proceeds are fully reinvested. Does not include Section 179 tax savings, SDVOSB contract premiums, or training revenue. Conservative sale price of 40% of replacement used throughout. Actual results depend on market conditions, equipment condition at sale, and execution.</p>
+    </div>
+
+    <hr class="divider">
+
+    <!-- ── SDVOSB REGISTRATION CHECKLIST ── -->
+    <h3 class="block-label" style="margin-bottom:16px;">30-Day SDVOSB Activation Checklist</h3>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; margin-bottom:28px;">
+
+      <div class="surface-box" style="padding:18px 20px;">
+        <p style="font-weight:700; font-size:0.88rem; color:var(--accent); margin-bottom:10px; letter-spacing:0.04em;">WEEK 1 — Register the Foundation</p>
+        <div style="display:flex; flex-direction:column; gap:8px; font-size:0.84rem; color:var(--text-2); line-height:1.5;">
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Register business entity (LLC) in Alabama if not done — protects personal assets</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Obtain EIN (IRS.gov — free, 10 minutes)</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Open dedicated business checking account</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Register on SAM.gov (required for ALL federal work)</span></label>
+        </div>
+      </div>
+
+      <div class="surface-box" style="padding:18px 20px;">
+        <p style="font-weight:700; font-size:0.88rem; color:var(--accent); margin-bottom:10px; letter-spacing:0.04em;">WEEK 2 — Veteran Certification</p>
+        <div style="display:flex; flex-direction:column; gap:8px; font-size:0.84rem; color:var(--text-2); line-height:1.5;">
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Apply for SDVOSB/VOSB at <strong>veteransbusinesscertification.va.gov</strong></span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Gather: DD-214, VA disability rating letter (P&amp;T), business ownership docs</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Confirm 51%+ ownership and control documentation</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Processing time: typically 60–90 days — START NOW</span></label>
+        </div>
+      </div>
+
+      <div class="surface-box" style="padding:18px 20px;">
+        <p style="font-weight:700; font-size:0.88rem; color:var(--accent); margin-bottom:10px; letter-spacing:0.04em;">WEEK 3 — GSAxcess Access</p>
+        <div style="display:flex; flex-direction:column; gap:8px; font-size:0.84rem; color:var(--text-2); line-height:1.5;">
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Register on <strong>gsaxcess.gov</strong> — create account, select "Veteran-Owned Business" category</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Set search filters for heavy construction equipment in Southeast region</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Set email alerts for new listings in your equipment categories</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Budget for transport — acquired equipment must be picked up or shipped from federal location</span></label>
+        </div>
+      </div>
+
+      <div class="surface-box" style="padding:18px 20px;">
+        <p style="font-weight:700; font-size:0.88rem; color:var(--accent); margin-bottom:10px; letter-spacing:0.04em;">WEEK 4 — Legal Review</p>
+        <div style="display:flex; flex-direction:column; gap:8px; font-size:0.84rem; color:var(--text-2); line-height:1.5;">
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Have a veteran business attorney review GSAxcess acquisition agreement for restrictions (the 1-year no-sell/no-rent clause lives here)</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Confirm what "Day 366" sale process looks like legally</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>CPA meeting: Section 179 strategy, P&amp;T exemptions in Alabama, flywheel tax planning</span></label>
+          <label style="display:flex; gap:8px;"><input type="checkbox" style="margin-top:3px; flex-shrink:0;"><span>Obtain general liability + equipment insurance (required before any job)</span></label>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── COMPETITIVE MOAT ── -->
+    <div class="verdict-box" style="margin-bottom:0;">
+      <div class="verdict-head">The Moat: Why Non-Veterans Can't Copy This</div>
+      <div class="verdict-body">
+        <p style="margin-bottom:12px;">A competitor without veteran status pays $85,000 for the same excavator your friend gets for $34,500. They cannot access GSAxcess priority. They cannot bid on SDVOSB set-aside contracts. They pay full property tax. They pay full income tax on all revenue. They start every year with a 145% cost disadvantage on fleet acquisition alone.</p>
+        <p>The combination of <strong>low acquisition cost</strong> (GSAxcess) + <strong>exclusive contracts</strong> (SDVOSB set-asides) + <strong>tax reduction</strong> (P&amp;T + Section 179) + <strong>flywheel reinvestment</strong> creates a compounding advantage that grows wider every year. This is not just a business plan. It is a legally protected economic engine that the federal government built specifically to give veterans this exact advantage. Use it.</p>
+      </div>
+    </div>
+
+  </div><!-- /vetedge -->
+
+
+  <!-- ════════════════ MACHINE GUIDE ════════════════ -->
+  <div id="tab-machines" class="tab-panel">
+
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Which Machines to Go After</h2>
+      <p class="section-desc">Ranked by Year-One ROI potential, versatility, and 2026 acquisition cost. Used prices are down — the window to buy right is now.</p>
+    </div>
+
+    <div class="machine-grid">
+
+      <div class="machine-card">
+        <div>
+          <span class="machine-rank">01</span>
+          <div class="machine-name">Excavator, 20–35 Ton Class</div>
+          <div class="machine-models">Cat 320 · Komatsu PC210 · John Deere 210P · Volvo EC220</div>
+          <div class="machine-desc">The single most versatile machine you can buy. Trenching, demolition, land clearing, pond digging, foundation work, debris sorting, road building — one machine does all of it with attachment swaps. Operator shortage is worst in this category, meaning customers are desperate. Service rates are strong and bidding is competitive but winnable. This is the first machine.</div>
+          <div class="verdict-tag buy-first">Buy First</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat">
+            <span class="mstat-label">2026 Auction Price</span>
+            <span class="mstat-val orange">$65K–$95K</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">New Replacement Cost</span>
+            <span class="mstat-val">$175K–$280K</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Service Rate</span>
+            <span class="mstat-val green">$180–$250/hr</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Useful Life</span>
+            <span class="mstat-val">10–15K hours</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Versatility</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="machine-card">
+        <div>
+          <span class="machine-rank">02</span>
+          <div class="machine-name">Compact Track Loader / Skid Steer</div>
+          <div class="machine-models">Cat 299XD3 · Bobcat T870 · Case TV450 · Deere 333P</div>
+          <div class="machine-desc">Fastest-moving category in used equipment right now. Highly versatile on tight job sites, works indoors and outdoors, massive attachment ecosystem. Pairs perfectly with an excavator — while the excavator opens a site up, the CTL fine-grades, loads, moves material, and handles finish work. Lower buy-in makes it the ideal second machine. Also the best training school add-on since students can learn multiple machines in one program.</div>
+          <div class="verdict-tag strong-second">Strong Second Machine</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat">
+            <span class="mstat-label">2026 Auction Price</span>
+            <span class="mstat-val orange">$25K–$45K</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">New Replacement Cost</span>
+            <span class="mstat-val">$65K–$110K</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Service Rate</span>
+            <span class="mstat-val green">$100–$175/hr</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Useful Life</span>
+            <span class="mstat-val">6–10K hours</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Versatility</span>
+            <span class="stars">★★★★★</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="machine-card">
+        <div>
+          <span class="machine-rank">03</span>
+          <div class="machine-name">Crawler Dozer</div>
+          <div class="machine-models">Cat D6 · Komatsu D65 · John Deere 850L</div>
+          <div class="machine-desc">The dominant machine for large-scale land clearing, site grading, and road building. Extremely high demand in the Southeast and Sun Belt where land development has been consistent. Slower and less versatile in urban environments, but on an acre of trees to clear, nothing touches it. Pairs naturally with an excavator — dozer clears and grades, excavator handles stumping, material sorting, and detail work. High hourly rate reflects the power.</div>
+          <div class="verdict-tag strong-second">If Land Clearing Is the Market</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat">
+            <span class="mstat-label">2026 Auction Price</span>
+            <span class="mstat-val orange">$80K–$150K</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">New Replacement Cost</span>
+            <span class="mstat-val">$250K–$450K</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Service Rate</span>
+            <span class="mstat-val green">$200–$350/hr</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Useful Life</span>
+            <span class="mstat-val">12–20K hours</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Versatility</span>
+            <span class="stars">★★★☆☆</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="machine-card">
+        <div>
+          <span class="machine-rank">04</span>
+          <div class="machine-name">Rough Terrain Crane</div>
+          <div class="machine-models">Grove RT60E · Manitowoc 12000-1 · Liebherr LTM 1050</div>
+          <div class="machine-desc">Highest hourly service rates of any piece of iron — $300 to $800/hr in most markets. The barrier is the operator: running a crane requires specialized NCCCO certification that takes time and money. Also needs rigger and signalperson on every lift, adding headcount. Insurance is substantially higher. If your friend already has the certification or knows someone who does, this is the highest-ROI single machine in the list. Otherwise, tackle this in Year 2 after cash flow is established.</div>
+          <div class="verdict-tag conditional">Year 2 — If Operator Is Ready</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat">
+            <span class="mstat-label">2026 Auction Price</span>
+            <span class="mstat-val orange">$100K–$220K</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">New Replacement Cost</span>
+            <span class="mstat-val">$400K–$900K</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Service Rate</span>
+            <span class="mstat-val green">$300–$800/hr</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Useful Life</span>
+            <span class="mstat-val">20K+ hours</span>
+          </div>
+          <div class="mstat">
+            <span class="mstat-label">Versatility</span>
+            <span class="stars">★★☆☆☆</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <h3 class="block-label">Where to Buy</h3>
+    <div class="fin-table-wrap">
+      <table class="fin-table">
+        <thead>
+          <tr><th>Source</th><th>Price Level</th><th>Selection</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ritchie Bros. / IronPlanet</td><td class="mono">Market</td><td>Huge</td><td style="font-size:0.8rem; color:var(--text-3);">Largest auction platform, transparent pricing, buyer's premium applies</td></tr>
+          <tr><td>Purple Wave Auctions</td><td class="mono">Below market</td><td>Good</td><td style="font-size:0.8rem; color:var(--text-3);">Strong in Midwest/South, often surplus government and municipal units</td></tr>
+          <tr><td>Government / municipal surplus</td><td class="mono">Well below market</td><td>Limited</td><td style="font-size:0.8rem; color:var(--text-3);">Best prices if you find them — check GovPlanet, PublicSurplus, NASPO</td></tr>
+          <tr><td>Equipment dealers (used inventory)</td><td class="mono">Above auction</td><td>Good</td><td style="font-size:0.8rem; color:var(--text-3);">Certified pre-owned with warranty options — worth a premium for reliability</td></tr>
+          <tr><td>Private / Facebook Marketplace</td><td class="mono">Variable</td><td>Limited</td><td style="font-size:0.8rem; color:var(--text-3);">Can find deals — always get a pre-purchase inspection by an independent mechanic</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout" style="margin-top:16px;">
+      <strong>Pre-purchase inspection is non-negotiable.</strong> Pay $300–$600 for an independent dealer or certified mechanic to inspect any used machine before buying. Used equipment with hidden undercarriage damage or hydraulic issues can cost $15,000–$40,000 to repair. The inspection pays for itself on the first machine every time.
+    </div>
+
+    <hr class="divider">
+
+    <h3 class="block-label">✓ Verified — The GSAxcess Acquisition Path (SDVOSB Priority)</h3>
+    <div style="background:var(--positive-bg); border:1px solid var(--positive); border-left:4px solid var(--positive); border-radius:0 4px 4px 0; padding:22px 24px; margin-top:4px;">
+      <p style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.1rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--positive); margin-bottom:8px;">Confirmed — GSAxcess.gov via Public Law 115-416</p>
+      <p style="font-size:0.88rem; color:var(--text-2); line-height:1.65; margin-bottom:16px;">The 15% acquisition path is real. Federal surplus equipment is available to Service-Disabled Veteran-Owned Businesses at priority through <strong style="color:var(--text-1);">gsaxcess.gov</strong>, codified by the Veterans Small Business Enhancement Act of 2018 (Public Law 115-416). Prices are set as a percentage of original government cost — routinely 5–20% of market replacement value. See the <strong>★ Veteran Edge tab</strong> for the full breakdown, the flywheel model, and the SDVOSB registration checklist. All base-case math in this document continues to use conservative market auction pricing. The GSAxcess impact is shown below.</p>
+      <div class="fin-table-wrap" style="margin-bottom:16px;">
+        <table class="fin-table">
+          <thead>
+            <tr><th>Machine</th><th>Replacement Value</th><th>Auction Price (used)</th><th>At 15% of Replacement</th><th>Savings vs. Auction</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Cat 320 Excavator</td><td class="mono">$230,000</td><td class="mono">$85,000</td><td class="mono" style="color:var(--positive);">$34,500</td><td class="mono" style="color:var(--positive);">$50,500 saved</td></tr>
+            <tr><td>Compact Track Loader</td><td class="mono">$85,000</td><td class="mono">$32,000</td><td class="mono" style="color:var(--positive);">$12,750</td><td class="mono" style="color:var(--positive);">$19,250 saved</td></tr>
+            <tr><td>Crawler Dozer (D6)</td><td class="mono">$350,000</td><td class="mono">$115,000</td><td class="mono" style="color:var(--positive);">$52,500</td><td class="mono" style="color:var(--positive);">$62,500 saved</td></tr>
+            <tr class="profit"><td><strong>Combo Fleet (Excavator + CTL)</strong></td><td class="mono"><strong>$315,000</strong></td><td class="mono"><strong>$117,000</strong></td><td class="mono"><strong style="color:var(--positive);">$47,250</strong></td><td class="mono"><strong style="color:var(--positive);">$69,750 saved</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.85rem; color:var(--text-2); line-height:1.6; margin-bottom:12px;">At 15% acquisition on the Combo fleet: machine cost drops from $117,000 to $47,250. Payback period compresses from ~4 months to <strong style="color:var(--text-1);">under 7 weeks</strong>. Year-one ROI jumps from 299% to over <strong style="color:var(--text-1);">740%</strong>. Section 179 deduction applies to the full replacement value only if acquired through specific channels — verify with a CPA.</p>
+      <p style="font-family:'DM Mono',monospace; font-size:0.68rem; color:var(--text-3); letter-spacing:0.04em;">Primary verified channel: gsaxcess.gov (SDVOSB priority, P.L. 115-416). Additional channels: DRMO/DLA surplus, military base auctions, insurance total-loss liquidations, municipal fleet replacements, estate auctions. Each channel carries different acquisition terms and restrictions. Have an attorney review the transfer agreement before purchase to confirm the restriction period and Day 366 sale conditions. Section 179 deduction applies to acquisition cost — consult a CPA on GSAxcess-acquired equipment specifically.</p>
+    </div>
+
+  </div><!-- /machines -->
+
+</div><!-- /main -->
+
+<!-- ════════════════ PLAIN ENGLISH SECTION ════════════════ -->
+<div class="plain-english-section">
+  <div class="pe-inner">
+    <div class="pe-header">
+      <span class="pe-eyebrow">For Everyone in the Room</span>
+      <h2 class="pe-title">Wait — What Does Any of This Actually Mean?</h2>
+      <p class="pe-subtitle">If you read all of that and half the words felt like a different language, this part is for you. No jargon. No assumptions. Just the real story.</p>
+    </div>
+
+    <div class="pe-grid">
+
+      <div class="pe-card">
+        <div class="pe-q">What even IS heavy equipment?</div>
+        <div class="pe-a">The giant machines you see at construction sites — the ones moving piles of dirt, digging holes, tearing down buildings, or clearing trees. An <strong>excavator</strong> is the big arm-and-bucket machine. A <strong>bulldozer</strong> pushes earth around with a big blade on the front. A <strong>skid steer</strong> is the smaller, nimbler one that can spin in place. These machines cost $85,000 to $500,000+ new. They are essentially very expensive, very powerful tools.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">Why would he buy them cheap if he can't sell them for a year?</div>
+        <div class="pe-a">Because there are <em>other</em> ways to make money with them — ways that have nothing to do with selling or renting. Think of it like buying a commercial oven. The rule says you can't rent the oven or sell it for 12 months. But nothing stops you from opening a bakery and selling cakes. The oven is just doing what it was made to do. Same idea here.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What's the difference between renting it out and doing the work yourself?</div>
+        <div class="pe-a">Big legal difference. <strong>Renting</strong> = handing someone else the keys and charging them for the time. <strong>Providing a service</strong> = YOU (or someone you hired) run the machine and charge for the job completed. When a plumber comes to fix your pipes, you're not renting his pipe wrench — you're paying for the work. That's exactly what these proposals do. Your friend charges for the work, not the machine.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What does "$200 per hour" actually mean?</div>
+        <div class="pe-a">That's what the customer pays for one hour of the machine being operated on their job site. It covers: the machine itself, the person running it, the diesel fuel it burns, and a slice of all the other business costs. Contractors in the Southeast currently charge $170–$250/hr for excavator work. The customer has no idea what the machine cost your friend — they just know how much the hole costs them.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What is an "operator" and does he have to drive it himself?</div>
+        <div class="pe-a">An operator is the person who actually sits in the cab and runs the machine — like a forklift driver but for much heavier equipment. No, your friend doesn't have to do it himself. He can hire a licensed operator, pay them $28–$35/hr, charge the customer $200/hr, and keep the difference. He can run the business side — getting jobs, managing the schedule — while someone else does the physical work.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What's a "cohort" in the training proposal?</div>
+        <div class="pe-a">Just a group of students in one class. In Proposal 2, his machines become the classroom. Students pay tuition to learn how to operate the equipment — the same way students pay tuition to learn welding or HVAC. He's not renting the machine to them. He's selling them an education that uses the machine as the teaching tool. 8 students, 2 weeks, $6,000 each = $48,000 per session.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What does "LLC" mean and why does it matter?</div>
+        <div class="pe-a">LLC stands for Limited Liability Company. It's a legal structure you set up (costs $50–$500 depending on the state, takes about a week). It does one critical thing: if something goes wrong on a job — an accident, a lawsuit, a debt — the LLC is responsible, not your friend personally. His house, his savings, his truck — they're protected behind the LLC wall. For any business involving heavy machinery, this is non-negotiable. Do this on Day One.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What is Section 179 and why should I care about it?</div>
+        <div class="pe-a">It's an IRS tax rule that says: if you buy equipment for your business, you don't have to spread the deduction over 5–7 years like normal depreciation. You can deduct the <em>entire purchase price</em> the same year you buy it. So if he buys an $85,000 excavator and he's in the 35% tax bracket, the government effectively hands him back $29,750 of that purchase price in tax savings. The machine's real cost just dropped to $55,250. It's not a loophole — it was designed specifically to encourage business investment in equipment.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What is government bidding and is it really open to anyone?</div>
+        <div class="pe-a">Yes, literally anyone with a business license, insurance, and sometimes a bond can bid on government contracts. When a city needs a ditch dug or a county needs road repairs, they are legally required to advertise the job publicly and award it to the lowest qualified bidder. Your friend can be that bidder. Government jobs pay more per hour than private jobs (they're required to pay "prevailing wage"), they pay reliably, and they don't haggle. The catch is more paperwork and slower payment — usually 30–90 days after invoicing.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What's a "prevailing wage" and why does the government pay more?</div>
+        <div class="pe-a">Prevailing wage is the government's minimum labor rate for a given type of work in a given area — set by the Department of Labor. If the prevailing wage for an equipment operator in your county is $38/hr, every contractor on a government job must pay their operators at least that. This sounds like a cost — but you just build it into your bid price. The government pays for it. Your profit margin stays the same or better.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What does "ROI" mean when you see it in the tables?</div>
+        <div class="pe-a">Return on Investment. It's how much money you make back relative to what you put in, expressed as a percentage. A 299% ROI means for every dollar invested in the machines, you get $2.99 back in profit — in just Year One. To put that in plain terms: you spend $117,000 on equipment, and by the end of the year you've pocketed $350,100 in profit. The machines paid for themselves in about 4 months, then everything after that is money in your pocket.</div>
+      </div>
+
+      <div class="pe-card">
+        <div class="pe-q">What's the 15% thing about — can he really buy a $230,000 machine for $34,500?</div>
+        <div class="pe-a">Maybe — but it's not confirmed yet. Your friend has a lead on a way to acquire equipment at a fraction of normal cost, but the details aren't clear yet. This document flags it as unverified so nobody makes decisions based on a number that isn't locked in. If it turns out to be real, the payback periods get crazy short — under two months in some scenarios. When the source is confirmed, run the math again. For now, all the proposals work at normal auction pricing, which is already a good deal.</div>
+      </div>
+
+    </div><!-- /pe-grid -->
+
+    <div class="pe-bottom-note">
+      <strong>The short version of the whole document:</strong> Your friend can buy big construction machines cheap, use those machines to provide services or run a training school (neither of which violates the no-rent/no-sell restriction), collect $170,000–$390,000 in profit in year one, get the machines fully paid for within 3–6 months, then in year two he can rent them, sell them, or scale the business further. The math works at every level — starter, full-scale, and combined.
+    </div>
+
+  </div><!-- /pe-inner -->
+</div><!-- /plain-english-section -->
+
+<!-- ════════════════ TIMELINE TAB ════════════════ -->
+<style>
+/* ── TIMELINE TAB STYLES ── */
+.tl-intro {
+  margin-bottom: 40px;
+}
+
+.tl-intro p {
+  font-size: 1rem;
+  color: var(--text-2);
+  max-width: 600px;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+
+.tl-spine {
+  position: relative;
+  padding-left: 0;
+}
+
+.tl-spine::before {
+  content: '';
+  position: absolute;
+  left: 52px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.tl-phase {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.tl-phase-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.tl-phase-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--accent);
+  width: 106px;
+  flex-shrink: 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.tl-phase-meta {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.tl-phase-timing {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.tl-phase-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-1);
+  line-height: 1;
+}
+
+.tl-phase-note {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--text-3);
+  font-style: italic;
+  max-width: 480px;
+  line-height: 1.5;
+}
+
+.tl-tasks {
+  margin-left: 106px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tl-task {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--text-2);
+  line-height: 1.4;
+  position: relative;
+}
+
+.tl-task::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--ground);
+}
+
+.tl-task.critical {
+  border-left: 3px solid var(--accent);
+}
+
+.tl-task.critical::before {
+  background: var(--accent);
+}
+
+.tl-task.go {
+  border-left: 3px solid var(--positive);
+}
+
+.tl-task.go::before {
+  background: var(--positive);
+}
+
+.tl-task-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 2px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.tl-task-tag.urgent {
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+}
+
+.tl-task-tag.legal {
+  background: var(--negative-bg);
+  color: var(--negative);
+  border: 1px solid var(--negative);
+}
+
+.tl-task-tag.vet {
+  background: var(--positive-bg);
+  color: var(--positive);
+  border: 1px solid var(--positive);
+}
+
+.tl-task-tag.money {
+  background: var(--mono-bg);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+}
+
+.tl-task strong {
+  color: var(--text-1);
+  font-weight: 600;
+}
+
+/* Flywheel milestone table */
+.tl-milestones {
+  margin-top: 48px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.tl-milestones-head {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tl-milestone-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.tl-milestone-table th {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  text-align: left;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--ground-2);
+}
+
+.tl-milestone-table td {
+  padding: 10px 20px;
+  color: var(--text-2);
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+}
+
+.tl-milestone-table tr:last-child td { border-bottom: none; }
+
+.tl-milestone-table td.mono {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+
+.tl-milestone-table td strong {
+  color: var(--text-1);
+}
+
+/* Year projection strip */
+.tl-flywheel-strip {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .tl-flywheel-strip { grid-template-columns: 1fr; }
+  .tl-tasks { margin-left: 80px; }
+  .tl-spine::before { left: 40px; }
+  .tl-phase-num { width: 80px; font-size: 2.8rem; }
+}
+
+.tl-year-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.tl-year-card.year1 { border-top-color: var(--accent); }
+.tl-year-card.year2 { border-top-color: var(--positive); }
+.tl-year-card.year3 { border-top-color: var(--warning); }
+
+.tl-year-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tl-year-val {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--text-1);
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-year-card.year1 .tl-year-val { color: var(--accent); }
+.tl-year-card.year2 .tl-year-val { color: var(--positive); }
+.tl-year-card.year3 .tl-year-val { color: var(--warning); }
+
+.tl-year-sub {
+  font-size: 0.8rem;
+  color: var(--text-3);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+</style>
+
+<!-- TIMELINE PANEL (inside .main, which wraps all panels) -->
+<script>
+// Inject timeline panel into .main after DOM loads
+document.addEventListener('DOMContentLoaded', function() {
+  var main = document.querySelector('.main');
+  if (!main) return;
+  var tlDiv = document.createElement('div');
+  tlDiv.id = 'tab-timeline';
+  tlDiv.className = 'tab-panel';
+  tlDiv.innerHTML = `
+    <div class="section-head tl-intro">
+      <h2 class="section-title">Year One Execution Timeline</h2>
+      <p>Every action, in the order that matters. VetCert takes 60–90 days — file it on Day 1. Everything else flows from the flywheel starting the moment the first machine is acquired.</p>
+    </div>
+
+    <div class="tl-spine">
+
+      <!-- PHASE 1 -->
+      <div class="tl-phase">
+        <div class="tl-phase-header">
+          <div class="tl-phase-num">1</div>
+          <div class="tl-phase-meta">
+            <span class="tl-phase-timing">Weeks 1–4</span>
+            <div class="tl-phase-title">Formation</div>
+            <p class="tl-phase-note">Lock the legal and business structure before touching GSAxcess. VetCert clock starts Day 1.</p>
+          </div>
+        </div>
+        <div class="tl-tasks">
+          <div class="tl-task critical"><span class="tl-task-tag urgent">Day 1</span><span><strong>Apply for VetCert</strong> at veteransbusinesscertification.va.gov — 60–90 day processing, clock starts now</span></div>
+          <div class="tl-task critical"><span class="tl-task-tag legal">Legal</span><span><strong>Form LLC or corporation</strong> — protects personal assets from day one</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Admin</span><span><strong>Get EIN</strong> from IRS.gov — free, takes 10 minutes online</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Admin</span><span><strong>Open business bank account</strong> — required before GSAxcess purchase</span></div>
+          <div class="tl-task critical"><span class="tl-task-tag urgent">Week 2</span><span><strong>Register on SAM.gov</strong> — required for all government contracting</span></div>
+          <div class="tl-task critical"><span class="tl-task-tag legal">Legal</span><span><strong>Attorney review</strong> — GSAxcess 1-year no-sell/no-rent restriction before any purchase</span></div>
+        </div>
+      </div>
+
+      <!-- PHASE 2 -->
+      <div class="tl-phase">
+        <div class="tl-phase-header">
+          <div class="tl-phase-num">2</div>
+          <div class="tl-phase-meta">
+            <span class="tl-phase-timing">Weeks 3–6 (overlaps Phase 1)</span>
+            <div class="tl-phase-title">Insurance &amp; Setup</div>
+            <p class="tl-phase-note">These run parallel — start while VetCert processes and LLC forms.</p>
+          </div>
+        </div>
+        <div class="tl-tasks">
+          <div class="tl-task"><span class="tl-task-tag money">Insurance</span><span><strong>Get general liability insurance quote</strong> — required before any job site work</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Insurance</span><span><strong>Get equipment insurance quote</strong> — covers the machine itself</span></div>
+          <div class="tl-task"><span class="tl-task-tag urgent">Decision</span><span><strong>Choose lead business model</strong> — Combo (Services + Training) recommended: $350,100 net, 299% ROI</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Admin</span><span><strong>Build rate sheet for excavation services</strong> — $170–$250/hr Southeast market rate</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Admin</span><span><strong>Build rate sheet for training academy</strong> — $6,000/student, 8 students per cohort</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Logistics</span><span><strong>Secure equipment storage location</strong> — before acquisition</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Logistics</span><span><strong>Arrange lowboy / transport contact</strong> — needed to move the machine at acquisition</span></div>
+        </div>
+      </div>
+
+      <!-- PHASE 3 -->
+      <div class="tl-phase">
+        <div class="tl-phase-header">
+          <div class="tl-phase-num">3</div>
+          <div class="tl-phase-meta">
+            <span class="tl-phase-timing">Weeks 4–8</span>
+            <div class="tl-phase-title">First Acquisition</div>
+            <p class="tl-phase-note">LLC formed + bank account open = ready to buy. The 365-day clock starts on acquisition date.</p>
+          </div>
+        </div>
+        <div class="tl-tasks">
+          <div class="tl-task go"><span class="tl-task-tag vet">GSAxcess</span><span><strong>Research Cat 320 availability</strong> on GSAxcess.gov — target 15% of market (~$34,500 vs $85K auction)</span></div>
+          <div class="tl-task go"><span class="tl-task-tag vet">GSAxcess</span><span><strong>Identify first acquisition target</strong> — match to chosen business model</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Finance</span><span><strong>Calculate acquisition budget</strong> — cash or financing, account for transport and storage</span></div>
+          <div class="tl-task go"><span class="tl-task-tag urgent">Go</span><span><strong>Submit GSAxcess bid</strong> — Day 1 of the 365-day flywheel clock</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Logistics</span><span><strong>Transport machine to storage</strong> — confirm insurance active before moving</span></div>
+        </div>
+      </div>
+
+      <!-- PHASE 4 -->
+      <div class="tl-phase">
+        <div class="tl-phase-header">
+          <div class="tl-phase-num">4</div>
+          <div class="tl-phase-meta">
+            <span class="tl-phase-timing">Weeks 6–12</span>
+            <div class="tl-phase-title">Government Contracting</div>
+            <p class="tl-phase-note">Build the bid pipeline now — VetCert unlocks sole-source contracts up to $4.5M when it arrives.</p>
+          </div>
+        </div>
+        <div class="tl-tasks">
+          <div class="tl-task"><span class="tl-task-tag vet">SAM.gov</span><span><strong>Complete SAM.gov profile 100%</strong> — incomplete profiles are disqualified from bids</span></div>
+          <div class="tl-task"><span class="tl-task-tag vet">SDVOSB</span><span><strong>Draft capability statement</strong> — 1-page SDVOSB intro doc for every bid package</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Pipeline</span><span><strong>Identify 3 local government bid opportunities</strong> — city, county, state DOT</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Pipeline</span><span><strong>Register on beta.SAM.gov for bid alerts</strong> — automated notifications for matching contracts</span></div>
+          <div class="tl-task go"><span class="tl-task-tag urgent">Submit</span><span><strong>Submit first government bid</strong> — even before VetCert; sets-aside unlock later</span></div>
+        </div>
+      </div>
+
+      <!-- PHASE 5 -->
+      <div class="tl-phase">
+        <div class="tl-phase-header">
+          <div class="tl-phase-num">5</div>
+          <div class="tl-phase-meta">
+            <span class="tl-phase-timing">Month 3 → Month 13</span>
+            <div class="tl-phase-title">Revenue &amp; The Flywheel</div>
+            <p class="tl-phase-note">Machine is working. Money is coming in. Eyes on Day 366.</p>
+          </div>
+        </div>
+        <div class="tl-tasks">
+          <div class="tl-task go"><span class="tl-task-tag vet">Target</span><span><strong>Hit $80,000 service net</strong> by Month 12 (Proposal 1 base case)</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Ops</span><span><strong>Track machine hours and maintenance</strong> — log everything for depreciation and resale value</span></div>
+          <div class="tl-task"><span class="tl-task-tag money">Tax</span><span><strong>Document all Year 1 revenue</strong> — Section 179 deduction on equipment, ~$29,750 back on $85K machine at 35% bracket</span></div>
+          <div class="tl-task go"><span class="tl-task-tag urgent">Scale</span><span><strong>Begin identifying Year 2 acquisition targets</strong> — 2–3 machines, $275K–$412K return</span></div>
+          <div class="tl-task go"><span class="tl-task-tag vet">Day 366</span><span><strong>Sell machine at market</strong> — ~$92,000, reinvest into Year 2 fleet. The flywheel turns.</span></div>
+        </div>
+      </div>
+
+    </div><!-- /tl-spine -->
+
+    <!-- MILESTONE TABLE -->
+    <div class="tl-milestones">
+      <div class="tl-milestones-head">Key Milestones</div>
+      <table class="tl-milestone-table">
+        <thead>
+          <tr>
+            <th>Milestone</th>
+            <th>Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>LLC formed</strong></td><td class="mono">Week 1</td></tr>
+          <tr><td><strong>VetCert filed</strong> — clock starts</td><td class="mono">Week 1</td></tr>
+          <tr><td><strong>SAM.gov registered</strong></td><td class="mono">Week 2</td></tr>
+          <tr><td><strong>First machine acquired</strong></td><td class="mono">Week 6–8</td></tr>
+          <tr><td><strong>First government bid submitted</strong></td><td class="mono">Week 10–12</td></tr>
+          <tr><td><strong>VetCert approved</strong> — SDVOSB sole-source unlocked</td><td class="mono">Month 2–3</td></tr>
+          <tr><td><strong>$80K service net reached</strong></td><td class="mono">Month 12</td></tr>
+          <tr><td><strong>Machine sold Day 366</strong> (~$92K)</td><td class="mono">Month 13</td></tr>
+          <tr><td><strong>Year 2 fleet acquired</strong> (2–3 machines)</td><td class="mono">Month 13–14</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- FLYWHEEL PROJECTIONS -->
+    <div class="tl-flywheel-strip">
+      <div class="tl-year-card year1">
+        <span class="tl-year-label">Year 1 — 1 Machine</span>
+        <div class="tl-year-val">$137,500</div>
+        <div class="tl-year-sub">$80K service net + $57.5K sale gain<br>398% ROI on $34,500 GSAxcess buy-in</div>
+      </div>
+      <div class="tl-year-card year2">
+        <span class="tl-year-label">Year 2 — 2–3 Machines</span>
+        <div class="tl-year-val">$275K–$412K</div>
+        <div class="tl-year-sub">Reinvest $92K proceeds<br>Flywheel doubles or triples</div>
+      </div>
+      <div class="tl-year-card year3">
+        <span class="tl-year-label">Year 3+ — 4–6 Machines</span>
+        <div class="tl-year-val">$550K–$825K+</div>
+        <div class="tl-year-sub">Compounding fleet<br>Full SDVOSB pipeline active</div>
+      </div>
+    </div>
+
+  `;
+  main.appendChild(tlDiv);
+});
+</script>
+
+<div class="doc-footer">
+  <span class="footer-label">Heavy Iron / Year One — Business Feasibility Document</span>
+  <span class="footer-label">All figures are estimates — verify with a CPA and licensed contractor before investing</span>
+</div>
+
+<script>
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+}
+
+function switchScenario(proposal, id, btn) {
+  const prefix = proposal + '-';
+  document.querySelectorAll('[id^="' + prefix + '"]').forEach(el => el.classList.remove('active'));
+  btn.closest('.tab-panel').querySelectorAll('.scenario-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(prefix + id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+
+</body></html>
