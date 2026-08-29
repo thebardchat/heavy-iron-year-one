@@ -149,5 +149,19 @@ This repo is connected to the Claude.ai Project "TBD Josh & Shane" — both coll
 
 ---
 
+## Claude Skills — Available Now
+
+Three skills are built for this project and saved to Shane's Claude account. Invoke with a slash command at the start of any message.
+
+| Skill | Command | When to Use |
+|---|---|---|
+| Session Briefing | `/heavy-iron-session-open` | Start of every session — loads phase, VetCert status, next 3 moves, flywheel clock |
+| Equipment Scout | `/gsaxcess-equipment-scout` | Planning any acquisition — returns targets, price ranges, inspection checklist, ROI math |
+| Bid Builder | `/heavy-iron-bid-builder` | Pursuing a government contract — capability statement, bid range, SDVOSB check, submission checklist |
+
+Full documentation: `SKILLS.md` in this repo.
+
+---
+
 ## GSAxcess Inventory Sorting — Future Feature
 Goal: Build a tool to query GSAxcess inventory and sort/filter by equipment type, condition, region, and acquisition cost to identify top picks for any situation (FEMA response, training academy, leasing play, etc.). Shane will architect this using ShaneBrain MCP tooling. Add to backlog when GSAxcess API or data export access is confirmed.
