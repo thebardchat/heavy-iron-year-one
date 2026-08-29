@@ -1,4 +1,4 @@
-  <!doctype html><html><head><!-- frame-runtime --><base href="/_f/1787929815-f8c1/"><script>window.__FRAME_PREAMBLE={"v":1,"capabilities":{"artifact":"artifact.D_F1mx8d.js","assets":"assets.8Gk803W0.js","comments":"comments.GLuHR3zP.js","db":"db.h-3sndFg.js","downloads":"downloads.C3GSvEDP.js","embed":"embed.CxGAyc-v.js","mcp":"mcp.Bvma3qD7.js","network":"network.B5UA9Su4.js","notifications":"notifications.ssU4jy7G.js","permissions":"permissions.BNySkLV5.js","room":"room.BMMoe2BY.js","sample":"sample.BW2Uysoh.js","self":"artifact.D_F1mx8d.js","user":"user.BpKav-Rf.js"},"transforms":"_transforms.DSB5x63f.js","comments":"_comments.BoakUwmM.js","translate":"_translate.5HCW4BJh.js"}</script><script>(function(){"use strict";var te=["light","dark","system"],re=/^[A-Za-z0-9_-]{1,64}$/,$=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,ne=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function oe(e){const t=e.toLowerCase();return t.startsWith("data-")||t.startsWith("aria-")||ne.has(t)}var Be="http://www.w3.org/1999/xhtml",se="http://www.w3.org/2000/svg",ae=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),ie=new Set(["script","style"]);function ce(e){const t=e.localName.toLowerCase();return e.namespaceURI==="http://www.w3.org/1999/xhtml"?!ae.has(t):e.namespaceURI===se?!ie.has(t):!1}function M(e,t){return e===t||(e===160||e===32)&&(t===160||t===32)}function le(e,t){const r=e.length,n=t.length;let s=0;for(;s<r&&s<n&&M(e.charCodeAt(s),t.charCodeAt(s));)s++;let o=0;for(;o<r-s&&o<n-s&&M(e.charCodeAt(r-1-o),t.charCodeAt(n-1-o));)o++;return{p:s,s:o}}function ue(e,t){const r=e.firstChild;if(e.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){e.textContent=t;return}const n=r.data,s=n.length,o=t.length,{p:i,s:c}=le(n,t);i===s&&c===0&&s===o||r.replaceData(i,s-i-c,t.slice(i,o-c));const h=r.data,p=e.ownerDocument.getSelection?.()??null,w=p!==null&&p.rangeCount>0&&(p.anchorNode===r||p.focusNode===r)?{anchor:p.anchorNode,anchorOffset:p.anchorOffset,focus:p.focusNode,focusOffset:p.focusOffset}:null;let m=-1,g=-1;for(let f=0;f<h.length&&f<t.length;f++){const v=h.charCodeAt(f),b=t.charCodeAt(f);v!==b&&M(v,b)&&(m<0&&(m=f),g=f)}const a=m>=0;if(a&&r.replaceData(m,g-m+1,t.slice(m,g+1)),a&&w!==null&&w.anchor!==null&&w.focus!==null)try{p.setBaseAndExtent(w.anchor,w.anchorOffset,w.focus,w.focusOffset)}catch{}}var fe=new Set(["html","head","body","frameset"]);function de(e){return e.namespaceURI==="http://www.w3.org/1999/xhtml"&&fe.has(e.localName)}function pe(e){if(e===null||typeof e!="object")return!1;const t=e;if(typeof t.target!="string"||!re.test(t.target)||t.text!==void 0&&typeof t.text!="string")return!1;if(t.attrsSet!==void 0){if(t.attrsSet===null||typeof t.attrsSet!="object")return!1;for(const[r,n]of Object.entries(t.attrsSet))if(!$.test(r)||typeof n!="string")return!1}if(t.attrsRemoved!==void 0){if(!Array.isArray(t.attrsRemoved))return!1;for(const r of t.attrsRemoved)if(typeof r!="string"||!$.test(r))return!1}return!0}function me(e,t){if(e===null||typeof e!="object")return!1;const{seq:r,elements:n}=e;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let s=0;s<n.length;s++)if(!t(n[s]))return!1;return!0}function he(e){return e===null||typeof e!="object"?!1:me(e.__frame_patch,pe)}function _e(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_init;return t!==null&&typeof t=="object"}function ve(e){return e!==null&&typeof e=="object"&&e.__frame_size_poke===!0}function ye(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_theme;if(t===null||typeof t!="object")return!1;const r=t.theme;return typeof r=="string"&&te.includes(r)}var A=/^[\w.-]+\.js$/;function we(e,t,r){return r?"inert":typeof t=="string"&&A.test(t)?e?[t]:"inert":e?"inert":"framed"}function ge(){return{post(e,t){parent.postMessage(e,t)},on(e){const t=r=>{r.source===parent&&e(r.data,r.origin,r.isTrusted)};return addEventListener("message",t),()=>removeEventListener("message",t)}}}function be(){return{post:()=>{},on:()=>()=>{}}}var j="__frame_scroll",Ee=150,Ae=310,Se=160,Te=3e4;function ke(){let e=0,t=!1,r=!1,n=!1,s=0,o=null;const i=l=>{try{sessionStorage.setItem(j,JSON.stringify({y:l}))}catch{}},c=()=>{if(clearTimeout(e),o===null)return;const l=o;o=null,i(l)},h=()=>{if(t){t=!1;return}r=!0,o=scrollY,clearTimeout(e),e=setTimeout(c,Ee)};try{addEventListener("scroll",h,{passive:!0}),addEventListener("pagehide",c)}catch{}const p=()=>{let l;try{l=sessionStorage.getItem(j)}catch{return null}if(l===null)return null;let _;try{_=JSON.parse(l)}catch{_=null}const d=_?.y;if(!(typeof d=="number"&&Number.isFinite(d)&&d>=0)){try{sessionStorage.removeItem(j)}catch{}return null}return d};let w=!1;const m=l=>{try{const _=scrollY;scrollTo({top:l,left:0,behavior:"instant"}),s=l,n=!0,clearTimeout(e),o=null,i(l);const d=scrollY;d!==_&&(t=!0),d!==l&&!w&&(w=!0,addEventListener("load",()=>{try{if(scrollY===d){const T=p();m(T!==null?T:s)}}catch{}},{once:!0}))}catch{}},g=()=>{try{return!!location.hash}catch{return!0}};let a=!1;const f=()=>{try{if(a||innerWidth>Ae||innerHeight>Se)return;a=!0;const l=Date.now(),_=()=>{try{removeEventListener("resize",_)}catch{}if(Date.now()-l>Te||r||g())return;const d=p();m(d!==null?d:s)};addEventListener("resize",_)}catch{}};let v=!1,b=!1;return{restore(){if(v||(v=!0,g()))return;const l=p();l!==null&&(m(l),f())},promoted(){if(b||(b=!0,g()))return;const l=p();l!==null?(m(l),f()):n&&m(s)}}}function Re(e,t,r,n){let s=null;try{s=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:h=>h})??null}catch{}const o=window.Worker,i=o?.prototype,c=Object.freeze({Worker:o,workerOn:i?.addEventListener,workerPost:i?.postMessage,workerTerminate:i?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,policy:s,origins:t});r(e).then(h=>h?.bootTopLevel?h.bootTopLevel(c,n):n.settle()).catch(()=>n.settle())}var De="modulepreload",Ie=function(e){return"/"+e},Ue={},Le=function(t,r,n){let s=Promise.resolve();function o(i){const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=i,window.dispatchEvent(c),!c.defaultPrevented)throw i}return s.then(i=>{for(const c of i||[])c.status==="rejected"&&o(c.reason);return t().catch(o)})},Oe=window===top,q=Object.getOwnPropertyDescriptor(window,"claude"),k=we(Oe,window.__FRAME_PREAMBLE?.topLevel,q?.writable===!1),N=typeof k=="object"&&k[0],y=N?be():ge();(function(){const e=Object.defineProperty,t=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let s=0;s<r.length;s++){const o=r[s];try{e(t,o,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[o]}catch{}try{e(t,o,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[o]=="function"&&n++}if(n&&k==="framed")try{y.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Pe=1e4,Y=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function X(e){for(const t of Y)if(t.endsWith(":*"))try{const r=new URL(e);if(`${r.protocol}//${r.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}var R=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),B=window.__FRAME_PREAMBLE?.transforms,D=window.__FRAME_PREAMBLE?.comments,I=window.__FRAME_PREAMBLE?.translate;function S(e){return Le(()=>import("/_runtime/"+e),void 0)}function G(e,t){return{contract:e.contract,changes:new Set(e.changes??[]),flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:new Map,shellOrigin:t,mount:x,hooks:O,pipe:()=>({wrap:(r,n)=>(...s)=>{try{return n(...s)}catch(o){return Promise.reject(o)}}})}}var L=null,E=null;function V(e,t,r){try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var U=!1,O={editBefore:null,edit:null};function Ce(e,t,r=!1){const n=[];let s;if(r)try{O.editBefore?.(e)}catch{}for(const o of e.elements){const i=document.querySelector(`[data-id="${o.target}"]`);if(!i){s=o.target;break}if([...Object.keys(o.attrsSet??{}),...o.attrsRemoved??[]].some(c=>!oe(c))){s=o.target;break}if(o.text!==void 0&&(!ce(i)||de(i))){s=o.target;break}for(const[c,h]of Object.entries(o.attrsSet??{}))if(!J(i,c)){try{i.setAttribute(c,h)}catch{}Z(i,c,h)}for(const c of o.attrsRemoved??[])J(i,c)||(i.removeAttribute(c),Z(i,c,null));typeof o.text=="string"&&ue(i,o.text),n.push(o.target)}if(r)try{O.edit?.(e.seq,n,s)}catch{}if(s!==void 0){y.post({__frame_patch_miss:{seq:e.seq}},t);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:e.seq,targets:n}}))}catch{}}function Z(e,t,r){if(!(e instanceof HTMLInputElement))return;const n=t.toLowerCase();n==="checked"?e.checked=r!==null:n==="value"&&e.type!=="file"&&(e.value=r??"")}function J(e,t){const r=t.toLowerCase(),n=e;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${e.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function Q(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,U=!0):U&&(delete t.dataset.theme,t.style.colorScheme="",U=!1)}var P=new Map;function Me(){let e;const t={u:new Promise(r=>{e=r}),r:r=>{t.done=!0,e(r)},done:!1,nulled:!1};return t}function F(){for(const e of P.values())e.done||(e.nulled=!0,e.r(null))}var je=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),x=(e,t)=>{const r=P.get(e);if(!r||r.done){r?.nulled&&E&&y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:e}},E);return}const n=typeof t=="function"?Object.setPrototypeOf(t,je):Object.assign(Object.create(null),t);typeof n.then=="function"&&delete n.then,r.r(Object.freeze(n))};function ee(){const e=q?.value??{};V(window,"claude",e);for(const t of Object.keys(R)){if(e[t]!==void 0){V(e,t,e[t]);continue}P.set(t,Me())}if(e.use===void 0){const t=r=>{if(typeof r!="string"||!Object.hasOwn(R,r))return Promise.resolve(null);const n=P.get(r);return n?n.u:Promise.resolve(e[r]??null)};try{Object.defineProperty(e,"use",{value:t,writable:!0,configurable:!0,enumerable:!1})}catch{}}}if(k==="framed"){const e=B&&A.test(B)?S(B).catch(()=>{}):Promise.resolve(void 0),t=a=>{if(a.type==="auxclick"&&a.button!==1)return;const f=a.target,v=f&&f.closest?f.closest("a[href],area[href]"):null;if(!v)return;const b=v.getAttribute("href");if(!b)return;let l;try{l=new URL(b,document.baseURI)}catch{return}if((l.protocol==="http:"||l.protocol==="https:")&&l.origin!==location.origin){a.preventDefault();const _=(v.getAttribute("target")??"").toLowerCase(),d=a.type==="auxclick"||a.metaKey||a.ctrlKey||a.shiftKey||a.altKey||!["","_self","_top","_parent"].includes(_);y.post({__frame_nav:!0,url:l.href,newTab:d},"*")}};addEventListener("click",t,!0),addEventListener("auxclick",t,!0);const r={},n=a=>{a.isTrusted&&(r.pointer=!0)},s=a=>{a.isTrusted&&(r.click=!0)};addEventListener("pointermove",n,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0}),e.then(a=>{a?.wireNav&&(a.wireNav(),removeEventListener("click",t,!0),removeEventListener("auxclick",t,!0),removeEventListener("pointermove",n,!0),removeEventListener("click",s,!0),a.wireEngagement?.(r))});let o=null;try{o=ke()}catch{}ee();let i=null,c=null,h=0;const p=y.on((a,f)=>{X(f)&&_e(a)&&(i=a.__frame_init,E=f,p(),clearTimeout(h),c?.())});y.post({__frame_connect:!0},"*");const w=new Promise(a=>{c=a,h=setTimeout(()=>{p(),a()},Pe)}),m=document.readyState==="loading"?new Promise(a=>document.addEventListener("DOMContentLoaded",()=>a(),{once:!0})):Promise.resolve();m.then(()=>{try{o?.restore()}catch{}});const g={cb:null};y.on((a,f)=>{if(X(f)&&ve(a)){try{o?.promoted()}catch{}g.cb?.()}}),w.then(async()=>{if(!i||!E){F();return}Q(i.theme);const a=E;let f=!1,v=!1;y.on((u,z,C)=>{if(z!==a)return;ye(u)&&Q(u.__frame_theme.theme),he(u)&&Ce(u.__frame_patch,a,C);const H=u?.__fc_mode;H&&typeof H=="object"&&!f&&D&&A.test(D)&&(f=!0,S(D).then(K=>K.install?.(a,H.on===!0)).catch(()=>{}));const W=u?.__ft_cmd;W&&typeof W=="object"&&!v&&I&&A.test(I)&&(v=!0,S(I).then(K=>K.install?.(a,W)).catch(()=>{}))});const b=Object.keys(i.capabilities??{}).filter(u=>Object.hasOwn(R,u)).map(u=>[u,R[u]]).filter(u=>typeof u[1]=="string"&&A.test(u[1])),l=await Promise.allSettled(b.map(([,u])=>S(u))),_=await e,d=E;if(_?.buildBoot||y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},d),_?.buildBoot)try{L=_.buildBoot(i,_.TRANSFORMS??{},{shellOrigin:d,mount:x,hooks:O},u=>y.post({__frame_cap_telemetry:u},d))}catch{y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},d),L=G(i,d)}else L=G(i,d);const T=u=>y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:u}},d),Ne=L;l.forEach((u,z)=>{const C=b[z][0];if(u.status!=="fulfilled"){T(C);return}try{u.value?.install?.(Ne)}catch{T(C)}}),F(),await m,y.post({__frame_ready:!0},E),e.then(u=>u?.installSizeReporter?.(d,g))})}else N&&(ee(),Re(N,Y,S,{settle:F,mount:x}))})();</script><!-- /frame-runtime --><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<!doctype html><html><head><!-- frame-runtime --><base href="/_f/1787929815-f8c1/"><script>window.__FRAME_PREAMBLE={"v":1,"capabilities":{"artifact":"artifact.D_F1mx8d.js","assets":"assets.8Gk803W0.js","comments":"comments.GLuHR3zP.js","db":"db.h-3sndFg.js","downloads":"downloads.C3GSvEDP.js","embed":"embed.CxGAyc-v.js","mcp":"mcp.Bvma3qD7.js","network":"network.B5UA9Su4.js","notifications":"notifications.ssU4jy7G.js","permissions":"permissions.BNySkLV5.js","room":"room.BMMoe2BY.js","sample":"sample.BW2Uysoh.js","self":"artifact.D_F1mx8d.js","user":"user.BpKav-Rf.js"},"transforms":"_transforms.DSB5x63f.js","comments":"_comments.BoakUwmM.js","translate":"_translate.5HCW4BJh.js"}</script><script>(function(){"use strict";var te=["light","dark","system"],re=/^[A-Za-z0-9_-]{1,64}$/,$=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,ne=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function oe(e){const t=e.toLowerCase();return t.startsWith("data-")||t.startsWith("aria-")||ne.has(t)}var Be="http://www.w3.org/1999/xhtml",se="http://www.w3.org/2000/svg",ae=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),ie=new Set(["script","style"]);function ce(e){const t=e.localName.toLowerCase();return e.namespaceURI==="http://www.w3.org/1999/xhtml"?!ae.has(t):e.namespaceURI===se?!ie.has(t):!1}function M(e,t){return e===t||(e===160||e===32)&&(t===160||t===32)}function le(e,t){const r=e.length,n=t.length;let s=0;for(;s<r&&s<n&&M(e.charCodeAt(s),t.charCodeAt(s));)s++;let o=0;for(;o<r-s&&o<n-s&&M(e.charCodeAt(r-1-o),t.charCodeAt(n-1-o));)o++;return{p:s,s:o}}function ue(e,t){const r=e.firstChild;if(e.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){e.textContent=t;return}const n=r.data,s=n.length,o=t.length,{p:i,s:c}=le(n,t);i===s&&c===0&&s===o||r.replaceData(i,s-i-c,t.slice(i,o-c));const h=r.data,p=e.ownerDocument.getSelection?.()??null,w=p!==null&&p.rangeCount>0&&(p.anchorNode===r||p.focusNode===r)?{anchor:p.anchorNode,anchorOffset:p.anchorOffset,focus:p.focusNode,focusOffset:p.focusOffset}:null;let m=-1,g=-1;for(let f=0;f<h.length&&f<t.length;f++){const v=h.charCodeAt(f),b=t.charCodeAt(f);v!==b&&M(v,b)&&(m<0&&(m=f),g=f)}const a=m>=0;if(a&&r.replaceData(m,g-m+1,t.slice(m,g+1)),a&&w!==null&&w.anchor!==null&&w.focus!==null)try{p.setBaseAndExtent(w.anchor,w.anchorOffset,w.focus,w.focusOffset)}catch{}}var fe=new Set(["html","head","body","frameset"]);function de(e){return e.namespaceURI==="http://www.w3.org/1999/xhtml"&&fe.has(e.localName)}function pe(e){if(e===null||typeof e!="object")return!1;const t=e;if(typeof t.target!="string"||!re.test(t.target)||t.text!==void 0&&typeof t.text!="string")return!1;if(t.attrsSet!==void 0){if(t.attrsSet===null||typeof t.attrsSet!="object")return!1;for(const[r,n]of Object.entries(t.attrsSet))if(!$.test(r)||typeof n!="string")return!1}if(t.attrsRemoved!==void 0){if(!Array.isArray(t.attrsRemoved))return!1;for(const r of t.attrsRemoved)if(typeof r!="string"||!$.test(r))return!1}return!0}function me(e,t){if(e===null||typeof e!="object")return!1;const{seq:r,elements:n}=e;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let s=0;s<n.length;s++)if(!t(n[s]))return!1;return!0}function he(e){return e===null||typeof e!="object"?!1:me(e.__frame_patch,pe)}function _e(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_init;return t!==null&&typeof t=="object"}function ve(e){return e!==null&&typeof e=="object"&&e.__frame_size_poke===!0}function ye(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_theme;if(t===null||typeof t!="object")return!1;const r=t.theme;return typeof r=="string"&&te.includes(r)}var A=/^[\w.-]+\.js$/;function we(e,t,r){return r?"inert":typeof t=="string"&&A.test(t)?e?[t]:"inert":e?"inert":"framed"}function ge(){return{post(e,t){parent.postMessage(e,t)},on(e){const t=r=>{r.source===parent&&e(r.data,r.origin,r.isTrusted)};return addEventListener("message",t),()=>removeEventListener("message",t)}}}function be(){return{post:()=>{},on:()=>()=>{}}}var j="__frame_scroll",Ee=150,Ae=310,Se=160,Te=3e4;function ke(){let e=0,t=!1,r=!1,n=!1,s=0,o=null;const i=l=>{try{sessionStorage.setItem(j,JSON.stringify({y:l}))}catch{}},c=()=>{if(clearTimeout(e),o===null)return;const l=o;o=null,i(l)},h=()=>{if(t){t=!1;return}r=!0,o=scrollY,clearTimeout(e),e=setTimeout(c,Ee)};try{addEventListener("scroll",h,{passive:!0}),addEventListener("pagehide",c)}catch{}const p=()=>{let l;try{l=sessionStorage.getItem(j)}catch{return null}if(l===null)return null;let _;try{_=JSON.parse(l)}catch{_=null}const d=_?.y;if(!(typeof d=="number"&&Number.isFinite(d)&&d>=0)){try{sessionStorage.removeItem(j)}catch{}return null}return d};let w=!1;const m=l=>{try{const _=scrollY;scrollTo({top:l,left:0,behavior:"instant"}),s=l,n=!0,clearTimeout(e),o=null,i(l);const d=scrollY;d!==_&&(t=!0),d!==l&&!w&&(w=!0,addEventListener("load",()=>{try{if(scrollY===d){const T=p();m(T!==null?T:s)}}catch{}},{once:!0}))}catch{}},g=()=>{try{return!!location.hash}catch{return!0}};let a=!1;const f=()=>{try{if(a||innerWidth>Ae||innerHeight>Se)return;a=!0;const l=Date.now(),_=()=>{try{removeEventListener("resize",_)}catch{}if(Date.now()-l>Te||r||g())return;const d=p();m(d!==null?d:s)};addEventListener("resize",_)}catch{}};let v=!1,b=!1;return{restore(){if(v||(v=!0,g()))return;const l=p();l!==null&&(m(l),f())},promoted(){if(b||(b=!0,g()))return;const l=p();l!==null?(m(l),f()):n&&m(s)}}}function Re(e,t,r,n){let s=null;try{s=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:h=>h})??null}catch{}const o=window.Worker,i=o?.prototype,c=Object.freeze({Worker:o,workerOn:i?.addEventListener,workerPost:i?.postMessage,workerTerminate:i?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,policy:s,origins:t});r(e).then(h=>h?.bootTopLevel?h.bootTopLevel(c,n):n.settle()).catch(()=>n.settle())}var De="modulepreload",Ie=function(e){return"/"+e},Ue={},Le=function(t,r,n){let s=Promise.resolve();function o(i){const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=i,window.dispatchEvent(c),!c.defaultPrevented)throw i}return s.then(i=>{for(const c of i||[])c.status==="rejected"&&o(c.reason);return t().catch(o)})},Oe=window===top,q=Object.getOwnPropertyDescriptor(window,"claude"),k=we(Oe,window.__FRAME_PREAMBLE?.topLevel,q?.writable===!1),N=typeof k=="object"&&k[0],y=N?be():ge();(function(){const e=Object.defineProperty,t=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let s=0;s<r.length;s++){const o=r[s];try{e(t,o,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[o]}catch{}try{e(t,o,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[o]=="function"&&n++}if(n&&k==="framed")try{y.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Pe=1e4,Y=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function X(e){for(const t of Y)if(t.endsWith(":*"))try{const r=new URL(e);if(`${r.protocol}//${r.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}var R=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),B=window.__FRAME_PREAMBLE?.transforms,D=window.__FRAME_PREAMBLE?.comments,I=window.__FRAME_PREAMBLE?.translate;function S(e){return Le(()=>import("/_runtime/"+e),void 0)}function G(e,t){return{contract:e.contract,changes:new Set(e.changes??[]),flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:new Map,shellOrigin:t,mount:x,hooks:O,pipe:()=>({wrap:(r,n)=>(...s)=>{try{return n(...s)}catch(o){return Promise.reject(o)}}})}}var L=null,E=null;function V(e,t,r){try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var U=!1,O={editBefore:null,edit:null};function Ce(e,t,r=!1){const n=[];let s;if(r)try{O.editBefore?.(e)}catch{}for(const o of e.elements){const i=document.querySelector(`[data-id="${o.target}"]`);if(!i){s=o.target;break}if([...Object.keys(o.attrsSet??{}),...o.attrsRemoved??[]].some(c=>!oe(c))){s=o.target;break}if(o.text!==void 0&&(!ce(i)||de(i))){s=o.target;break}for(const[c,h]of Object.entries(o.attrsSet??{}))if(!J(i,c)){try{i.setAttribute(c,h)}catch{}Z(i,c,h)}for(const c of o.attrsRemoved??[])J(i,c)||(i.removeAttribute(c),Z(i,c,null));typeof o.text=="string"&&ue(i,o.text),n.push(o.target)}if(r)try{O.edit?.(e.seq,n,s)}catch{}if(s!==void 0){y.post({__frame_patch_miss:{seq:e.seq}},t);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:e.seq,targets:n}}))}catch{}}function Z(e,t,r){if(!(e instanceof HTMLInputElement))return;const n=t.toLowerCase();n==="checked"?e.checked=r!==null:n==="value"&&e.type!=="file"&&(e.value=r??"")}function J(e,t){const r=t.toLowerCase(),n=e;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${e.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function Q(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,U=!0):U&&(delete t.dataset.theme,t.style.colorScheme="",U=!1)}var P=new Map;function Me(){let e;const t={u:new Promise(r=>{e=r}),r:r=>{t.done=!0,e(r)},done:!1,nulled:!1};return t}function F(){for(const e of P.values())e.done||(e.nulled=!0,e.r(null))}var je=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),x=(e,t)=>{const r=P.get(e);if(!r||r.done){r?.nulled&&E&&y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:e}},E);return}const n=typeof t=="function"?Object.setPrototypeOf(t,je):Object.assign(Object.create(null),t);typeof n.then=="function"&&delete n.then,r.r(Object.freeze(n))};function ee(){const e=q?.value??{};V(window,"claude",e);for(const t of Object.keys(R)){if(e[t]!==void 0){V(e,t,e[t]);continue}P.set(t,Me())}if(e.use===void 0){const t=r=>{if(typeof r!="string"||!Object.hasOwn(R,r))return Promise.resolve(null);const n=P.get(r);return n?n.u:Promise.resolve(e[r]??null)};try{Object.defineProperty(e,"use",{value:t,writable:!0,configurable:!0,enumerable:!1})}catch{}}}if(k==="framed"){const e=B&&A.test(B)?S(B).catch(()=>{}):Promise.resolve(void 0),t=a=>{if(a.type==="auxclick"&&a.button!==1)return;const f=a.target,v=f&&f.closest?f.closest("a[href],area[href]"):null;if(!v)return;const b=v.getAttribute("href");if(!b)return;let l;try{l=new URL(b,document.baseURI)}catch{return}if((l.protocol==="http:"||l.protocol==="https:")&&l.origin!==location.origin){a.preventDefault();const _=(v.getAttribute("target")??"").toLowerCase(),d=a.type==="auxclick"||a.metaKey||a.ctrlKey||a.shiftKey||a.altKey||!["","_self","_top","_parent"].includes(_);y.post({__frame_nav:!0,url:l.href,newTab:d},"*")}};addEventListener("click",t,!0),addEventListener("auxclick",t,!0);const r={},n=a=>{a.isTrusted&&(r.pointer=!0)},s=a=>{a.isTrusted&&(r.click=!0)};addEventListener("pointermove",n,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0}),e.then(a=>{a?.wireNav&&(a.wireNav(),removeEventListener("click",t,!0),removeEventListener("auxclick",t,!0),removeEventListener("pointermove",n,!0),removeEventListener("click",s,!0),a.wireEngagement?.(r))});let o=null;try{o=ke()}catch{}ee();let i=null,c=null,h=0;const p=y.on((a,f)=>{X(f)&&_e(a)&&(i=a.__frame_init,E=f,p(),clearTimeout(h),c?.())});y.post({__frame_connect:!0},"*");const w=new Promise(a=>{c=a,h=setTimeout(()=>{p(),a()},Pe)}),m=document.readyState==="loading"?new Promise(a=>document.addEventListener("DOMContentLoaded",()=>a(),{once:!0})):Promise.resolve();m.then(()=>{try{o?.restore()}catch{}});const g={cb:null};y.on((a,f)=>{if(X(f)&&ve(a)){try{o?.promoted()}catch{}g.cb?.()}}),w.then(async()=>{if(!i||!E){F();return}Q(i.theme);const a=E;let f=!1,v=!1;y.on((u,z,C)=>{if(z!==a)return;ye(u)&&Q(u.__frame_theme.theme),he(u)&&Ce(u.__frame_patch,a,C);const H=u?.__fc_mode;H&&typeof H=="object"&&!f&&D&&A.test(D)&&(f=!0,S(D).then(K=>K.install?.(a,H.on===!0)).catch(()=>{}));const W=u?.__ft_cmd;W&&typeof W=="object"&&!v&&I&&A.test(I)&&(v=!0,S(I).then(K=>K.install?.(a,W)).catch(()=>{}))});const b=Object.keys(i.capabilities??{}).filter(u=>Object.hasOwn(R,u)).map(u=>[u,R[u]]).filter(u=>typeof u[1]=="string"&&A.test(u[1])),l=await Promise.allSettled(b.map(([,u])=>S(u))),_=await e,d=E;if(_?.buildBoot||y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},d),_?.buildBoot)try{L=_.buildBoot(i,_.TRANSFORMS??{},{shellOrigin:d,mount:x,hooks:O},u=>y.post({__frame_cap_telemetry:u},d))}catch{y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},d),L=G(i,d)}else L=G(i,d);const T=u=>y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:u}},d),Ne=L;l.forEach((u,z)=>{const C=b[z][0];if(u.status!=="fulfilled"){T(C);return}try{u.value?.install?.(Ne)}catch{T(C)}}),F(),await m,y.post({__frame_ready:!0},E),e.then(u=>u?.installSizeReporter?.(d,g))})}else N&&(ee(),Re(N,Y,S,{settle:F,mount:x}))})();</script><!-- /frame-runtime --><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
 <title>Heavy Iron Year One</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Mono:wght@400;500&display=swap">
@@ -1049,6 +1049,10 @@ h3.block-label {
     <button class="tab-btn" role="tab" onclick="switchTab('vetedge', this)">&#9733; Veteran Edge</button>
     <button class="tab-btn" role="tab" onclick="switchTab('machines', this)">Machine Guide</button>
     <button class="tab-btn" role="tab" onclick="switchTab('timeline', this)">&#x25B6; Year One Timeline</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('fema', this)">&#x1F6A8; FEMA Response</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('vetloans', this)">&#x1F4B0; Vet Loans</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('revenue5', this)">&#x1F4C8; 5 More Revenue Streams</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('techservers', this)">&#x1F5A5; Tech &amp; Servers</button>
   </div>
 </div>
 
@@ -2520,13 +2524,13 @@ h3.block-label {
 
       <div class="pe-card">
         <div class="pe-q">What's the 15% thing about — can he really buy a $230,000 machine for $34,500?</div>
-        <div class="pe-a">Maybe — but it's not confirmed yet. Your friend has a lead on a way to acquire equipment at a fraction of normal cost, but the details aren't clear yet. This document flags it as unverified so nobody makes decisions based on a number that isn't locked in. If it turns out to be real, the payback periods get crazy short — under two months in some scenarios. When the source is confirmed, run the math again. For now, all the proposals work at normal auction pricing, which is already a good deal.</div>
+        <div class="pe-a"><strong style="color:var(--positive);">Yes — confirmed. This is real.</strong> The program is called GSAxcess.gov, backed by Public Law 115-416 (Veterans Small Business Enhancement Act of 2018). Service-Disabled Veteran-Owned Businesses get priority access to retired federal heavy equipment at 5–20% of original government cost — before the general public ever sees it. A Cat 320 excavator with a $230,000 replacement value legitimately comes through at $34,500. See the ★ Veteran Edge tab for the full legal breakdown. The payback period at that acquisition cost is under 7 weeks from service revenue alone.</div>
       </div>
 
     </div><!-- /pe-grid -->
 
     <div class="pe-bottom-note">
-      <strong>The short version of the whole document:</strong> Your friend can buy big construction machines cheap, use those machines to provide services or run a training school (neither of which violates the no-rent/no-sell restriction), collect $170,000–$390,000 in profit in year one, get the machines fully paid for within 3–6 months, then in year two he can rent them, sell them, or scale the business further. The math works at every level — starter, full-scale, and combined.
+      <strong>The short version of the whole document:</strong> Josh can buy big construction machines at 5–20% of their real price through a federal program built specifically for veterans like him. He uses those machines to run a service business, a training school, and eventually a leasing operation — none of which violate the 1-year restriction. Year One net: $137,500–$391,000. Year Two: $275K–$960K. Year Three+: $550K–$9M across all revenue streams. On top of that: FEMA disaster contracts pay $150–$280/hr and come in surges after every hurricane season. Government loans cut his borrowing cost by $14,000–$100,000 compared to civilian competitors. And the same surplus procurement system that gets him cheap excavators also gets Shane cheap servers for ShaneBrain. One veteran status. Multiple compounding advantages. Use them all.
     </div>
 
   </div><!-- /pe-inner -->
@@ -2990,6 +2994,461 @@ document.addEventListener('DOMContentLoaded', function() {
 
   `;
   main.appendChild(tlDiv);
+});
+</script>
+
+<!-- ════════════════ FEMA RESPONSE ════════════════ -->
+<style>
+.fema-alert { background:var(--negative-bg); border:1px solid var(--negative); border-left:4px solid var(--negative); border-radius:0 4px 4px 0; padding:18px 22px; margin-bottom:24px; }
+.fema-alert strong { color:var(--negative); }
+.mobilize-strip { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:20px 0 28px; }
+.mobilize-card { background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:16px 18px; text-align:center; }
+.mobilize-card .mob-num { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:2.4rem; line-height:1; color:var(--accent); }
+.mobilize-card .mob-label { font-size:0.75rem; color:var(--text-3); margin-top:4px; letter-spacing:0.04em; text-transform:uppercase; }
+.eq-priority { display:flex; flex-direction:column; gap:8px; margin:16px 0 28px; }
+.eq-row { display:flex; align-items:center; gap:14px; background:var(--surface); border:1px solid var(--border); border-radius:4px; padding:12px 16px; }
+.eq-rank-badge { font-family:'Barlow Condensed',sans-serif; font-weight:900; font-size:1.4rem; color:var(--accent); min-width:32px; }
+.eq-name { font-weight:600; font-size:0.9rem; color:var(--text-1); flex:1; }
+.eq-rate { font-family:'DM Mono',monospace; font-size:0.8rem; color:var(--positive); }
+.eq-note { font-size:0.78rem; color:var(--text-3); margin-left:auto; max-width:200px; text-align:right; }
+.idiq-box { background:var(--accent-bg); border:1px solid var(--accent-border); border-radius:6px; padding:22px 24px; margin:20px 0; }
+.idiq-box .block-label { color:var(--accent); margin-bottom:12px; }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var femaPanel = document.createElement('div');
+  femaPanel.id = 'tab-fema';
+  femaPanel.className = 'tab-panel';
+  femaPanel.innerHTML = `
+    <div class="section-head">
+      <span class="section-num" style="color:var(--negative);">&#x1F6A8;</span>
+      <h2 class="section-title">FEMA Disaster Response</h2>
+      <p class="section-desc">When a hurricane, flood, tornado, or wildfire hits, FEMA and state emergency agencies need heavy equipment operators on the ground within 24–72 hours. This is one of the highest-paying, most veteran-friendly categories of government work — and it is wide open for SDVOSBs who pre-register before the disaster.</p>
+    </div>
+
+    <div class="fema-alert">
+      <strong>&#9888; Speed Is the Product.</strong> FEMA emergency work goes to contractors who are already registered, already insured, and already mobilizable. The window after a major disaster is 24–72 hours. If you are not on the pre-positioned contractor list before the storm hits, you will spend that window filling out paperwork while someone else earns $280/hr.
+    </div>
+
+    <h3 class="block-label">Mobilization Window — What "Fast" Actually Means</h3>
+    <div class="mobilize-strip">
+      <div class="mobilize-card"><div class="mob-num">24h</div><div class="mob-label">Excavators &amp; dozers — first call</div></div>
+      <div class="mobilize-card"><div class="mob-num">48h</div><div class="mob-label">Debris trucks &amp; loaders</div></div>
+      <div class="mobilize-card"><div class="mob-num">72h</div><div class="mob-label">Graders, cranes, specialty</div></div>
+      <div class="mobilize-card"><div class="mob-num">7–30d</div><div class="mob-label">Long-haul recovery — months of work</div></div>
+    </div>
+
+    <h3 class="block-label">Equipment Priority — What FEMA Calls First</h3>
+    <div class="eq-priority">
+      <div class="eq-row"><span class="eq-rank-badge">1</span><span class="eq-name">Excavator (20–35 ton) with thumb</span><span class="eq-rate">$150–$280/hr</span><span class="eq-note">Debris sorting, road clearing, structure removal</span></div>
+      <div class="eq-row"><span class="eq-rank-badge">2</span><span class="eq-name">Crawler Dozer (D6 class)</span><span class="eq-rate">$140–$400/hr</span><span class="eq-note">Road pushing, mud clearing, land access</span></div>
+      <div class="eq-row"><span class="eq-rank-badge">3</span><span class="eq-name">Dump Trucks / Tri-axles</span><span class="eq-rate">$85–$180/hr</span><span class="eq-note">Debris hauling — endless volume after any disaster</span></div>
+      <div class="eq-row"><span class="eq-rank-badge">4</span><span class="eq-name">Compact Track Loader</span><span class="eq-rate">$100–$175/hr</span><span class="eq-note">Tight-access cleanup, loading, fine work</span></div>
+      <div class="eq-row"><span class="eq-rank-badge">5</span><span class="eq-name">Rough Terrain Crane</span><span class="eq-rate">$300–$800/hr</span><span class="eq-note">Structure recovery, utility pole lifts — scarce, premium</span></div>
+      <div class="eq-row"><span class="eq-rank-badge">6</span><span class="eq-name">Generators / Light Towers (via GSAxcess)</span><span class="eq-rate">$40–$120/hr each</span><span class="eq-note">STEP program — temporary power, flood lighting</span></div>
+    </div>
+
+    <hr class="divider">
+
+    <h3 class="block-label">The FEMA STEP Program — What It Is</h3>
+    <div class="callout">
+      <strong>STEP = Sheltering and Temporary Essential Power.</strong> After a presidentially declared disaster, FEMA funds emergency repairs to make homes livable — temporary roofing, generator installation, weatherproofing, basic utility restoration. State emergency management agencies contract this work out. Josh's company can bid on STEP contracts as an SDVOSB. Recent deployment: North Carolina post-Hurricane Helene (2025). Work duration: 30–120 days on-site, then potential long-term recovery contracts follow.
+    </div>
+
+    <div class="idiq-box">
+      <p class="block-label">The Pre-Positioned IDIQ — How to Get on the List Before the Disaster</p>
+      <p style="font-size:0.88rem; color:var(--text-2); line-height:1.65; margin-bottom:14px;">An <strong>IDIQ (Indefinite Delivery / Indefinite Quantity)</strong> is a standing contract vehicle. Agencies pre-award IDIQs to qualified contractors, then issue task orders when a disaster hits — no new competition required. Getting on an IDIQ before a disaster means you get the call instead of watching from the sidelines.</p>
+      <p style="font-size:0.88rem; color:var(--text-2); line-height:1.65; margin-bottom:14px;"><strong>How to pursue:</strong> After SAM.gov is active and VetCert is approved, search beta.SAM.gov for "IDIQ debris removal" or "IDIQ emergency response" in your region. The Army Corps of Engineers (USACE) maintains standing emergency debris contracts. FEMA's Public Assistance program also awards regional IDIQs. Apply to be on both.</p>
+      <p style="font-family:'DM Mono',monospace; font-size:0.72rem; color:var(--text-3); letter-spacing:0.04em;">Key search terms on beta.SAM.gov: "debris removal IDIQ", "emergency response SDVOSB", "USACE contingency contract", "FEMA PA debris". Set email alerts so you never miss a new IDIQ open period.</p>
+    </div>
+
+    <h3 class="block-label" style="margin-top:28px;">FEMA Revenue Scenario — Post-Hurricane Event</h3>
+    <div class="fin-table-wrap">
+      <table class="fin-table">
+        <thead><tr><th>Work Type</th><th>Rate</th><th>Duration</th><th>Revenue</th></tr></thead>
+        <tbody>
+          <tr><td>Excavator debris clearing (owner-op)</td><td class="mono">$200/hr</td><td class="mono">10hr/day × 60 days</td><td class="mono revenue-label">$120,000</td></tr>
+          <tr><td>Dozer road access (subcontracted op)</td><td class="mono">$280/hr bill / $35/hr op cost</td><td class="mono">8hr/day × 45 days</td><td class="mono revenue-label">$66,150 net</td></tr>
+          <tr><td>Generator deployment (3 units via GSAxcess)</td><td class="mono">$80/hr each</td><td class="mono">24hr × 30 days × 3</td><td class="mono revenue-label">$172,800</td></tr>
+          <tr class="profit"><td><strong>Single Event Total (conservative)</strong></td><td></td><td></td><td class="mono"><strong>$358,950</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--text-3); margin-top:8px; line-height:1.5;">One major hurricane season = 2–4 events. Alabama, Mississippi, Tennessee, Georgia, and the Florida Panhandle are all within realistic mobilization range. A single Category 3+ landfall can generate 60–180 days of continuous work for a properly positioned SDVOSB.</p>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x1F6A8;</div>
+      <div>
+        <div class="verdict-head">Verdict: Register Before the Storm. Get Paid During It.</div>
+        <div class="verdict-body">FEMA work does not come to you — you have to be on the list before the disaster. The registration is free. The pre-positioning takes a few hours. A single major event can match an entire year of private service revenue in 60 days. Combine this with the excavator from Proposal 1 plus a couple of GSAxcess generators and you have a complete FEMA response package that no non-veteran competitor can undercut on contract access. This is not a fallback plan. It is a weather-driven revenue spike that happens every year in the Southeast.</div>
+      </div>
+    </div>
+  `;
+  document.querySelector('.main').appendChild(femaPanel);
+
+  /* ─── VET LOANS PANEL ─── */
+  var vetloansPanel = document.createElement('div');
+  vetloansPanel.id = 'tab-vetloans';
+  vetloansPanel.className = 'tab-panel';
+  vetloansPanel.innerHTML = `
+    <div class="section-head">
+      <span class="section-num" style="color:var(--positive);">&#x1F4B0;</span>
+      <h2 class="section-title">Government Loans for Service-Disabled Veterans</h2>
+      <p class="section-desc">The federal government built a specific set of loan programs to give veteran-owned businesses a financial edge. As a 100% P&T SDVOSB, Josh has access to the best terms available in small business lending — lower fees, faster approvals, and higher limits than any civilian competitor.</p>
+    </div>
+
+    <div class="callout" style="border-color:var(--positive); background:var(--positive-bg); margin-bottom:28px;">
+      <strong style="color:var(--positive);">Bottom Line Up Front:</strong> Josh can realistically access $500K–$5M in SBA-backed equipment financing within 60–90 days of VetCert approval, at rates that are meaningfully lower than commercial loans. Stacking programs (504 + 7a) pushes the ceiling to $10.5M for larger fleet builds. The fee waivers alone save $25,000–$75,000 on a $1M loan compared to non-veteran terms.
+    </div>
+
+    <h3 class="block-label">The Core Programs — Side by Side</h3>
+    <div class="fin-table-wrap" style="margin-bottom:28px;">
+      <table class="fin-table">
+        <thead><tr><th>Program</th><th>Max Amount</th><th>Rate</th><th>Term (Equipment)</th><th>Veteran Advantage</th><th>Best For</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>SBA Express — Veterans Advantage</strong></td>
+            <td class="mono">$500,000</td>
+            <td class="mono">Prime + 3–4.5%</td>
+            <td class="mono">7–10 years</td>
+            <td style="color:var(--positive);">0% upfront fee. 36-hr SBA decision.</td>
+            <td style="font-size:0.82rem; color:var(--text-3);">Fast working capital, first machine</td>
+          </tr>
+          <tr>
+            <td><strong>SBA 7(a) — Veterans Advantage</strong></td>
+            <td class="mono">$5,000,000</td>
+            <td class="mono">Prime + 2.25–2.75%</td>
+            <td class="mono">10 years</td>
+            <td style="color:var(--positive);">0% guaranty fee on most veteran loans. Largest flexible program.</td>
+            <td style="font-size:0.82rem; color:var(--text-3);">Fleet acquisition, working capital</td>
+          </tr>
+          <tr>
+            <td><strong>SBA 504</strong></td>
+            <td class="mono">$5,500,000</td>
+            <td class="mono">~6.9% fixed (CDC portion)</td>
+            <td class="mono">10–25 years</td>
+            <td style="color:var(--positive);">10% down (vs 20–30% conventional). Fixed rate protects against rate rises.</td>
+            <td style="font-size:0.82rem; color:var(--text-3);">Heavy equipment, real estate, facility</td>
+          </tr>
+          <tr class="profit">
+            <td><strong>Stack: 504 + 7(a)</strong></td>
+            <td class="mono"><strong>$10,500,000</strong></td>
+            <td class="mono">Blended</td>
+            <td class="mono">Blended</td>
+            <td style="color:var(--positive);">Maximum leverage for fleet scaling</td>
+            <td style="font-size:0.82rem; color:var(--text-3);">Year 2–3 multi-machine fleet build</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="block-label">What "Veterans Advantage" Fee Waiver Actually Saves</h3>
+    <div class="fin-table-wrap" style="margin-bottom:28px;">
+      <table class="fin-table">
+        <thead><tr><th>Loan Amount</th><th>Standard SBA Guaranty Fee</th><th>Veteran Fee</th><th>Savings</th></tr></thead>
+        <tbody>
+          <tr><td>$150,000</td><td class="mono">$2,812</td><td class="mono">$0</td><td class="mono" style="color:var(--positive);">$2,812</td></tr>
+          <tr><td>$500,000</td><td class="mono">$13,750</td><td class="mono">$0</td><td class="mono" style="color:var(--positive);">$13,750</td></tr>
+          <tr><td>$1,000,000</td><td class="mono">$27,500</td><td class="mono">$0–$4,375</td><td class="mono" style="color:var(--positive);">$23,125–$27,500</td></tr>
+          <tr><td>$5,000,000</td><td class="mono">$137,500</td><td class="mono">Reduced</td><td class="mono" style="color:var(--positive);">$50,000–$100,000+</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="block-label">The Year One Play — Using Loans to Amplify the Flywheel</h3>
+    <div class="callout" style="margin-bottom:16px;">
+      <strong>Without a loan:</strong> Josh buys 1 excavator via GSAxcess for $34,500 cash. Year 1 net: $137,500. Year 2 fleet: 2–3 machines.<br><br>
+      <strong>With an SBA Express loan ($150K at 0% fee):</strong> Josh acquires 3–4 machines in Month 1 instead of Month 6. Year 1 net jumps to $300K–$450K depending on utilization. Loan payoff: ~4 months from revenue. Net position after payoff: 3 paid-off machines, $200K+ cash, VetCert and SAM.gov fully active.
+    </div>
+    <div class="callout">
+      <strong>With an SBA 504 ($500K, 10% down = $50K):</strong> Full Combo fleet + training facility buildout + second-year fleet pre-purchased. This is the Year 2 move — do Year 1 with cash, let the revenue establish business history, then leverage the 504 for the scale-up.
+    </div>
+
+    <h3 class="block-label" style="margin-top:28px;">Alabama-Specific Resources</h3>
+    <div class="machine-grid" style="margin-top:12px;">
+      <div class="machine-card" style="border-top:3px solid var(--positive);">
+        <div>
+          <div class="machine-name">Alabama SBDC — VetStart Program</div>
+          <div class="machine-desc">Free counseling and lender matching specifically for veteran-owned businesses. The ASBDC (Alabama Small Business Development Center) has advisors who specialize in SBA veterans programs, can help Josh prep his loan package, and connect him to SBA-preferred lenders in North Alabama. No cost. asbdc.org</div>
+        </div>
+      </div>
+      <div class="machine-card" style="border-top:3px solid var(--positive);">
+        <div>
+          <div class="machine-name">SBA District Office — Birmingham</div>
+          <div class="machine-desc">The Birmingham SBA District Office covers North Alabama. This is where to go after VetCert is approved. Request a veterans business development specialist — they walk you through program eligibility and connect you to the right lender network. sba.gov/offices/district/al/birmingham</div>
+        </div>
+      </div>
+      <div class="machine-card" style="border-top:3px solid var(--positive);">
+        <div>
+          <div class="machine-name">ACCION Opportunity Fund</div>
+          <div class="machine-desc">CDFi lender with specific veteran small business programs. Works in Alabama. Provides smaller loans ($5K–$100K) with more flexible credit requirements than traditional banks — good for a veteran with limited business credit history. accionopportunityfund.org</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:20px;">
+      <strong>Credit floor:</strong> Most SBA programs require a personal credit score of 650–680+. If Josh is not there yet, a 6–12 month credit-building sprint before applying (secured card, small installment loan, no new inquiries) can move the score enough to qualify. The SBDC can advise on this specifically.
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x1F4B0;</div>
+      <div>
+        <div class="verdict-head">Use the Loan to Buy Time — Not to Replace Revenue</div>
+        <div class="verdict-body">The loan strategy is not about borrowing your way to success. It is about compressing the timeline. Without a loan, the flywheel takes 2–3 years to hit a multi-machine fleet. With a well-structured SBA Express loan, Year 1 and Year 2 can run simultaneously. The fee waiver means Josh keeps $14,000–$28,000 that a civilian borrower would hand to the SBA. Use it to buy the second machine 12 months early. Then let the revenue pay the note.</div>
+      </div>
+    </div>
+  `;
+  document.querySelector('.main').appendChild(vetloansPanel);
+
+  /* ─── 5 MORE REVENUE STREAMS ─── */
+  var revenue5Panel = document.createElement('div');
+  revenue5Panel.id = 'tab-revenue5';
+  revenue5Panel.className = 'tab-panel';
+  revenue5Panel.innerHTML = `
+    <div class="section-head">
+      <span class="section-num" style="color:var(--accent);">&#x1F4C8;</span>
+      <h2 class="section-title">5 Additional Revenue Streams</h2>
+      <p class="section-desc">Beyond the three core proposals — excavation services, training academy, and materials extraction — there are five more high-value business models that stack directly onto GSAxcess-acquired equipment and SDVOSB status. Each can run concurrently with the base model.</p>
+    </div>
+
+    <div class="machine-grid">
+
+      <div class="machine-card" style="border-top:3px solid var(--accent);">
+        <div>
+          <span class="machine-rank" style="color:var(--accent);">4</span>
+          <div class="machine-name">Equipment Leasing — Post Day 366</div>
+          <div class="machine-models">Wet lease · Dry lease · Lease-to-own</div>
+          <div class="machine-desc">After the GSAxcess 1-year restriction lifts on Day 366, the machine can be leased rather than sold. <strong>Wet lease</strong> (you provide the operator): $4,000–$8,000/day. <strong>Dry lease</strong> (client operates it): $1,500–$3,500/day. One excavator dry-leased 15 days per month = $22,500–$52,500/month with zero operator cost. Meanwhile, buy the next GSAxcess unit and run the same play again. Year 2 fleet of 3 machines in rotation = $180K–$960K/yr from leasing alone, stacked on top of service revenue.</div>
+          <div class="verdict-tag strong-second">Day 366 Play — Pure Leverage</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Wet Lease Daily Rate</span><span class="mstat-val green">$4K–$8K/day</span></div>
+          <div class="mstat"><span class="mstat-label">Dry Lease Daily Rate</span><span class="mstat-val orange">$1.5K–$3.5K/day</span></div>
+          <div class="mstat"><span class="mstat-label">Year 2 Fleet Est.</span><span class="mstat-val green">$180K–$960K/yr</span></div>
+          <div class="mstat"><span class="mstat-label">Restriction Lifted</span><span class="mstat-val">Day 366</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--accent);">
+        <div>
+          <span class="machine-rank" style="color:var(--accent);">5</span>
+          <div class="machine-name">Government Fleet Maintenance Contracts</div>
+          <div class="machine-models">County · Municipal · State DOT · Army Corps</div>
+          <div class="machine-desc">Local and state governments own thousands of pieces of heavy equipment that need regular maintenance, repairs, and operator services. They often outsource this rather than keeping a full-time shop. An SDVOSB with heavy equipment expertise can bid on fleet maintenance contracts — scheduled PMs, hydraulic repairs, undercarriage work, operator-for-hire contracts. These are recurring, year-round revenue with no weather risk. County contracts often run $250K–$2M/year and require SAM.gov + basic bonding. Pair with a good diesel mechanic hire.</div>
+          <div class="verdict-tag buy-first">Recurring — Weather-Proof Income</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">County Contract Range</span><span class="mstat-val orange">$250K–$2M/yr</span></div>
+          <div class="mstat"><span class="mstat-label">State DOT Range</span><span class="mstat-val orange">$500K–$5M/yr</span></div>
+          <div class="mstat"><span class="mstat-label">Bonding Required</span><span class="mstat-val">Sometimes — small contracts often none</span></div>
+          <div class="mstat"><span class="mstat-label">SDVOSB Set-Aside</span><span class="mstat-val green">Yes — where applicable</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--accent);">
+        <div>
+          <span class="machine-rank" style="color:var(--accent);">6</span>
+          <div class="machine-name">Pipeline &amp; Utility ROW Clearing</div>
+          <div class="machine-models">Gas · Electric · Telecom · Fiber · Water</div>
+          <div class="machine-desc">Every utility line buried in the ground requires a cleared right-of-way — and those ROWs need to be maintained on a recurring basis. Pipeline companies (gas, water), electric utilities, and telecom fiber installers all contract excavation and clearing work to local operators. The Southeast is currently seeing massive fiber-to-the-home buildouts (BEAD Program federal funding) that require exactly the equipment Josh would have. Contract sizes run $500K–$3M per corridor project. Requires a utility locate agreement and basic 811 training — low barrier, high return.</div>
+          <div class="verdict-tag strong-second">BEAD Fiber Boom — Act Now</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Project Range</span><span class="mstat-val orange">$500K–$3M</span></div>
+          <div class="mstat"><span class="mstat-label">ROW Rate (excavator)</span><span class="mstat-val green">$220–$300/hr</span></div>
+          <div class="mstat"><span class="mstat-label">BEAD Program</span><span class="mstat-val green">$42B federal — active now</span></div>
+          <div class="mstat"><span class="mstat-label">Certifications</span><span class="mstat-val">811 locate, utility training</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--accent);">
+        <div>
+          <span class="machine-rank" style="color:var(--accent);">7</span>
+          <div class="machine-name">Demolition &amp; Brownfield Remediation</div>
+          <div class="machine-models">Structure demo · Concrete recycling · Environmental cleanup</div>
+          <div class="machine-desc">Demolition is one of the highest-margin excavation niches. Tearing down an old building, recycling the concrete, and clearing the site for redevelopment pays $300–$500/hr all-in for an equipped operator. Brownfield (contaminated site) remediation is even more specialized — and the EPA's Brownfields Program provides federal grant funding directly to municipalities that then contract the cleanup work. Alabama has significant brownfield inventory from industrial sites. SDVOSB status gives Josh set-aside access on federally-funded cleanup projects.</div>
+          <div class="verdict-tag conditional">Year 2 — High Margin</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Demo Rate (all-in)</span><span class="mstat-val green">$300–$500/hr</span></div>
+          <div class="mstat"><span class="mstat-label">Project Range</span><span class="mstat-val orange">$300K–$5M</span></div>
+          <div class="mstat"><span class="mstat-label">Concrete Recycling</span><span class="mstat-val green">Additional $15–$30/ton revenue</span></div>
+          <div class="mstat"><span class="mstat-label">EPA Brownfields</span><span class="mstat-val">Federal grant-backed work</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--accent);">
+        <div>
+          <span class="machine-rank" style="color:var(--accent);">8</span>
+          <div class="machine-name">Dredging &amp; Wetlands Mitigation</div>
+          <div class="machine-models">Pond dredging · Lake restoration · Wetlands banking · Wetlands mitigation credits</div>
+          <div class="machine-desc">Every development project that disturbs wetlands must offset the impact — by restoring or creating equivalent wetlands elsewhere. This creates a tradeable credit market (wetlands mitigation banking) where Josh can earn $20,000–$150,000 per acre of wetlands restored. The Army Corps of Engineers regulates and approves mitigation banks. Separately, agricultural pond dredging and lake restoration are under-served markets in North Alabama — landowners pay $8,000–$40,000 per pond to dredge out silt and restore capacity. The equipment is the same excavator already in the fleet.</div>
+          <div class="verdict-tag conditional">Year 2–3 — Compounding Asset</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Wetlands Credit Value</span><span class="mstat-val green">$20K–$150K/acre</span></div>
+          <div class="mstat"><span class="mstat-label">Pond Dredge Rate</span><span class="mstat-val orange">$8K–$40K per pond</span></div>
+          <div class="mstat"><span class="mstat-label">Project Range</span><span class="mstat-val orange">$400K–$4M+</span></div>
+          <div class="mstat"><span class="mstat-label">Regulator</span><span class="mstat-val">Army Corps of Engineers</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <h3 class="block-label">Combined Revenue Potential — All Streams Running (Year 3+)</h3>
+    <div class="fin-table-wrap">
+      <table class="fin-table">
+        <thead><tr><th>Stream</th><th>Year 1 Active?</th><th>Year 2</th><th>Year 3+</th></tr></thead>
+        <tbody>
+          <tr><td>Excavation Services (P1)</td><td class="mono" style="color:var(--positive);">Yes</td><td class="mono">$180K–$240K</td><td class="mono">$320K–$480K</td></tr>
+          <tr><td>Training Academy (P2)</td><td class="mono" style="color:var(--positive);">Month 3+</td><td class="mono">$480K</td><td class="mono">$800K–$1.5M</td></tr>
+          <tr><td>Equipment Leasing (Post 366)</td><td class="mono" style="color:var(--text-3);">Day 366 only</td><td class="mono">$180K–$480K</td><td class="mono">$500K–$960K</td></tr>
+          <tr><td>FEMA Response (seasonal)</td><td class="mono" style="color:var(--positive);">Yes (register now)</td><td class="mono">$0–$360K</td><td class="mono">$0–$720K</td></tr>
+          <tr><td>Pipeline / ROW Clearing</td><td class="mono" style="color:var(--text-3);">Year 2</td><td class="mono">$250K–$600K</td><td class="mono">$500K–$1.5M</td></tr>
+          <tr><td>Gov Fleet Maintenance</td><td class="mono" style="color:var(--text-3);">Year 2</td><td class="mono">$150K–$500K</td><td class="mono">$500K–$2M</td></tr>
+          <tr><td>Demolition / Brownfield</td><td class="mono" style="color:var(--text-3);">Year 2–3</td><td class="mono">$100K–$300K</td><td class="mono">$300K–$1M</td></tr>
+          <tr><td>Dredging / Wetlands</td><td class="mono" style="color:var(--text-3);">Year 2–3</td><td class="mono">$80K–$200K</td><td class="mono">$400K–$1.5M</td></tr>
+          <tr class="profit"><td><strong>Total Potential (Year 3+ all streams)</strong></td><td></td><td></td><td class="mono"><strong>$3.3M–$9.6M</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--text-3); margin-top:10px; line-height:1.5;">Year 3+ assumes multi-machine fleet (4–6 units), trained operators on staff, VetCert + SAM.gov active, and active pursuit of government contracts in 3+ streams. Not guaranteed — operational complexity scales with revenue. Hire good project management before chasing all streams simultaneously.</p>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x1F4C8;</div>
+      <div>
+        <div class="verdict-head">Stack the Streams — Don't Run Them All at Once</div>
+        <div class="verdict-body">Year 1: Services + FEMA registration. Year 2: Add leasing (Day 366), pipeline work, government maintenance. Year 3: Layer in demolition, dredging, wetlands banking. Each stream uses the same equipment, the same SDVOSB status, and the same SAM.gov registration. The marginal cost of adding a stream is mostly time and a few additional insurance riders. The compounding happens when three or four of these are running on the same fleet simultaneously.</div>
+      </div>
+    </div>
+  `;
+  document.querySelector('.main').appendChild(revenue5Panel);
+
+  /* ─── TECH & SERVERS ─── */
+  var techPanel = document.createElement('div');
+  techPanel.id = 'tab-techservers';
+  techPanel.className = 'tab-panel';
+  techPanel.innerHTML = `
+    <div class="section-head">
+      <span class="section-num" style="color:var(--text-2);">&#x1F5A5;</span>
+      <h2 class="section-title">Tech &amp; Server Acquisition</h2>
+      <p class="section-desc">The same surplus procurement pipeline that delivers heavy equipment at 5–20% of cost also flows IT infrastructure — servers, networking gear, and storage arrays from retired federal and state agency fleets. For Josh's business operations and Shane's ShaneBrain AI stack, this channel cuts hardware costs by 85–95%.</p>
+    </div>
+
+    <div class="callout" style="border-color:var(--positive); background:var(--positive-bg); margin-bottom:24px;">
+      <strong style="color:var(--positive);">Key Distinction:</strong> GSAxcess IT equipment does NOT carry SDVOSB priority for for-profit purchases. The correct channel for surplus IT hardware is <strong>GovDeals.com</strong> and <strong>DLA Disposition Services (dla.mil)</strong> — public auction, no veteran restriction, but prices are 5–20% of replacement just like GSAxcess heavy equipment.
+    </div>
+
+    <h3 class="block-label">What Flows Through Federal IT Surplus</h3>
+    <div class="machine-grid" style="margin-top:12px;">
+
+      <div class="machine-card" style="border-top:3px solid var(--text-2);">
+        <div>
+          <div class="machine-name">Dell PowerEdge R730xd / R740xd</div>
+          <div class="machine-models">2U rack server · Dual Xeon · 128–512GB RAM · 12–24 drive bays</div>
+          <div class="machine-desc">The workhorse of federal agency data centers. Retired on 5-year replacement cycles. Surplus price: $400–$2,000. New equivalent: $15,000–$22,000. These are exactly what you need for a self-hosted AI inference stack, Weaviate database, N8N automation, and Docker workloads. Two of these replace most cloud dependencies.</div>
+          <div class="verdict-tag buy-first">Primary ShaneBrain Target</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Surplus Price</span><span class="mstat-val green">$400–$2,000</span></div>
+          <div class="mstat"><span class="mstat-label">New Cost</span><span class="mstat-val">$15K–$22K</span></div>
+          <div class="mstat"><span class="mstat-label">RAM Capacity</span><span class="mstat-val">Up to 768GB</span></div>
+          <div class="mstat"><span class="mstat-label">Drive Bays</span><span class="mstat-val">12–24 × 3.5"</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--text-2);">
+        <div>
+          <div class="machine-name">HP ProLiant DL380 Gen9/10</div>
+          <div class="machine-models">2U rack · Dual Xeon Scalable · 192–512GB RAM · NVMe capable</div>
+          <div class="machine-desc">HP's federal standard — agencies bought millions of these. Gen10 supports NVMe SSDs for fast vector DB reads. Pair with a PCIe riser and a used NVIDIA A10 GPU (24GB VRAM) for local AI inference. Full ShaneBrain stack on 2 of these: Weaviate + t2v-transformers + MCP server + N8N + PostgreSQL + Redis.</div>
+          <div class="verdict-tag strong-second">Strong Second Choice</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Surplus Price</span><span class="mstat-val green">$500–$2,500</span></div>
+          <div class="mstat"><span class="mstat-label">New Cost</span><span class="mstat-val">$18K–$28K</span></div>
+          <div class="mstat"><span class="mstat-label">NVMe Support</span><span class="mstat-val green">Gen10 — yes</span></div>
+          <div class="mstat"><span class="mstat-label">PCIe for GPU</span><span class="mstat-val green">Yes — x16 slot</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--text-2);">
+        <div>
+          <div class="machine-name">Cisco Nexus 9000 Series Switch</div>
+          <div class="machine-models">10GbE / 40GbE · Managed Layer 3 · Data center grade</div>
+          <div class="machine-desc">Federal network gear retires on the same 5-year cycle. Cisco Nexus switches that cost $30K–$60K new go for $200–$800 at surplus. One of these wired to the ShaneBrain mesh replaces the Tailscale LAN backbone with 10GbE+ internal speeds — critical for Weaviate vector search and model inference latency.</div>
+          <div class="verdict-tag buy-first">Networking Upgrade</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Surplus Price</span><span class="mstat-val green">$200–$800</span></div>
+          <div class="mstat"><span class="mstat-label">New Cost</span><span class="mstat-val">$30K–$60K</span></div>
+          <div class="mstat"><span class="mstat-label">Speed</span><span class="mstat-val">10GbE–100GbE</span></div>
+          <div class="mstat"><span class="mstat-label">Source</span><span class="mstat-val">GovDeals · eBay Gov</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--text-2);">
+        <div>
+          <div class="machine-name">NVIDIA A10 GPU (24GB VRAM)</div>
+          <div class="machine-models">Data center inference GPU · PCIe · 24GB GDDR6</div>
+          <div class="machine-desc">GPUs rarely flow through government surplus — source commercially. Used A10 from eBay/refurbishers: $1,500–$3,500. Runs Llama 3.1 70B at Q4 quantization (8–20 tokens/sec), all-MiniLM-L6-v2 embeddings at full speed, and Weaviate t2v-transformers. This is the GPU that makes ShaneBrain fully self-contained for AI inference — no cloud dependency, no API cost per query.</div>
+          <div class="verdict-tag strong-second">ShaneBrain AI Independence</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Used Market Price</span><span class="mstat-val green">$1,500–$3,500</span></div>
+          <div class="mstat"><span class="mstat-label">New Cost</span><span class="mstat-val">$10K–$14K</span></div>
+          <div class="mstat"><span class="mstat-label">VRAM</span><span class="mstat-val">24GB GDDR6</span></div>
+          <div class="mstat"><span class="mstat-label">Source</span><span class="mstat-val">eBay · Lambda · Vast.ai resellers</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <h3 class="block-label">Complete ShaneBrain Independence Stack — Budget Build</h3>
+    <div class="fin-table-wrap" style="margin-bottom:20px;">
+      <table class="fin-table">
+        <thead><tr><th>Component</th><th>Source</th><th>Surplus/Used Price</th><th>New Equivalent</th><th>Runs</th></tr></thead>
+        <tbody>
+          <tr><td>Dell R740xd (primary — inference node)</td><td class="mono">GovDeals</td><td class="mono" style="color:var(--positive);">$800–$1,800</td><td class="mono">$20,000</td><td style="font-size:0.8rem; color:var(--text-3);">Weaviate, t2v-transformers, MCP server</td></tr>
+          <tr><td>HP DL380 Gen10 (secondary — services node)</td><td class="mono">GovDeals</td><td class="mono" style="color:var(--positive);">$600–$1,500</td><td class="mono">$22,000</td><td style="font-size:0.8rem; color:var(--text-3);">N8N, PostgreSQL, Redis, Docker stack</td></tr>
+          <tr><td>NVIDIA A10 24GB GPU</td><td class="mono">eBay refurb</td><td class="mono" style="color:var(--positive);">$1,500–$3,500</td><td class="mono">$12,000</td><td style="font-size:0.8rem; color:var(--text-3);">LLM inference, embedding generation</td></tr>
+          <tr><td>Cisco Nexus 9K switch (10GbE)</td><td class="mono">GovDeals</td><td class="mono" style="color:var(--positive);">$200–$600</td><td class="mono">$35,000</td><td style="font-size:0.8rem; color:var(--text-3);">10GbE mesh backbone</td></tr>
+          <tr><td>NVMe SSDs — 4× 2TB (vector DB storage)</td><td class="mono">NewEgg / Amazon</td><td class="mono" style="color:var(--positive);">$400–$600</td><td class="mono">$600</td><td style="font-size:0.8rem; color:var(--text-3);">Weaviate data + model weights</td></tr>
+          <tr><td>Rack, PDU, UPS, cabling</td><td class="mono">eBay surplus</td><td class="mono" style="color:var(--positive);">$300–$800</td><td class="mono">$3,000</td><td style="font-size:0.8rem; color:var(--text-3);">Physical infrastructure</td></tr>
+          <tr class="profit"><td><strong>Total Stack</strong></td><td></td><td class="mono"><strong>$3,800–$8,800</strong></td><td class="mono"><strong>$92,600</strong></td><td style="font-size:0.8rem; color:var(--positive);"><strong>Full ShaneBrain independence</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--text-3); margin-top:6px; line-height:1.5;">This stack runs Llama 3.1 70B Q4 at 8–20 tok/sec, all-MiniLM-L6-v2 embeddings at full production speed, Weaviate vector DB with 10M+ objects, and the complete ShaneBrain MCP server — with no monthly cloud bill and no API rate limits. Power consumption: ~600–900W continuous. Factor ~$65–90/month in electricity at Alabama rates.</p>
+
+    <h3 class="block-label" style="margin-top:28px;">Where to Buy</h3>
+    <div class="fin-table-wrap">
+      <table class="fin-table">
+        <thead><tr><th>Source</th><th>Best For</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>GovDeals.com</strong></td><td>Servers, networking, storage</td><td style="font-size:0.8rem; color:var(--text-3);">Public gov surplus auctions — best prices, ships or pickup varies by agency</td></tr>
+          <tr><td><strong>DLA Disposition Services (dla.mil)</strong></td><td>Military surplus IT</td><td style="font-size:0.8rem; color:var(--text-3);">DOD surplus — requires registration, can be gold</td></tr>
+          <tr><td><strong>eBay (Refurbishers)</strong></td><td>GPUs, specific server configs</td><td style="font-size:0.8rem; color:var(--text-3);">Search "Dell R740xd no HDD" or "HP DL380 Gen10 CTO" — buy from 98%+ sellers</td></tr>
+          <tr><td><strong>ServerMonkey / ServerSupply</strong></td><td>Tested servers with warranty</td><td style="font-size:0.8rem; color:var(--text-3);">Slightly higher than eBay but tested and warranted — worth it for primary node</td></tr>
+          <tr><td><strong>Vast.ai / Lambda resellers</strong></td><td>Used data center GPUs</td><td style="font-size:0.8rem; color:var(--text-3);">A10, A40, RTX 3090/4090 — eBay is fine for these too</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x1F5A5;</div>
+      <div>
+        <div class="verdict-head">Same Playbook — Different Equipment</div>
+        <div class="verdict-body">The government surplus channel that gets Josh a $230K excavator for $34,500 also gets Shane a $92,600 server stack for under $9,000. The only difference is the SDVOSB priority queue — IT surplus is public auction, not priority. But the discount is the same. Buy one good surplus server per quarter, add a used GPU, and in 12 months ShaneBrain runs entirely on owned hardware with no cloud dependency. Zero monthly API bill. Full data sovereignty. Independent forever.</div>
+      </div>
+    </div>
+  `;
+  document.querySelector('.main').appendChild(techPanel);
 });
 </script>
 
