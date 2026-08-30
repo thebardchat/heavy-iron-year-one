@@ -1050,9 +1050,10 @@ h3.block-label {
     <button class="tab-btn" role="tab" onclick="switchTab('machines', this)">Machine Guide</button>
     <button class="tab-btn" role="tab" onclick="switchTab('partnership', this)">Partnership</button>
     <button class="tab-btn" role="tab" onclick="switchTab('timeline', this)">&#x25B6; Year One Timeline</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('launchtiming', this)">&#x1F4C5; Launch Timing</button>
     <button class="tab-btn" role="tab" onclick="switchTab('fema', this)">&#x1F6A8; FEMA Response</button>
     <button class="tab-btn" role="tab" onclick="switchTab('vetloans', this)">&#x1F4B0; Vet Loans</button>
-    <button class="tab-btn" role="tab" onclick="switchTab('revenue5', this)">&#x1F4C8; 5 More Revenue Streams</button>
+    <button class="tab-btn" role="tab" onclick="switchTab('revenue5', this)">&#x1F4C8; 10 More Revenue Streams</button>
     <button class="tab-btn" role="tab" onclick="switchTab('techservers', this)">&#x1F5A5; Tech &amp; Servers</button>
   </div>
 </div>
@@ -3414,8 +3415,8 @@ document.addEventListener('DOMContentLoaded', function() {
   revenue5Panel.innerHTML = `
     <div class="section-head">
       <span class="section-num" style="color:var(--accent);">&#x1F4C8;</span>
-      <h2 class="section-title">5 Additional Revenue Streams</h2>
-      <p class="section-desc">Beyond the three core proposals — excavation services, training academy, and materials extraction — there are five more high-value business models that stack directly onto GSAxcess-acquired equipment and SDVOSB status. Each can run concurrently with the base model.</p>
+      <h2 class="section-title">10 Additional Revenue Streams</h2>
+      <p class="section-desc">Beyond the three core proposals — excavation services, training academy, and materials extraction — there are ten more ways to add money to the same fleet and the same SDVOSB status. The first five (below) run on new customers and new contract types. The next five — arbitrage, auction-house sales, staggered acquisition, attachment rental, and the mild-winter regional edge — squeeze more out of the equipment and the calendar without adding a new customer type at all.</p>
     </div>
 
     <div class="machine-grid">
@@ -3504,6 +3505,94 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <hr class="divider">
 
+    <h3 class="block-label">5 More — Squeeze More Out of the Same Fleet</h3>
+    <p style="font-size:0.87rem; color:var(--text-3); margin:-4px 0 20px;">These don't need a new customer type. Three add real new dollars (folded into the table below); two are tactics that make the money you're already planning to make bigger — flagged as such so nothing here double-counts.</p>
+    <div class="machine-grid">
+
+      <div class="machine-card" style="border-top:3px solid var(--positive);">
+        <div>
+          <span class="machine-rank" style="color:var(--positive);">9</span>
+          <div class="machine-name">Fast-Flip Arbitrage — GovDeals, Not GSAxcess</div>
+          <div class="machine-models">Cherry pickers · dump trailers · generators · compact loaders</div>
+          <div class="machine-desc">GSAxcess is the SDVOSB priority channel and its equipment is committed to the 1-year work-it flywheel. GovDeals is a separate public-auction marketplace — no SDVOSB restriction, and (confirm with the attorney, since it varies by seller and state) generally no equivalent no-resell hold. That opens a side channel: watch GovDeals for specific undervalued items and flip them fast to other contractors instead of putting them to work. Real examples from GovDeals' own buyer guide: a high-lift cherry picker bought for $6,000 and resold to a local business for $30,000; another buyer landed roughly $50,000 of equipment for $15,000 through patient, late bidding. This is opportunistic, not a monthly paycheck — budget it as a few flips a year, not a schedule.</div>
+          <div class="verdict-tag strong-second">Side Channel — Separate From GSAxcess</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Case Study — Cherry Picker</span><span class="mstat-val green">$6K &#8594; $30K resale</span></div>
+          <div class="mstat"><span class="mstat-label">Case Study — Bulk Lot</span><span class="mstat-val green">$50K value for $15K</span></div>
+          <div class="mstat"><span class="mstat-label">Est. Annual (opportunistic)</span><span class="mstat-val orange">$6K–$60K/yr</span></div>
+          <div class="mstat"><span class="mstat-label">Channel</span><span class="mstat-val">GovDeals.com — attorney-confirm resale terms</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--text-2);">
+        <div>
+          <span class="machine-rank" style="color:var(--text-2);">10</span>
+          <div class="machine-name">Auction-House Sale on Day 366+</div>
+          <div class="machine-models">Ritchie Bros · IronPlanet — consignment, not private sale</div>
+          <div class="machine-desc">The flywheel math assumes a private-party sale on Day 366. An alternative worth pricing out: consign the machine to Ritchie Bros or IronPlanet instead. They charge a seller's commission, but they put the machine in front of a national buyer pool bidding competitively rather than one negotiated private buyer — often the better net on a scarce or high-demand model even after the fee. Get a private-sale quote and an auction consignment quote before Day 366 and take whichever nets more. This is a tactic that can improve the existing sale number, not a new revenue line — it's not added to the table below.</div>
+          <div class="verdict-tag conditional">Tactic — No New $ Line</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Buyer Pool</span><span class="mstat-val">National vs. one local buyer</span></div>
+          <div class="mstat"><span class="mstat-label">Cost</span><span class="mstat-val orange">Seller's commission applies</span></div>
+          <div class="mstat"><span class="mstat-label">Best For</span><span class="mstat-val">Scarce or high-demand models</span></div>
+          <div class="mstat"><span class="mstat-label">Best Timing</span><span class="mstat-val">Spring resale peak — see Launch Timing tab</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--text-2);">
+        <div>
+          <span class="machine-rank" style="color:var(--text-2);">11</span>
+          <div class="machine-name">Staggered Multi-Machine Rotation</div>
+          <div class="machine-models">Year 2+ — once the fleet is 2 machines or more</div>
+          <div class="machine-desc">Once there's cash for a second machine, buy it about 6 months offset from the first instead of on the same clock. One machine is always mid-cycle generating steady service revenue while the other is approaching its Day 366+ sale window — a sale event roughly every 6 months instead of once a year, and a breakdown on one machine doesn't stop 100% of revenue. Same total revenue as buying both at once; smoother cash flow and lower single-point-of-failure risk. Not a new $ line — a scheduling tactic.</div>
+          <div class="verdict-tag conditional">Tactic — No New $ Line</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Requires</span><span class="mstat-val">2+ machines — Year 2 earliest</span></div>
+          <div class="mstat"><span class="mstat-label">Benefit</span><span class="mstat-val green">Cash flow smoothing</span></div>
+          <div class="mstat"><span class="mstat-label">Downtime Risk</span><span class="mstat-val green">Reduced — no single point of failure</span></div>
+          <div class="mstat"><span class="mstat-label">Sale Cadence</span><span class="mstat-val">~Every 6 months vs. annual</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--positive);">
+        <div>
+          <span class="machine-rank" style="color:var(--positive);">12</span>
+          <div class="machine-name">Attachment &amp; Implement Rental Add-On</div>
+          <div class="machine-models">Hydraulic thumb · breaker · grapple · auger</div>
+          <div class="machine-desc">Attachments are cheap on GSAxcess/GovDeals surplus and fit any excavator in the same size class — including machines Josh doesn't own. Other contractors who own a base excavator but not the attachment they need for one job are a ready rental market: day-rate the attachment out with no operator required, low capital outlay, and it doesn't compete with the core service business at all — it's pure add-on margin on gear that's otherwise sitting in the yard between jobs.</div>
+          <div class="verdict-tag buy-first">Low Capital — High Margin</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Attachment Cost (surplus)</span><span class="mstat-val green">$500–$3,000 each</span></div>
+          <div class="mstat"><span class="mstat-label">Day Rental Rate (est.)</span><span class="mstat-val orange">$75–$250/day</span></div>
+          <div class="mstat"><span class="mstat-label">Capital Required</span><span class="mstat-val green">Low</span></div>
+          <div class="mstat"><span class="mstat-label">Est. Annual (2–3 attachments)</span><span class="mstat-val orange">$5K–$20K/yr</span></div>
+        </div>
+      </div>
+
+      <div class="machine-card" style="border-top:3px solid var(--positive);">
+        <div>
+          <span class="machine-rank" style="color:var(--positive);">13</span>
+          <div class="machine-name">Mild-Winter Regional Edge</div>
+          <div class="machine-models">Land &amp; brush clearing · drainage prep · early spring contracts</div>
+          <div class="machine-desc">Alabama ground doesn't freeze hard and rarely locks under snow the way northern markets do. While equipment across much of the country sits idle November through February, Josh's machine can keep billing: land and brush clearing (easier without leaf cover), storm cleanup, and drainage/culvert prep ahead of spring permitting. It's also the best window to lock in spring contracts while competitors — including out-of-region operators — are parked for the season. This turns what most excavation businesses treat as dead months into a genuine regional advantage instead of downtime.</div>
+          <div class="verdict-tag buy-first">Alabama-Specific Advantage</div>
+        </div>
+        <div class="machine-stats">
+          <div class="mstat"><span class="mstat-label">Ground-Frozen Days/Yr (AL)</span><span class="mstat-val green">~0 vs. 60–90+ up north</span></div>
+          <div class="mstat"><span class="mstat-label">Off-Season Work</span><span class="mstat-val">Clearing, drainage prep</span></div>
+          <div class="mstat"><span class="mstat-label">Competitive Edge</span><span class="mstat-val green">Northern/regional rigs parked Nov–Feb</span></div>
+          <div class="mstat"><span class="mstat-label">Est. Annual</span><span class="mstat-val orange">$10K–$30K/yr</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="divider">
+
     <h3 class="block-label">Combined Revenue Potential — All Streams Running (Year 3+)</h3>
     <div class="fin-table-wrap">
       <table class="fin-table">
@@ -3517,11 +3606,14 @@ document.addEventListener('DOMContentLoaded', function() {
           <tr><td>Gov Fleet Maintenance</td><td class="mono" style="color:var(--text-3);">Year 2</td><td class="mono">$150K–$500K</td><td class="mono">$500K–$2M</td></tr>
           <tr><td>Demolition / Brownfield</td><td class="mono" style="color:var(--text-3);">Year 2–3</td><td class="mono">$100K–$300K</td><td class="mono">$300K–$1M</td></tr>
           <tr><td>Dredging / Wetlands</td><td class="mono" style="color:var(--text-3);">Year 2–3</td><td class="mono">$80K–$200K</td><td class="mono">$400K–$1.5M</td></tr>
-          <tr class="profit"><td><strong>Total Potential (Year 3+ all streams)</strong></td><td></td><td></td><td class="mono"><strong>$3.3M–$9.6M</strong></td></tr>
+          <tr><td>Fast-Flip Arbitrage (GovDeals)</td><td class="mono" style="color:var(--positive);">Yes — opportunistic</td><td class="mono">$6K–$60K</td><td class="mono">$10K–$80K</td></tr>
+          <tr><td>Attachment Rental Add-On</td><td class="mono" style="color:var(--text-3);">Year 2</td><td class="mono">$5K–$20K</td><td class="mono">$10K–$35K</td></tr>
+          <tr><td>Mild-Winter Regional Work</td><td class="mono" style="color:var(--positive);">Yes</td><td class="mono">$10K–$30K</td><td class="mono">$15K–$50K</td></tr>
+          <tr class="profit"><td><strong>Total Potential (Year 3+ all streams)</strong></td><td></td><td></td><td class="mono"><strong>$3.3M–$9.8M</strong></td></tr>
         </tbody>
       </table>
     </div>
-    <p style="font-size:0.78rem; color:var(--text-3); margin-top:10px; line-height:1.5;">Year 3+ assumes multi-machine fleet (4–6 units), trained operators on staff, VetCert + SAM.gov active, and active pursuit of government contracts in 3+ streams. Not guaranteed — operational complexity scales with revenue. Hire good project management before chasing all streams simultaneously.</p>
+    <p style="font-size:0.78rem; color:var(--text-3); margin-top:10px; line-height:1.5;">Year 3+ assumes multi-machine fleet (4–6 units), trained operators on staff, VetCert + SAM.gov active, and active pursuit of government contracts in 3+ streams. Auction-house sale and staggered rotation are tactics, not new lines — they're not in this total. Not guaranteed — operational complexity scales with revenue. Hire good project management before chasing all streams simultaneously.</p>
 
     <div class="verdict">
       <div class="verdict-icon">&#x1F4C8;</div>
@@ -3655,6 +3747,134 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   `;
   document.querySelector('.main').appendChild(techPanel);
+
+  /* ─── LAUNCH TIMING ─── */
+  var timingPanel = document.createElement('div');
+  timingPanel.id = 'tab-launchtiming';
+  timingPanel.className = 'tab-panel';
+  timingPanel.innerHTML = `
+    <div class="section-head">
+      <span class="section-num" style="color:var(--accent);">&#x1F4C5;</span>
+      <h2 class="section-title">Launch Timing — The Calendar Advantage</h2>
+      <p class="section-desc">Same strategy, same equipment, same SDVOSB status — a different month of the year changes the math. Federal contracting runs on a fiscal-year clock, used equipment runs on a construction-season clock, and the tax code runs on a calendar-year clock. Line the launch date up with all three and the flywheel gets a running start instead of a cold one.</p>
+    </div>
+
+    <figure style="margin:0 0 10px;">
+      <div style="border:1px solid var(--border); border-radius:8px; padding:24px 20px 12px; background:var(--surface);">
+        <svg viewBox="0 0 980 292" role="img" aria-label="A twelve-month chart showing three overlapping cycles: equipment-buying advantage peaks October through January, federal contract dollar flow spikes in August and September at fiscal year-end, and construction service demand peaks April through July. October through December is marked as the optimal launch window, and December 31 is marked as the Section 179 tax deadline." style="width:100%; height:auto;">
+          <rect x="793.75" y="70" width="187.5" height="185" fill="var(--accent)" opacity="0.09"></rect>
+          <line x1="793.75" y1="70" x2="793.75" y2="255" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"></line>
+          <text x="887.5" y="58" text-anchor="middle" fill="var(--accent)" font-weight="700" font-size="12" style="font-family:'Barlow Condensed',sans-serif; letter-spacing:0.04em; text-transform:uppercase;">Optimal Launch Window</text>
+
+          <text x="0" y="124" fill="var(--text-2)" font-size="11" font-weight="600" font-family="'DM Mono',monospace">Equipment Buy</text>
+          <text x="0" y="138" fill="var(--text-2)" font-size="11" font-weight="600" font-family="'DM Mono',monospace">Advantage</text>
+          <text x="0" y="174" fill="var(--text-2)" font-size="11" font-weight="600" font-family="'DM Mono',monospace">Federal Contract</text>
+          <text x="0" y="188" fill="var(--text-2)" font-size="11" font-weight="600" font-family="'DM Mono',monospace">$ Flow</text>
+          <text x="0" y="224" fill="var(--text-2)" font-size="11" font-weight="600" font-family="'DM Mono',monospace">Service Demand &amp;</text>
+          <text x="0" y="238" fill="var(--text-2)" font-size="11" font-weight="600" font-family="'DM Mono',monospace">Pricing Power</text>
+
+          <g fill="var(--positive)">
+            <rect x="200.5" y="112" width="56.5" height="28"></rect>
+            <rect x="263" y="126" width="56.5" height="14"></rect>
+            <rect x="325.5" y="132" width="56.5" height="8"></rect>
+            <rect x="388" y="132" width="56.5" height="8"></rect>
+            <rect x="450.5" y="132" width="56.5" height="8"></rect>
+            <rect x="513" y="128" width="56.5" height="12"></rect>
+            <rect x="575.5" y="124" width="56.5" height="16"></rect>
+            <rect x="638" y="122" width="56.5" height="18"></rect>
+            <rect x="700.5" y="118" width="56.5" height="22"></rect>
+            <rect x="763" y="106" width="56.5" height="34"></rect>
+            <rect x="825.5" y="100" width="56.5" height="40"></rect>
+            <rect x="888" y="104" width="56.5" height="36"></rect>
+          </g>
+
+          <g fill="var(--accent)">
+            <rect x="200.5" y="180" width="56.5" height="10"></rect>
+            <rect x="263" y="180" width="56.5" height="10"></rect>
+            <rect x="325.5" y="178" width="56.5" height="12"></rect>
+            <rect x="388" y="178" width="56.5" height="12"></rect>
+            <rect x="450.5" y="178" width="56.5" height="12"></rect>
+            <rect x="513" y="176" width="56.5" height="14"></rect>
+            <rect x="575.5" y="172" width="56.5" height="18"></rect>
+            <rect x="638" y="160" width="56.5" height="30"></rect>
+            <rect x="700.5" y="150" width="56.5" height="40"></rect>
+            <rect x="763" y="174" width="56.5" height="16"></rect>
+            <rect x="825.5" y="180" width="56.5" height="10"></rect>
+            <rect x="888" y="180" width="56.5" height="10"></rect>
+          </g>
+
+          <g fill="var(--warning)">
+            <rect x="200.5" y="232" width="56.5" height="8"></rect>
+            <rect x="263" y="226" width="56.5" height="14"></rect>
+            <rect x="325.5" y="218" width="56.5" height="22"></rect>
+            <rect x="388" y="210" width="56.5" height="30"></rect>
+            <rect x="450.5" y="204" width="56.5" height="36"></rect>
+            <rect x="513" y="202" width="56.5" height="38"></rect>
+            <rect x="575.5" y="204" width="56.5" height="36"></rect>
+            <rect x="638" y="210" width="56.5" height="30"></rect>
+            <rect x="700.5" y="216" width="56.5" height="24"></rect>
+            <rect x="763" y="222" width="56.5" height="18"></rect>
+            <rect x="825.5" y="228" width="56.5" height="12"></rect>
+            <rect x="888" y="232" width="56.5" height="8"></rect>
+          </g>
+
+          <line x1="200" y1="255" x2="950" y2="255" stroke="var(--border)" stroke-width="1"></line>
+          <g fill="var(--text-3)" font-size="11" text-anchor="middle" font-family="'DM Mono',monospace">
+            <text x="228.75" y="270">Jan</text>
+            <text x="291.25" y="270">Feb</text>
+            <text x="353.75" y="270">Mar</text>
+            <text x="416.25" y="270">Apr</text>
+            <text x="478.75" y="270">May</text>
+            <text x="541.25" y="270">Jun</text>
+            <text x="603.75" y="270">Jul</text>
+            <text x="666.25" y="270">Aug</text>
+            <text x="728.75" y="270">Sep</text>
+            <text x="791.25" y="270">Oct</text>
+            <text x="853.75" y="270">Nov</text>
+            <text x="916.25" y="270">Dec</text>
+          </g>
+
+          <line x1="950" y1="70" x2="950" y2="255" stroke="var(--negative)" stroke-width="1.5" stroke-dasharray="3 3"></line>
+          <text x="950" y="58" text-anchor="end" fill="var(--negative)" font-size="10" font-weight="700" font-family="'DM Mono',monospace">Sec. 179 cutoff — in service by Dec 31</text>
+        </svg>
+      </div>
+      <figcaption style="font-size:0.78rem; color:var(--text-3); margin-top:10px; line-height:1.5;">Three cycles stacked on one calendar: equipment is cheapest and least contested October–January (a 10–18% seasonal discount, per Ritchie Bros auction data); federal contract dollars spike in the final weeks of the fiscal year, which closes September 30; and construction service demand — and the rates you can charge — climbs through spring. October–December is the only window where a fresh fiscal-year surplus turnover, the equipment discount, and the Section 179 same-year deduction all overlap.</figcaption>
+    </figure>
+
+    <div style="display:flex; gap:18px; flex-wrap:wrap; margin-bottom:28px; font-size:0.82rem; color:var(--text-2);">
+      <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--positive);display:inline-block;"></span> Equipment buy advantage</div>
+      <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--accent);display:inline-block;"></span> Federal contract $ flow</div>
+      <div style="display:flex; align-items:center; gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:var(--warning);display:inline-block;"></span> Service demand &amp; pricing power</div>
+    </div>
+
+    <div class="callout" style="border-color:var(--accent); background:var(--accent-bg); margin-bottom:24px;">
+      <strong style="color:var(--accent);">Where this stands right now:</strong> August is the fiscal year's positioning month — the last full window before the September 30 year-end surge. If SAM.gov, the capability statement, and the VetCert application aren't filed yet, this is the actual deadline that matters, not a someday-planning date. File now and the October–December buy window is only weeks out.
+    </div>
+
+    <h3 class="block-label">Month by Month</h3>
+    <div class="fin-table-wrap" style="margin-bottom:24px;">
+      <table class="fin-table">
+        <thead><tr><th>Window</th><th>What's Happening</th><th>Why It Matters</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">Jun–Jul</td><td>File LLC, EIN, SAM.gov, VetCert</td><td style="font-size:0.82rem; color:var(--text-2);">VetCert's 60–90 day clock, started here, lands approval right around fiscal year-end</td></tr>
+          <tr><td class="mono">Aug–Sep 30</td><td>Federal fiscal year closes</td><td style="font-size:0.82rem; color:var(--text-2);">~30–40% of annual contract dollars obligate in Q4; the final 6 weeks alone run about 4.9&#215; the rest of the year's weekly average</td></tr>
+          <tr><td class="mono">Oct–Dec</td><td>Acquire the first machine</td><td style="font-size:0.82rem; color:var(--text-2);">10–18% seasonal discount, least buyer competition, fresh GSAxcess/GovDeals listings from FY turnover, and Section 179 same-year deduction if placed in service by Dec 31</td></tr>
+          <tr><td class="mono">Jan</td><td>Build pipeline, prep the machine</td><td style="font-size:0.82rem; color:var(--text-2);">Slowest demand month of the year — no pressure, no competition for Josh's time</td></tr>
+          <tr><td class="mono">Feb–May</td><td>Spring construction season ramps</td><td style="font-size:0.82rem; color:var(--text-2);">Peak service demand and peak pricing power — the machine is fully proven right when rates are highest</td></tr>
+          <tr class="profit"><td class="mono">Month ~14–18</td><td><strong>Target sale window — not literal Day 366</strong></td><td style="font-size:0.82rem;">The GSAxcess restriction is a floor, not a deadline. Selling later than Day 366 is always legal — timing the sale into the following spring's resale peak instead of the calendar-exact date can mean a meaningfully better price.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-icon">&#x1F4C5;</div>
+      <div>
+        <div class="verdict-head">File in June — Everything Else Lines Up Behind It</div>
+        <div class="verdict-body">Filing the LLC and VetCert application in June is the single best calendar entry point, because it chains all four advantages together: VetCert lands right before the fiscal year-end bid surge, the first machine buys into the cheapest window of the year, that purchase is placed in service in time for the same-year Section 179 deduction, and the machine is fully proven right as spring demand — and spring pricing power — peaks. Missed June? The fallback rule still holds any time of year: file every registration immediately regardless of month, then aim the <em>first equipment purchase</em> for October–December whenever that window next comes around.</div>
+      </div>
+    </div>
+  `;
+  document.querySelector('.main').appendChild(timingPanel);
 });
 </script>
 

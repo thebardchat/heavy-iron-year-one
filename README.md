@@ -62,6 +62,16 @@ ACQUIRE  →  WORK  →  SELL  →  REINVEST  →  REPEAT
 
 ---
 
+## 📅 Launch Timing — The Calendar Advantage
+
+Three cycles overlap **October–December**: equipment is 10–18% cheaper (least buyer competition of the year, per Ritchie Bros auction data), the federal fiscal year's Sept 30 close means ~30–40% of annual contract dollars just obligated in Q4, and Section 179 requires the machine "in service" by Dec 31 for the same-year deduction. The machine is then fully proven right as spring service demand — and pricing power — peaks.
+
+**Best filing month: June.** VetCert's 60–90 day clock, started in June, lands approval right before the fiscal year-end bid surge. Missed June? File every registration immediately regardless of month, then aim the *first equipment purchase* for October–December whenever that window next comes around. And don't sell at the literal calendar-366 mark — the restriction is a floor, not a deadline; timing the sale into the following spring's resale peak can mean a meaningfully better price.
+
+→ Full breakdown with the year-round timing chart: **Launch Timing** tab in the [live proposal](https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1)
+
+---
+
 ## 🤝 Partnership Structure
 
 **Recommended: Option B — 51/49 ownership, 50/50 profit.** Josh keeps the 51%+ his SDVOSB certification requires by law; every dollar of profit still splits evenly. On the Combo Year 1 net ($350,100), that's **$175,050 each**.
@@ -188,7 +198,7 @@ heavy-iron-year-one/
 ├── SKILLS.md          ← Claude skill documentation
 ├── timeline.md        ← Phase-by-phase execution checklist
 ├── parallel-launch.md ← 6 concurrent tracks — run P1/P2/P3 at the same time
-└── heavy-iron-updated.html  ← Interactive business proposal (14 tabs)
+└── heavy-iron-updated.html  ← Interactive business proposal (15 tabs)
 ```
 
 ---
