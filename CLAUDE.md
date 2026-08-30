@@ -123,7 +123,18 @@ Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
 ## Primary Deliverable
 Interactive business proposal artifact: https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1
 
-**Tabs:** Overview · Proposal 1 · Proposal 2 · Proposal 3 · Combo · Gov't Bidding · Veteran Edge · Machine Guide · Year One Timeline · FEMA Response · Vet Loans · 5 More Revenue Streams · Tech & Servers
+**Tabs:** Overview · Proposal 1 · Proposal 2 · Proposal 3 · Combo · Gov't Bidding · Veteran Edge · Machine Guide · Partnership · Year One Timeline · FEMA Response · Vet Loans · 5 More Revenue Streams · Tech & Servers
+
+---
+
+## Partnership Structure (Josh & Shane)
+Recommended in the artifact's **Partnership** tab — flagged for attorney sign-off, not final advice.
+
+- **A 50/50 ownership split kills the SDVOSB.** Federal law requires the veteran to own AND control 51%+. Never let ownership drop below that.
+- **Recommended structure — Option B: 51/49 ownership, 50/50 profit.** Josh holds legal control (51%) so SDVOSB status and the whole GSAxcess flywheel stay intact; every dollar of profit still splits evenly. On the Combo Year 1 net ($350,100), that's $175,050 each.
+- Three alternatives are modeled in the tab (straight 51/49 split, salaries-first, and a Josh-funds/Shane-operates earn-in) for comparison — Option B is the pick.
+- **Non-negotiables for the operating agreement:** spend over $10K needs both signatures; buyout = right of first refusal at neutral third-party appraised value; Josh's 51%+ can never be diluted without a full amendment; suggested 40% reinvestment / 60% distribution in Year 1 until reserves hit $100K; dissolution splits by ownership %; a written culture clause (no cut corners, no shady contracts).
+- **Action item:** formalize as an LLC Operating Agreement with a business attorney ($500–$2,000) *before* the first machine is purchased — not a handshake, not a text message.
 
 ---
 

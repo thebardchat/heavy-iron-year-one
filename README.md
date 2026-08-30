@@ -62,6 +62,18 @@ ACQUIRE  →  WORK  →  SELL  →  REINVEST  →  REPEAT
 
 ---
 
+## 🤝 Partnership Structure
+
+**Recommended: Option B — 51/49 ownership, 50/50 profit.** Josh keeps the 51%+ his SDVOSB certification requires by law; every dollar of profit still splits evenly. On the Combo Year 1 net ($350,100), that's **$175,050 each**.
+
+> A straight 50/50 *ownership* split kills the SDVOSB — federal law requires the veteran to own and control 51%+.
+
+Non-negotiables for the LLC Operating Agreement: sign-off required over $10K spend · buyout at neutral appraised value · Josh's 51%+ can't be diluted · 40/60 reinvestment/distribution in Year 1 until $100K reserves · written culture clause. **Formalize with an attorney ($500–$2,000) before the first machine purchase.**
+
+→ Full breakdown with all four structures modeled: **Partnership** tab in the [live proposal](https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1)
+
+---
+
 ## 🎖 The Veteran Advantage
 
 - **SDVOSB** — Service-Disabled Veteran-Owned Small Business, 51%+ owner
@@ -175,7 +187,7 @@ heavy-iron-year-one/
 ├── CLAUDE.md          ← AI session context + business state
 ├── SKILLS.md          ← Claude skill documentation
 ├── timeline.md        ← Phase-by-phase execution checklist
-└── heavy-iron-updated.html  ← Interactive business proposal (13 tabs)
+└── heavy-iron-updated.html  ← Interactive business proposal (14 tabs)
 ```
 
 ---
