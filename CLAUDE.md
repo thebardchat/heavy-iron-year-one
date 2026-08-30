@@ -123,7 +123,24 @@ Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
 ## Primary Deliverable
 Interactive business proposal artifact: https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1
 
-**Tabs:** Overview · Proposal 1 · Proposal 2 · Proposal 3 · Combo · Gov't Bidding · Veteran Edge · Machine Guide · Year One Timeline · FEMA Response · Vet Loans · 5 More Revenue Streams · Tech & Servers
+**Public showcase (GitHub Pages, always in sync with the artifact):** https://thebardchat.github.io/heavy-iron-year-one/
+No claude.ai login needed. Each tab is a shareable deep link (e.g. `#launchtiming`, `#partnership`) — see the Navigate the Showcase table in README.md for the full list. Built from `heavy-iron-updated.html` via `scripts/build_pages.py` — never hand-edit `index.html` directly, it gets overwritten on the next build. Workflow when the artifact changes: publish from Claude → copy the HTML into `heavy-iron-updated.html` → run the build script → commit both files.
+
+**Tabs:** Overview · Proposal 1 · Proposal 2 · Proposal 3 · Combo · Gov't Bidding · Veteran Edge · Machine Guide · Partnership · Year One Timeline · Launch Timing · FEMA Response · Vet Loans · 10 More Revenue Streams · Tech & Servers
+
+**Companion reference doc — SDVOSB Operations Brief:** https://claude.ai/code/artifact/dae35c80-144c-4b91-8b99-332c4589ae62
+The source research behind five of the tabs above (FEMA Disaster Response Contracting, Government Loans for Service-Disabled Veterans, 5 Additional Revenue Models, Heavy Equipment Training School, Server Acquisition via GSAxcess) — deeper detail than the polished proposal tabs. Use it when Josh or Shane needs the underlying research, not just the summary numbers.
+
+---
+
+## Partnership Structure (Josh & Shane)
+Recommended in the artifact's **Partnership** tab — flagged for attorney sign-off, not final advice.
+
+- **A 50/50 ownership split kills the SDVOSB.** Federal law requires the veteran to own AND control 51%+. Never let ownership drop below that.
+- **Recommended structure — Option B: 51/49 ownership, 50/50 profit.** Josh holds legal control (51%) so SDVOSB status and the whole GSAxcess flywheel stay intact; every dollar of profit still splits evenly. On the Combo Year 1 net ($350,100), that's $175,050 each.
+- Three alternatives are modeled in the tab (straight 51/49 split, salaries-first, and a Josh-funds/Shane-operates earn-in) for comparison — Option B is the pick.
+- **Non-negotiables for the operating agreement:** spend over $10K needs both signatures; buyout = right of first refusal at neutral third-party appraised value; Josh's 51%+ can never be diluted without a full amendment; suggested 40% reinvestment / 60% distribution in Year 1 until reserves hit $100K; dissolution splits by ownership %; a written culture clause (no cut corners, no shady contracts).
+- **Action item:** formalize as an LLC Operating Agreement with a business attorney ($500–$2,000) *before* the first machine is purchased — not a handshake, not a text message.
 
 ---
 
@@ -160,6 +177,34 @@ Three skills are built for this project and saved to Shane's Claude account. Inv
 | Bid Builder | `/heavy-iron-bid-builder` | Pursuing a government contract — capability statement, bid range, SDVOSB check, submission checklist |
 
 Full documentation: `SKILLS.md` in this repo.
+
+---
+
+## Launch Timing — The Calendar Advantage
+Detailed in the artifact's **Launch Timing** tab (with a 3-band chart of the year). Three independent cycles overlap in October–December, making it the best window to acquire the first machine:
+- **Equipment is cheapest Oct–Jan** — a 10–18% seasonal discount vs. spring (Ritchie Bros auction data), least buyer competition of the year.
+- **Federal fiscal year closes Sept 30** — ~30–40% of annual contract dollars obligate in Q4, the final 6 weeks running ~4.9× the rest of the year's weekly average. SDVOSB set-asides move fast here.
+- **Section 179** requires equipment "placed in service" by Dec 31 for the same-year deduction — an Oct–Dec buy captures it; a Jan buy waits a full year.
+- **Service demand peaks Feb–May** — an Oct–Dec acquisition means the machine is fully proven right as spring pricing power hits.
+- **Best filing month: June.** VetCert's 60–90 day clock, started in June, lands approval right before the fiscal year-end surge — chaining bid-readiness, the cheap buy window, and the Section 179 deadline together.
+- **Sell later than Day 366 on purpose.** The GSAxcess restriction is a floor, not a deadline — selling into the following spring's resale peak instead of the calendar-exact date can mean a meaningfully better price. Never advise selling *before* Day 366 without legal clearance (unchanged).
+
+---
+
+## More Revenue Scenarios — Squeezing More Out of the Same Fleet
+Five more ways to add money layered onto the original "5 More Revenue Streams" tab (now 10 total, all in that tab). Three add real new dollars; two are tactics that improve numbers already in the model rather than new lines:
+- **Fast-Flip Arbitrage** (new $) — GovDeals, not GSAxcess. A separate public-auction channel, generally without GSAxcess's SDVOSB hold (confirm with the attorney — varies by seller/state). Opportunistic flips of undervalued items (real GovDeals case studies: a $6K cherry picker resold for $30K; ~$50K of equipment won for $15K). Budget $6K–$60K/yr, not a schedule.
+- **Auction-House Sale on Day 366+** (tactic, no new $ line) — Ritchie Bros/IronPlanet consignment vs. private sale. Commission applies, but a national buyer pool can net more on scarce models. Price both before selling.
+- **Staggered Multi-Machine Rotation** (tactic, no new $ line) — Year 2+, buy machines ~6 months apart so there's always one mid-cycle and one approaching sale. Smooths cash flow, doesn't add revenue.
+- **Attachment & Implement Rental** (new $) — cheap surplus attachments (thumb, breaker, grapple) rented day-rate to other contractors. Low capital, $5K–$20K/yr.
+- **Mild-Winter Regional Edge** (new $) — Alabama ground doesn't freeze; the machine can keep billing (clearing, drainage prep, locking spring contracts) while northern/regional competitors are parked Nov–Feb. $10K–$30K/yr.
+
+Updated Year 3+ combined revenue ceiling: **$3.3M–$9.8M** (was $3.3M–$9.6M).
+
+---
+
+## Parallel Launch Plan
+`docs/parallel-launch.md` resequences Year One into 6 concurrent tracks (Foundation, Site Services, Training Academy, Dirt & Materials, Gov't Bidding, Tech Independence) instead of one sequential phase list — so all three business proposals can be stood up at the same time rather than waiting on each other. Mirrored in ShaneBrain's cross-node planning system (`active-projects/heavy-iron-parallel-launch.md`) and broadcast to the node bus (tag `heavy-iron`) so any Claude session on any node can pick up open tracks.
 
 ---
 

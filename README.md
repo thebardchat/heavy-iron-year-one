@@ -13,7 +13,7 @@
 
 ---
 
-[📊 Live Business Proposal](https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1) · [📄 Google Doc Playbook](https://docs.google.com/document/d/1yJVknjbrjKB23gU1e-Jxf3XWgyLsBdsV3I2yg9UZaJU/edit) · [🛠 Skills Guide](./SKILLS.md) · [📋 CLAUDE.md](./CLAUDE.md)
+[🌐 GitHub Pages Showcase](https://thebardchat.github.io/heavy-iron-year-one/) · [📊 Live Business Proposal (Claude)](https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1) · [📋 SDVOSB Operations Brief](https://claude.ai/code/artifact/dae35c80-144c-4b91-8b99-332c4589ae62) · [📄 Google Doc Playbook](https://docs.google.com/document/d/1yJVknjbrjKB23gU1e-Jxf3XWgyLsBdsV3I2yg9UZaJU/edit) · [🛠 Skills Guide](./SKILLS.md) · [📋 CLAUDE.md](./CLAUDE.md)
 
 </div>
 
@@ -49,6 +49,30 @@ ACQUIRE  →  WORK  →  SELL  →  REINVEST  →  REPEAT
 
 ---
 
+## 🧭 Navigate the Showcase
+
+The [GitHub Pages site](https://thebardchat.github.io/heavy-iron-year-one/) is the fastest way to get your bearings — 15 tabs, each one deep-linkable and shareable:
+
+| Jump to | Tab | What you'll see |
+|---|---|---|
+| [#overview](https://thebardchat.github.io/heavy-iron-year-one/#overview) | Overview | Side-by-side comparison of all 3 proposals + the flywheel math |
+| [#p1](https://thebardchat.github.io/heavy-iron-year-one/#p1) / [#p2](https://thebardchat.github.io/heavy-iron-year-one/#p2) / [#p3](https://thebardchat.github.io/heavy-iron-year-one/#p3) | Proposals 1–3 | Full P&L for Site Services, Training Academy, Dirt & Materials |
+| [#combo](https://thebardchat.github.io/heavy-iron-year-one/#combo) | Combo | Why Services + Training beats either alone — $350,100 Year 1 net |
+| [#govbid](https://thebardchat.github.io/heavy-iron-year-one/#govbid) | Gov't Bidding | The 3 contracting tiers, set-aside programs, 30-day checklist |
+| [#vetedge](https://thebardchat.github.io/heavy-iron-year-one/#vetedge) | Veteran Edge | The GSAxcess flywheel, 30-day SDVOSB activation checklist |
+| [#machines](https://thebardchat.github.io/heavy-iron-year-one/#machines) | Machine Guide | Ranked equipment targets with price/versatility stats |
+| [#partnership](https://thebardchat.github.io/heavy-iron-year-one/#partnership) | Partnership | Josh/Shane ownership split — 4 structures compared |
+| [#timeline](https://thebardchat.github.io/heavy-iron-year-one/#timeline) | Year One Timeline | Phase-by-phase execution spine |
+| [#launchtiming](https://thebardchat.github.io/heavy-iron-year-one/#launchtiming) | 📅 Launch Timing | **New** — the 3-cycle calendar chart: best month to file, best month to buy |
+| [#fema](https://thebardchat.github.io/heavy-iron-year-one/#fema) | FEMA Response | Disaster contracting, mobilization windows, IDIQ pre-positioning |
+| [#vetloans](https://thebardchat.github.io/heavy-iron-year-one/#vetloans) | Vet Loans | SBA loan stack comparison, fee-waiver savings table |
+| [#revenue5](https://thebardchat.github.io/heavy-iron-year-one/#revenue5) | 10 More Revenue Streams | **Updated** — 10 add-on plays with $ ranges, stacked into one total |
+| [#techservers](https://thebardchat.github.io/heavy-iron-year-one/#techservers) | Tech & Servers | GovDeals server sourcing for ShaneBrain |
+
+Every link above jumps straight to that tab — bookmark one, send one to Josh, or use the tab bar at the top of the page to browse.
+
+---
+
 ## 📊 Business Proposals
 
 | Proposal | Model | Year 1 Net |
@@ -59,6 +83,28 @@ ACQUIRE  →  WORK  →  SELL  →  REINVEST  →  REPEAT
 | **⭐ Combo** | Services + Training | **$350,100 (299% ROI)** |
 
 > Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
+
+---
+
+## 📅 Launch Timing — The Calendar Advantage
+
+Three cycles overlap **October–December**: equipment is 10–18% cheaper (least buyer competition of the year, per Ritchie Bros auction data), the federal fiscal year's Sept 30 close means ~30–40% of annual contract dollars just obligated in Q4, and Section 179 requires the machine "in service" by Dec 31 for the same-year deduction. The machine is then fully proven right as spring service demand — and pricing power — peaks.
+
+**Best filing month: June.** VetCert's 60–90 day clock, started in June, lands approval right before the fiscal year-end bid surge. Missed June? File every registration immediately regardless of month, then aim the *first equipment purchase* for October–December whenever that window next comes around. And don't sell at the literal calendar-366 mark — the restriction is a floor, not a deadline; timing the sale into the following spring's resale peak can mean a meaningfully better price.
+
+→ Full breakdown with the year-round timing chart: **Launch Timing** tab in the [live proposal](https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1)
+
+---
+
+## 🤝 Partnership Structure
+
+**Recommended: Option B — 51/49 ownership, 50/50 profit.** Josh keeps the 51%+ his SDVOSB certification requires by law; every dollar of profit still splits evenly. On the Combo Year 1 net ($350,100), that's **$175,050 each**.
+
+> A straight 50/50 *ownership* split kills the SDVOSB — federal law requires the veteran to own and control 51%+.
+
+Non-negotiables for the LLC Operating Agreement: sign-off required over $10K spend · buyout at neutral appraised value · Josh's 51%+ can't be diluted · 40/60 reinvestment/distribution in Year 1 until $100K reserves · written culture clause. **Formalize with an attorney ($500–$2,000) before the first machine purchase.**
+
+→ Full breakdown with all four structures modeled: **Partnership** tab in the [live proposal](https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1)
 
 ---
 
@@ -171,12 +217,19 @@ Three skills built for this project. Invoke in any session inside the **TBD Josh
 
 ```
 heavy-iron-year-one/
-├── README.md          ← You are here
-├── CLAUDE.md          ← AI session context + business state
-├── SKILLS.md          ← Claude skill documentation
-├── timeline.md        ← Phase-by-phase execution checklist
-└── heavy-iron-updated.html  ← Interactive business proposal (13 tabs)
+├── README.md               ← You are here
+├── CLAUDE.md               ← AI session context + business state
+├── SKILLS.md               ← Claude skill documentation
+├── index.html              ← GitHub Pages showcase — built from heavy-iron-updated.html
+├── heavy-iron-updated.html ← Interactive business proposal source (15 tabs) — mirrors the live Claude artifact
+├── scripts/
+│   └── build_pages.py      ← Regenerates index.html from heavy-iron-updated.html (strips claude.ai iframe wrapper, adds hash routing)
+└── docs/
+    ├── timeline.md         ← Phase-by-phase execution checklist
+    └── parallel-launch.md  ← 6 concurrent tracks — run P1/P2/P3 at the same time
 ```
+
+**Updating the showcase:** edit `heavy-iron-updated.html` (or publish from the Claude artifact and copy it here), then run `python3 scripts/build_pages.py` to regenerate `index.html` before committing — don't hand-edit `index.html` directly, it'll be overwritten on the next build.
 
 ---
 

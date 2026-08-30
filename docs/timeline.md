@@ -6,11 +6,12 @@ Get legal and business structure locked before touching GSAxcess.
 - [ ] Form LLC or corporation
 - [ ] Get EIN from IRS.gov
 - [ ] Open business bank account
+- [ ] Draft & sign LLC Operating Agreement — Josh 51%/Shane 49% ownership, 50/50 profit split (Option B), before first machine purchase
 - [ ] Attorney review — GSAxcess 1-year no-sell/no-rent restriction
 - [ ] Register on SAM.gov
 - [ ] Apply for VetCert at veteransbusinesscertification.va.gov (60–90 day clock starts NOW)
 
-> **Why this order:** VetCert takes 60–90 days. File it on Day 1. Everything else waits on it but the clock starts immediately.
+> **Why this order:** VetCert takes 60–90 days. File it on Day 1. Everything else waits on it but the clock starts immediately. The Operating Agreement should be signed before Phase 3 — never buy the first machine on a handshake.
 
 ---
 
