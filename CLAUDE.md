@@ -123,6 +123,9 @@ Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
 ## Primary Deliverable
 Interactive business proposal artifact: https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1
 
+**Public showcase (GitHub Pages, always in sync with the artifact):** https://thebardchat.github.io/heavy-iron-year-one/
+No claude.ai login needed. Each tab is a shareable deep link (e.g. `#launchtiming`, `#partnership`) — see the Navigate the Showcase table in README.md for the full list. Built from `heavy-iron-updated.html` via `scripts/build_pages.py` — never hand-edit `index.html` directly, it gets overwritten on the next build. Workflow when the artifact changes: publish from Claude → copy the HTML into `heavy-iron-updated.html` → run the build script → commit both files.
+
 **Tabs:** Overview · Proposal 1 · Proposal 2 · Proposal 3 · Combo · Gov't Bidding · Veteran Edge · Machine Guide · Partnership · Year One Timeline · Launch Timing · FEMA Response · Vet Loans · 10 More Revenue Streams · Tech & Servers
 
 **Companion reference doc — SDVOSB Operations Brief:** https://claude.ai/code/artifact/dae35c80-144c-4b91-8b99-332c4589ae62
