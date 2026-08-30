@@ -125,6 +125,9 @@ Interactive business proposal artifact: https://claude.ai/code/artifact/1c673e48
 
 **Tabs:** Overview · Proposal 1 · Proposal 2 · Proposal 3 · Combo · Gov't Bidding · Veteran Edge · Machine Guide · Partnership · Year One Timeline · FEMA Response · Vet Loans · 5 More Revenue Streams · Tech & Servers
 
+**Companion reference doc — SDVOSB Operations Brief:** https://claude.ai/code/artifact/dae35c80-144c-4b91-8b99-332c4589ae62
+The source research behind five of the tabs above (FEMA Disaster Response Contracting, Government Loans for Service-Disabled Veterans, 5 Additional Revenue Models, Heavy Equipment Training School, Server Acquisition via GSAxcess) — deeper detail than the polished proposal tabs. Use it when Josh or Shane needs the underlying research, not just the summary numbers.
+
 ---
 
 ## Partnership Structure (Josh & Shane)
@@ -171,6 +174,11 @@ Three skills are built for this project and saved to Shane's Claude account. Inv
 | Bid Builder | `/heavy-iron-bid-builder` | Pursuing a government contract — capability statement, bid range, SDVOSB check, submission checklist |
 
 Full documentation: `SKILLS.md` in this repo.
+
+---
+
+## Parallel Launch Plan
+`docs/parallel-launch.md` resequences Year One into 6 concurrent tracks (Foundation, Site Services, Training Academy, Dirt & Materials, Gov't Bidding, Tech Independence) instead of one sequential phase list — so all three business proposals can be stood up at the same time rather than waiting on each other. Mirrored in ShaneBrain's cross-node planning system (`active-projects/heavy-iron-parallel-launch.md`) and broadcast to the node bus (tag `heavy-iron`) so any Claude session on any node can pick up open tracks.
 
 ---
 

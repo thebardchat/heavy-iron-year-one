@@ -13,7 +13,7 @@
 
 ---
 
-[📊 Live Business Proposal](https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1) · [📄 Google Doc Playbook](https://docs.google.com/document/d/1yJVknjbrjKB23gU1e-Jxf3XWgyLsBdsV3I2yg9UZaJU/edit) · [🛠 Skills Guide](./SKILLS.md) · [📋 CLAUDE.md](./CLAUDE.md)
+[📊 Live Business Proposal](https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1) · [📋 SDVOSB Operations Brief](https://claude.ai/code/artifact/dae35c80-144c-4b91-8b99-332c4589ae62) · [📄 Google Doc Playbook](https://docs.google.com/document/d/1yJVknjbrjKB23gU1e-Jxf3XWgyLsBdsV3I2yg9UZaJU/edit) · [🛠 Skills Guide](./SKILLS.md) · [📋 CLAUDE.md](./CLAUDE.md)
 
 </div>
 
@@ -187,6 +187,7 @@ heavy-iron-year-one/
 ├── CLAUDE.md          ← AI session context + business state
 ├── SKILLS.md          ← Claude skill documentation
 ├── timeline.md        ← Phase-by-phase execution checklist
+├── parallel-launch.md ← 6 concurrent tracks — run P1/P2/P3 at the same time
 └── heavy-iron-updated.html  ← Interactive business proposal (14 tabs)
 ```
 
