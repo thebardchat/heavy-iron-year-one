@@ -147,6 +147,7 @@ Recommended in the artifact's **Partnership** tab — flagged for attorney sign-
 ## Collaborators
 - **Shane Brazelton** (thebardchat) — strategic partner, ShaneBrain builder, Senior Procurement & Logistics Officer AI, Hazel Green AL
 - **Josh** — veteran, equipment operator, GSAxcess-eligible SDVOSB owner, 100% P&T
+- **Sapper** (Grok bot) — real-time market intelligence officer. Complements this Claude session rather than duplicating it: live GSAxcess/GovDeals/auction-house listing watch, SAM.gov and FEMA disaster monitoring, policy-change alerts — things this session's training data can't track live. Never gives final legal/tax advice and doesn't redesign the flywheel. Full system prompt and rationale: `docs/sapper-grok-bot.md`.
 
 ---
 
