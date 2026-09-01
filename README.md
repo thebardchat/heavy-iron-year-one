@@ -5,7 +5,7 @@
 **Federal surplus heavy equipment → veteran-owned business flywheel**
 
 [![SDVOSB](https://img.shields.io/badge/SDVOSB-Verified%20Veteran-00b4d8?style=for-the-badge&logo=shield&logoColor=white)](https://veteransbusinesscertification.va.gov)
-[![GSAxcess](https://img.shields.io/badge/GSAxcess-P.L.%20115--416-ff6b35?style=for-the-badge)](https://gsaxcess.gov)
+[![VOSB Surplus Program](https://img.shields.io/badge/VOSB%20Surplus-P.L.%20115--416-ff6b35?style=for-the-badge)](https://ppms.gov)
 [![Status](https://img.shields.io/badge/Status-Phase%201%20Execution-22c55e?style=for-the-badge)]()
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude%20AI-7c3aed?style=for-the-badge&logo=anthropic&logoColor=white)](https://claude.ai)
 
@@ -21,31 +21,33 @@
 
 ## 🎯 The Mission
 
-A **Service-Disabled Veteran** (100% P&T) building a heavy equipment business using **GSAxcess.gov** — federal surplus equipment at 5–20% of replacement cost, legally prioritized for SDVOSBs under **Public Law 115-416**.
+A **Service-Disabled Veteran** (100% P&T) building a heavy equipment business through the **VOSB Federal Surplus Personal Property Program** — federal surplus equipment acquired at a service-charge price well under replacement cost, legally prioritized for SDVOSBs under **Public Law 115-416**.
 
 This is not a grant program. This is not a handout. This is the government's own surplus channel, and the law says veterans get first access.
 
-One machine. 365 days of work. Sell on Day 366. Reinvest. Repeat.
+One machine. 18 months of work. Sell at title vesting. Reinvest. Repeat.
+
+> ⚠️ **Corrected 2026-09-01:** GSAxcess.gov was decommissioned in 2023 — access is now through **PPMS.gov**, applied via your **State Agency for Surplus Property** (ADECA in Alabama). The mandatory hold period is **18 months**, not 12 ("Day 366" was wrong). Full sourcing in CLAUDE.md's Acquisition Program Correction section.
 
 ---
 
 ## ⚙️ The Flywheel
 
 ```
-ACQUIRE  →  WORK  →  SELL  →  REINVEST  →  REPEAT
-  15%        365       Day      2–3          Compound
- market      days      366     machines      forever
+ACQUIRE  →   WORK    →  SELL   →  REINVEST  →  REPEAT
+service-    18 months   title      2–3          Compound
+charge      minimum     vests    machines      every cycle
 ```
 
 | Step | Detail |
 |---|---|
-| 🏗 Acquire | Cat 320 via GSAxcess at ~$34,500 (15% of $230K new) |
-| 🔧 Work | 365 days: site services, training, government contracts |
-| 💵 Sell | Day 366 at market: ~$92,000 |
-| 🔁 Reinvest | 2–3 machines → Year 2 fleet |
-| 📈 Compound | 4–6 machines + all revenue streams by Year 3 |
+| 🏗 Acquire | Cat 320 via the VOSB surplus program — ~$34,500 illustrative estimate, **unverified**, get a real ADECA quote |
+| 🔧 Work | 18 months minimum: site services, training, government contracts |
+| 💵 Sell | Title vests at Month 18 — sell at market: ~$92,000 illustrative |
+| 🔁 Reinvest | 2–3 machines → next 18-month cycle fleet |
+| 📈 Compound | 4–6 machines + all revenue streams by Cycle 3+ |
 
-**Year 1 ROI target: 398%** — $137,500 return on $34,500 in.
+**Cycle 1 ROI target: 398%** (illustrative) — $137,500 return on ~$34,500 in, over 18 months instead of 12.
 
 ---
 
@@ -57,9 +59,9 @@ The [GitHub Pages site](https://thebardchat.github.io/heavy-iron-year-one/) is t
 |---|---|---|
 | [#overview](https://thebardchat.github.io/heavy-iron-year-one/#overview) | Overview | Side-by-side comparison of all 3 proposals + the flywheel math |
 | [#p1](https://thebardchat.github.io/heavy-iron-year-one/#p1) / [#p2](https://thebardchat.github.io/heavy-iron-year-one/#p2) / [#p3](https://thebardchat.github.io/heavy-iron-year-one/#p3) | Proposals 1–3 | Full P&L for Site Services, Training Academy, Dirt & Materials |
-| [#combo](https://thebardchat.github.io/heavy-iron-year-one/#combo) | Combo | Why Services + Training beats either alone — $350,100 Year 1 net |
+| [#combo](https://thebardchat.github.io/heavy-iron-year-one/#combo) | Combo | Why Services + Training beats either alone — $350,100 Cycle 1 net |
 | [#govbid](https://thebardchat.github.io/heavy-iron-year-one/#govbid) | Gov't Bidding | The 3 contracting tiers, set-aside programs, 30-day checklist |
-| [#vetedge](https://thebardchat.github.io/heavy-iron-year-one/#vetedge) | Veteran Edge | The GSAxcess flywheel, 30-day SDVOSB activation checklist |
+| [#vetedge](https://thebardchat.github.io/heavy-iron-year-one/#vetedge) | Veteran Edge | The VOSB surplus flywheel, 30-day SDVOSB activation checklist |
 | [#machines](https://thebardchat.github.io/heavy-iron-year-one/#machines) | Machine Guide | Ranked equipment targets with price/versatility stats |
 | [#partnership](https://thebardchat.github.io/heavy-iron-year-one/#partnership) | Partnership | Josh/Shane ownership split — 4 structures compared |
 | [#timeline](https://thebardchat.github.io/heavy-iron-year-one/#timeline) | Year One Timeline | Phase-by-phase execution spine |
@@ -90,7 +92,7 @@ Every link above jumps straight to that tab — bookmark one, send one to Josh, 
 
 Three cycles overlap **October–December**: equipment is 10–18% cheaper (least buyer competition of the year, per Ritchie Bros auction data), the federal fiscal year's Sept 30 close means ~30–40% of annual contract dollars just obligated in Q4, and Section 179 requires the machine "in service" by Dec 31 for the same-year deduction. The machine is then fully proven right as spring service demand — and pricing power — peaks.
 
-**Best filing month: June.** VetCert's 60–90 day clock, started in June, lands approval right before the fiscal year-end bid surge. Missed June? File every registration immediately regardless of month, then aim the *first equipment purchase* for October–December whenever that window next comes around. And don't sell at the literal calendar-366 mark — the restriction is a floor, not a deadline; timing the sale into the following spring's resale peak can mean a meaningfully better price.
+**Best filing month: June.** VetCert's 60–90 day clock, started in June, lands approval right before the fiscal year-end bid surge. Missed June? File every registration immediately regardless of month, then aim the *first equipment purchase* for October–December whenever that window next comes around. And don't sell at the literal Month-18 vesting date — that's a floor, not a deadline; timing the sale into a following spring's resale peak can mean a meaningfully better price. (Title doesn't fully vest until Month 18 minimum — see the Acquisition Program Correction in CLAUDE.md.)
 
 → Full breakdown with the year-round timing chart: **Launch Timing** tab in the [live proposal](https://claude.ai/code/artifact/1c673e48-07e3-4020-9e45-d146413dccb1)
 
@@ -111,7 +113,7 @@ Non-negotiables for the LLC Operating Agreement: sign-off required over $10K spe
 ## 🎖 The Veteran Advantage
 
 - **SDVOSB** — Service-Disabled Veteran-Owned Small Business, 51%+ owner
-- **GSAxcess priority** — P.L. 115-416 · Veterans Small Business Enhancement Act 2018
+- **VOSB surplus property priority** — P.L. 115-416 · Veterans Small Business Enhancement Act 2018 · apply via ADECA (Alabama's State Agency for Surplus Property) after VetCert
 - **VA Veterans First** — VA legally required to use SDVOSBs first
 - **Sole-source threshold** — $4.5M services / $7.5M supplies (no bid competition)
 - **Alabama P&T** — 100% property tax exempt
@@ -172,7 +174,7 @@ Pre-positioned for emergency work before the storm.
 
 | Stream | Year 2 Est. | Year 3+ Est. |
 |---|---|---|
-| Equipment Leasing (post Day 366) | $180K–$480K | $500K–$960K |
+| Equipment Leasing (post 18-month title vest) | $180K–$480K | $500K–$960K |
 | FEMA Disaster Response | $0–$360K | $0–$720K |
 | Pipeline / ROW Clearing (BEAD fiber) | $250K–$600K | $500K–$1.5M |
 | Government Fleet Maintenance | $150K–$500K | $500K–$2M |
@@ -195,7 +197,7 @@ Acquiring federal surplus servers to operate independently — no cloud subscrip
 
 > Full stack: **$3,800–$8,800** surplus vs **$92,600** new · ~$65–90/month Alabama power cost
 > 
-> ⚠️ IT hardware routes through **GovDeals.com** and **DLA Disposition Services** — NOT GSAxcess
+> ⚠️ IT hardware routes through **GovDeals.com** and **DLA Disposition Services** — NOT the VOSB surplus property program
 
 ---
 
@@ -206,7 +208,7 @@ Three skills built for this project. Invoke in any session inside the **TBD Josh
 | Skill | Command | What It Does |
 |---|---|---|
 | Session Briefing | `/heavy-iron-session-open` | Loads phase, VetCert status, next 3 moves, flywheel clock |
-| Equipment Scout | `/gsaxcess-equipment-scout` | Prioritized equipment targets, price ranges, inspection checklist, ROI math |
+| Equipment Scout | `/gsaxcess-equipment-scout` | Prioritized equipment targets, price ranges, inspection checklist, ROI math (name unchanged, content updated to the corrected VOSB surplus program) |
 | Bid Builder | `/heavy-iron-bid-builder` | Capability statement, bid range, SDVOSB check, submission checklist |
 
 → Full documentation: [SKILLS.md](./SKILLS.md)
@@ -245,16 +247,16 @@ heavy-iron-year-one/
 | First government bid submitted | Week 10–12 |
 | VetCert approved | Month 2–3 |
 | $80K service net reached | Month 12 |
-| Machine sold Day 366 | Month 13 |
-| Year 2 fleet (2–3 machines) | Month 13–14 |
+| Title vests, machine sold | Month 18 |
+| Cycle 2 fleet (2–3 machines) | Month 18–19 |
 
 ---
 
 ## ⚠️ Legal Checkpoints
 
-- GSAxcess 1-year **no-sell / no-rent** restriction begins on acquisition date — attorney must review before purchase
+- The **18-month mandatory-use** restriction (41 CFR Part 102-37, property $5,000+) begins on acquisition date — attorney must review before purchase. Corrected from the old "1-year no-sell/no-rent" assumption; see CLAUDE.md's Acquisition Program Correction.
 - VetCert required for SDVOSB set-asides on VA contracts
-- Section 179 deduction: consult CPA on GSAxcess-acquired equipment specifically
+- Section 179 deduction: consult CPA on surplus-program-acquired equipment specifically
 - Davis-Bacon wage determination required on federal construction contracts
 - Never sign a government contract without attorney review
 
@@ -266,7 +268,7 @@ heavy-iron-year-one/
 
 | Person | Role |
 |---|---|
-| **Josh** | Veteran operator · SDVOSB owner · 100% P&T · GSAxcess eligible |
+| **Josh** | Veteran operator · SDVOSB owner · 100% P&T · VOSB surplus program eligible |
 | **[Shane Brazelton](https://github.com/thebardchat)** | Strategic partner · ShaneBrain architect · Senior Procurement & Logistics AI |
 
 ---
