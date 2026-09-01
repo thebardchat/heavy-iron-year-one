@@ -225,8 +225,9 @@ heavy-iron-year-one/
 ├── scripts/
 │   └── build_pages.py      ← Regenerates index.html from heavy-iron-updated.html (strips claude.ai iframe wrapper, adds hash routing)
 └── docs/
-    ├── timeline.md         ← Phase-by-phase execution checklist
-    └── parallel-launch.md  ← 6 concurrent tracks — run P1/P2/P3 at the same time
+    ├── timeline.md          ← Phase-by-phase execution checklist
+    ├── parallel-launch.md   ← 6 concurrent tracks — run P1/P2/P3 at the same time
+    └── sapper-grok-bot.md   ← System prompt for Sapper, the Grok real-time market intel bot
 ```
 
 **Updating the showcase:** edit `heavy-iron-updated.html` (or publish from the Claude artifact and copy it here), then run `python3 scripts/build_pages.py` to regenerate `index.html` before committing — don't hand-edit `index.html` directly, it'll be overwritten on the next build.
