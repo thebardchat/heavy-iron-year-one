@@ -12,16 +12,27 @@ When Josh or Shane opens a session in this project, your job is:
 ---
 
 ## What This Repo Is
-A private business playbook for Josh and Shane. Josh is a Service-Disabled Veteran (SDVOSB, 100% P&T) building a heavy equipment business using GSAxcess — federal surplus equipment at 5–20% of replacement cost. Shane is his strategic partner and AI systems architect. This repo holds the plan, the numbers, the legal research, and everything needed to execute Year One and beyond.
+A private business playbook for Josh and Shane. Josh is a Service-Disabled Veteran (SDVOSB, 100% P&T) building a heavy equipment business using the VOSB Federal Surplus Personal Property Program — federal surplus equipment acquired at a service-charge price well under replacement cost. Shane is his strategic partner and AI systems architect. This repo holds the plan, the numbers, the legal research, and everything needed to execute Year One and beyond.
+
+---
+
+## ⚠ Acquisition Program Correction — 2026-09-01
+Sapper (the project's Grok-based live-intelligence bot, see Collaborators) ran a live verification pass and found the acquisition mechanism this whole plan was built on had gone stale. Corrected here; every other section in this repo, the live artifact, and the GitHub Pages showcase has been updated to match.
+
+- **GSAxcess.gov is dead.** Decommissioned July 24, 2023. The federal system is now **PPMS.gov**, but you don't apply there directly — you register through your **state's Surplus Property Agency**. For Alabama, that's **ADECA Surplus Property Division** (adeca.alabama.gov/surplus/, eligibility at adeca.alabama.gov/surplus-eligibility/). VetCert must be approved first.
+- **The legal authority is unchanged.** P.L. 115-416 (Veterans Small Business Enhancement Act 2018) still applies, codified at 13 CFR Part 128 Subpart G, incorporating GSA's donation rules at 41 CFR Part 102-37.
+- **The price is not "15% of replacement cost."** It's a **service charge** — a handling/administrative fee, roughly mid-single-digits to ~15% depending on state and property type — calculated against the government's **original acquisition cost** (what they paid when it was new), not today's replacement value, plus you cover shipping. This is a materially different number than "15% of market value." **Every specific dollar figure below (the $34,500 Cat 320 example, the $92K resale) is the old illustrative GSAxcess-era estimate, not a verified real transaction.** Treat it as directional until priced against a real ADECA quote.
+- **The hold period is 18 months, not 12 — "Day 366" is wrong.** Confirmed across multiple independent sources: property valued $5,000+ (all heavy equipment in this plan) must be placed in service within 1 year and used continuously for **18 months** before title fully vests. During that window it "may not be sold, traded, leased, lent, or otherwise disposed of without prior written GSA approval" — same spirit as the old "no-sell/no-rent" framing, just half a year longer. Property under $5,000 is a 12-month hold.
+- **What's still unverified:** the exact service-charge percentage Alabama/ADECA charges for heavy equipment, and a real current listing to price against. That needs a call or application to ADECA, not another search — flagged, not guessed.
 
 ---
 
 ## The Core Strategy — The Flywheel
-1. Acquire heavy equipment via GSAxcess.gov at 15% of market value (CONFIRMED — P.L. 115-416)
-2. Work the machine 365 days (GSAxcess 1-year no-sell/no-rent restriction)
-3. Sell at market on Day 366
+1. Acquire heavy equipment through the VOSB Surplus Property Program — apply via ADECA (Alabama's State Agency for Surplus Property) after VetCert approval, browse/request through PPMS.gov (CONFIRMED program, P.L. 115-416 / 13 CFR Part 128 Subpart G — price mechanism and exact rate NOT yet confirmed, see correction above)
+2. Work the machine 18 months (mandatory continuous-use period for property $5,000+ under 41 CFR Part 102-37 — corrected from the old "365 days" assumption)
+3. Title fully vests at Month 18 (Day ~548) — sell, lease, or trade freely after that
 4. Reinvest proceeds into 2–3 machines
-5. Repeat — compounding fleet and cash flow every year
+5. Repeat — compounding fleet and cash flow every 18-month cycle (slower than the old annual-cadence model — see note under Flywheel Math)
 
 ---
 
@@ -40,7 +51,7 @@ Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
 ### Additional Revenue Streams (Year 2+)
 | Stream | Year 2 Est. | Year 3+ Est. |
 |---|---|---|
-| Equipment Leasing (post Day 366) | $180K–$480K | $500K–$960K |
+| Equipment Leasing (post 18-month title vest) | $180K–$480K | $500K–$960K |
 | FEMA Disaster Response | $0–$360K (event-driven) | $0–$720K |
 | Pipeline / ROW Clearing (BEAD fiber boom) | $250K–$600K | $500K–$1.5M |
 | Government Fleet Maintenance | $150K–$500K | $500K–$2M |
@@ -49,11 +60,12 @@ Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
 
 ---
 
-## Flywheel Math (GSAxcess SDVOSB path)
-- Cat 320 via GSAxcess at 15% = $34,500 (vs $85,000 auction · vs $230,000 new)
-- Year 1: $80K service net + $57.5K sale gain = $137,500 = 398% ROI
-- Year 2: reinvest $92K → 2–3 machines → $275K–$412K
-- Year 3+: 4–6 machines + all streams → $3.3M–$9.6M ceiling
+## Flywheel Math (VOSB Surplus Property path — illustrative, pending real ADECA quote)
+- Cat 320 via the surplus program, illustrative service-charge estimate ≈ $34,500 (vs $85,000 auction · vs $230,000 new) — **unverified**, get a real quote from ADECA before committing capital
+- Cycle 1 (Months 1–18): $80K service net (annual run-rate × 1.5) + $57.5K sale gain at Month 18 = $137,500 illustrative total
+- Cycle 2 (Months 19–36): reinvest ~$92K → 2–3 machines → $275K–$412K illustrative
+- Cycle 3+: 4–6 machines + all streams → $3.3M–$9.6M illustrative ceiling
+- **Note on cadence:** the flywheel now turns every 18 months, not every 12 — compounding is slower than the old annual model implied. The $ figures above carry over the old GSAxcess-era estimates relabeled to the new timeline rather than freshly modeled; treat them as directional, not a recomputed forecast, until real ADECA pricing lands.
 
 ---
 
@@ -61,7 +73,7 @@ Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
 - **Register before the storm.** SAM.gov is the only registration needed. Pre-position on USACE and FEMA regional IDIQs now.
 - **Mobilization window: 24–72 hours.** Equipment must be ready to move.
 - **SDVOSB set-asides apply** under FAR 19.1405. Emergency no-bid contracts can bypass set-asides (FAR 6.302-2) — so get on pre-positioned IDIQs before a disaster.
-- **Best equipment for FEMA work:** Excavator with thumb (Day 1), Dozer (Day 1), CTL (Day 2), Generators via GSAxcess (STEP program).
+- **Best equipment for FEMA work:** Excavator with thumb (Day 1), Dozer (Day 1), CTL (Day 2), Generators via the surplus property program (STEP program).
 - **STEP Program:** Sheltering and Temporary Essential Power — state-contracted emergency home repair. Josh can bid as SDVOSB.
 
 ---
@@ -91,7 +103,7 @@ Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
 ---
 
 ## Tech & Server Acquisition (ShaneBrain Independence)
-- GSAxcess does NOT prioritize for-profit buyers on IT equipment — use GovDeals.com and DLA Disposition Services (dla.mil) instead
+- The VOSB surplus property program is for heavy equipment, not IT gear — use GovDeals.com and DLA Disposition Services (dla.mil) instead, both still live and unaffected by the GSAxcess shutdown
 - **Target hardware:** Dell PowerEdge R740xd ($800–$1,800 surplus vs $20K new), HP DL380 Gen10 ($600–$1,500)
 - **GPU (source commercially):** NVIDIA A10 24GB — $1,500–$3,500 used (eBay/Lambda resellers)
 - **Full ShaneBrain independence stack:** ~$3,800–$8,800 surplus/used vs $92,600 new
@@ -102,7 +114,7 @@ Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
 
 ## Josh's Veteran Advantage
 - SDVOSB (Service-Disabled Veteran-Owned Small Business), 51%+ owner
-- GSAxcess priority access via Public Law 115-416 (Veterans Small Business Enhancement Act 2018)
+- VOSB surplus property priority access via Public Law 115-416 (Veterans Small Business Enhancement Act 2018) — apply through ADECA (Alabama's State Agency for Surplus Property) after VetCert, browse via PPMS.gov
 - SDVOSB sole-source threshold: $4.5M services / $7.5M supplies
 - VA Veterans First Contracting Program — VA legally required to use SDVOSBs first
 - Alabama P&T veterans: fully exempt from property tax
@@ -113,10 +125,10 @@ Section 179 boosted nets: P1 $198,950 · P2 $383,510 · Combo $391,050
 ---
 
 ## Key Legal Notes
-- GSAxcess 1-year no-sell/no-rent restriction MUST be reviewed by attorney before purchase
-- Do not advise Josh to sell or rent before Day 366 without legal clearance
+- The 18-month mandatory-use restriction (41 CFR Part 102-37, for property $5,000+) MUST be reviewed by attorney before purchase — corrected from the old "1-year" assumption
+- Do not advise Josh to sell, lease, or dispose of surplus-acquired equipment before Month 18 / title vesting without legal clearance and prior written GSA approval
 - FEMA emergency contracts: FAR 6.302-2 emergency no-bid can bypass set-asides — get on pre-positioned IDIQs to avoid this
-- Section 179: deduction applies to acquisition cost — consult CPA on GSAxcess-acquired equipment specifically
+- Section 179: deduction applies to acquisition cost — consult CPA on surplus-program-acquired equipment specifically, and on how the service-charge price basis affects the deductible amount
 
 ---
 
@@ -129,7 +141,7 @@ No claude.ai login needed. Each tab is a shareable deep link (e.g. `#launchtimin
 **Tabs:** Overview · Proposal 1 · Proposal 2 · Proposal 3 · Combo · Gov't Bidding · Veteran Edge · Machine Guide · Partnership · Year One Timeline · Launch Timing · FEMA Response · Vet Loans · 10 More Revenue Streams · Tech & Servers
 
 **Companion reference doc — SDVOSB Operations Brief:** https://claude.ai/code/artifact/dae35c80-144c-4b91-8b99-332c4589ae62
-The source research behind five of the tabs above (FEMA Disaster Response Contracting, Government Loans for Service-Disabled Veterans, 5 Additional Revenue Models, Heavy Equipment Training School, Server Acquisition via GSAxcess) — deeper detail than the polished proposal tabs. Use it when Josh or Shane needs the underlying research, not just the summary numbers.
+The source research behind five of the tabs above (FEMA Disaster Response Contracting, Government Loans for Service-Disabled Veterans, 5 Additional Revenue Models, Heavy Equipment Training School, Server Acquisition via GSAxcess) — deeper detail than the polished proposal tabs. Use it when Josh or Shane needs the underlying research, not just the summary numbers. **⚠ This companion artifact still uses the old GSAxcess/Day 366 terminology and has not yet been updated to match the 2026-09-01 correction above — it's a separate document this session doesn't own edit access to; needs the same pass applied to it directly.**
 
 ---
 
@@ -137,7 +149,7 @@ The source research behind five of the tabs above (FEMA Disaster Response Contra
 Recommended in the artifact's **Partnership** tab — flagged for attorney sign-off, not final advice.
 
 - **A 50/50 ownership split kills the SDVOSB.** Federal law requires the veteran to own AND control 51%+. Never let ownership drop below that.
-- **Recommended structure — Option B: 51/49 ownership, 50/50 profit.** Josh holds legal control (51%) so SDVOSB status and the whole GSAxcess flywheel stay intact; every dollar of profit still splits evenly. On the Combo Year 1 net ($350,100), that's $175,050 each.
+- **Recommended structure — Option B: 51/49 ownership, 50/50 profit.** Josh holds legal control (51%) so SDVOSB status and the whole surplus-program flywheel stay intact; every dollar of profit still splits evenly. On the Combo Cycle 1 net ($350,100), that's $175,050 each.
 - Three alternatives are modeled in the tab (straight 51/49 split, salaries-first, and a Josh-funds/Shane-operates earn-in) for comparison — Option B is the pick.
 - **Non-negotiables for the operating agreement:** spend over $10K needs both signatures; buyout = right of first refusal at neutral third-party appraised value; Josh's 51%+ can never be diluted without a full amendment; suggested 40% reinvestment / 60% distribution in Year 1 until reserves hit $100K; dissolution splits by ownership %; a written culture clause (no cut corners, no shady contracts).
 - **Action item:** formalize as an LLC Operating Agreement with a business attorney ($500–$2,000) *before* the first machine is purchased — not a handshake, not a text message.
@@ -146,8 +158,8 @@ Recommended in the artifact's **Partnership** tab — flagged for attorney sign-
 
 ## Collaborators
 - **Shane Brazelton** (thebardchat) — strategic partner, ShaneBrain builder, Senior Procurement & Logistics Officer AI, Hazel Green AL
-- **Josh** — veteran, equipment operator, GSAxcess-eligible SDVOSB owner, 100% P&T
-- **Sapper** (Grok bot) — real-time market intelligence officer. Complements this Claude session rather than duplicating it: live GSAxcess/GovDeals/auction-house listing watch, SAM.gov and FEMA disaster monitoring, policy-change alerts — things this session's training data can't track live. Never gives final legal/tax advice and doesn't redesign the flywheel. Full system prompt and rationale: `docs/sapper-grok-bot.md`.
+- **Josh** — veteran, equipment operator, VOSB surplus program-eligible SDVOSB owner, 100% P&T
+- **Sapper** (Grok bot) — real-time market intelligence officer. Complements this Claude session rather than duplicating it: live surplus-program/GovDeals/auction-house listing watch, SAM.gov and FEMA disaster monitoring, policy-change alerts — things this session's training data can't track live. Caught the GSAxcess.gov shutdown and the 18-month hold period correction above on its first live scan (2026-09-01). Never gives final legal/tax advice and doesn't redesign the flywheel. Full system prompt and rationale: `docs/sapper-grok-bot.md`.
 
 ---
 
@@ -188,14 +200,14 @@ Detailed in the artifact's **Launch Timing** tab (with a 3-band chart of the yea
 - **Section 179** requires equipment "placed in service" by Dec 31 for the same-year deduction — an Oct–Dec buy captures it; a Jan buy waits a full year.
 - **Service demand peaks Feb–May** — an Oct–Dec acquisition means the machine is fully proven right as spring pricing power hits.
 - **Best filing month: June.** VetCert's 60–90 day clock, started in June, lands approval right before the fiscal year-end surge — chaining bid-readiness, the cheap buy window, and the Section 179 deadline together.
-- **Sell later than Day 366 on purpose.** The GSAxcess restriction is a floor, not a deadline — selling into the following spring's resale peak instead of the calendar-exact date can mean a meaningfully better price. Never advise selling *before* Day 366 without legal clearance (unchanged).
+- **Sell later than Month 18 on purpose.** The 18-month mandatory-use requirement is a floor, not a deadline — selling into the following spring's resale peak instead of the calendar-exact vesting date can mean a meaningfully better price. Never advise selling, leasing, or disposing of the equipment before title fully vests at Month 18 without legal clearance and prior written GSA approval (corrected from the old "Day 366" assumption — see Acquisition Program Correction above).
 
 ---
 
 ## More Revenue Scenarios — Squeezing More Out of the Same Fleet
 Five more ways to add money layered onto the original "5 More Revenue Streams" tab (now 10 total, all in that tab). Three add real new dollars; two are tactics that improve numbers already in the model rather than new lines:
-- **Fast-Flip Arbitrage** (new $) — GovDeals, not GSAxcess. A separate public-auction channel, generally without GSAxcess's SDVOSB hold (confirm with the attorney — varies by seller/state). Opportunistic flips of undervalued items (real GovDeals case studies: a $6K cherry picker resold for $30K; ~$50K of equipment won for $15K). Budget $6K–$60K/yr, not a schedule.
-- **Auction-House Sale on Day 366+** (tactic, no new $ line) — Ritchie Bros/IronPlanet consignment vs. private sale. Commission applies, but a national buyer pool can net more on scarce models. Price both before selling.
+- **Fast-Flip Arbitrage** (new $) — GovDeals, not the VOSB surplus program. A separate public-auction channel, generally without the 18-month hold (confirm with the attorney — varies by seller/state). Opportunistic flips of undervalued items (real GovDeals case studies: a $6K cherry picker resold for $30K; ~$50K of equipment won for $15K). Budget $6K–$60K/yr, not a schedule.
+- **Auction-House Sale at Month 18+** (tactic, no new $ line) — Ritchie Bros/IronPlanet consignment vs. private sale. Commission applies, but a national buyer pool can net more on scarce models. Price both before selling.
 - **Staggered Multi-Machine Rotation** (tactic, no new $ line) — Year 2+, buy machines ~6 months apart so there's always one mid-cycle and one approaching sale. Smooths cash flow, doesn't add revenue.
 - **Attachment & Implement Rental** (new $) — cheap surplus attachments (thumb, breaker, grapple) rented day-rate to other contractors. Low capital, $5K–$20K/yr.
 - **Mild-Winter Regional Edge** (new $) — Alabama ground doesn't freeze; the machine can keep billing (clearing, drainage prep, locking spring contracts) while northern/regional competitors are parked Nov–Feb. $10K–$30K/yr.
@@ -209,5 +221,5 @@ Updated Year 3+ combined revenue ceiling: **$3.3M–$9.8M** (was $3.3M–$9.6M).
 
 ---
 
-## GSAxcess Inventory Sorting — Future Feature
-Goal: Build a tool to query GSAxcess inventory and sort/filter by equipment type, condition, region, and acquisition cost to identify top picks for any situation (FEMA response, training academy, leasing play, etc.). Shane will architect this using ShaneBrain MCP tooling. Add to backlog when GSAxcess API or data export access is confirmed.
+## Surplus Property Inventory Sorting — Future Feature
+Goal: Build a tool to query PPMS/ADECA surplus inventory and sort/filter by equipment type, condition, region, and acquisition cost to identify top picks for any situation (FEMA response, training academy, leasing play, etc.). Shane will architect this using ShaneBrain MCP tooling. Add to backlog when PPMS/ADECA API or data export access is confirmed. (Renamed from "GSAxcess Inventory Sorting" — GSAxcess.gov was decommissioned July 2023.)

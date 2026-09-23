@@ -2,6 +2,8 @@
 
 Three Claude skills are built specifically for this project. They are saved to Shane's Claude account and are available in any session inside the **TBD Josh & Shane** Claude project.
 
+> **⚠ Needs a content update:** As of 2026-09-01, GSAxcess.gov is confirmed decommissioned (replaced by PPMS.gov, accessed via ADECA — Alabama's State Agency for Surplus Property) and the acquisition hold period is 18 months, not 12 ("Day 366"). See CLAUDE.md's **Acquisition Program Correction** section for full sourcing. The example outputs below are updated to match, but the actual skill definitions live in Shane's Claude account, not this repo — they need the same correction applied there directly.
+
 To invoke a skill, type the skill name as a slash command at the start of your message — for example `/heavy-iron-session-open`.
 
 ---
@@ -21,8 +23,8 @@ To invoke a skill, type the skill name as a slash command at the start of your m
 
 Current Phase: Phase 2 — Insurance & Setup (Weeks 3–6)
 VetCert Status: Filed — Day 45 of 60–90 day window
-First Machine Target: Cat 320 Excavator — $34,500 target (15% of $230K new)
-Revenue Model: Combo — Services + Training ($350,100 Year 1)
+First Machine Target: Cat 320 Excavator — ~$34,500 illustrative estimate (unverified — get a real ADECA quote)
+Revenue Model: Combo — Services + Training ($350,100 Cycle 1)
 
 Next 3 Moves:
 - [ ] Get general liability and equipment insurance quotes
@@ -30,34 +32,36 @@ Next 3 Moves:
 - [ ] Arrange equipment storage location
 
 Open Decisions:
-- Attorney review of GSAxcess 1-year restriction — pending
+- Attorney review of the 18-month mandatory-use restriction — pending
 - Business bank account — confirm opened
 
 Flywheel Clock:
 - Machine acquired: TBD
-- Day 366 (sell date): TBD
-- Year 1 net target: $80,000 service revenue
+- Month 18 (title vests, sell-eligible): TBD
+- Cycle 1 net target: $80,000 service revenue
 ```
 
 ---
 
 ## `/gsaxcess-equipment-scout`
 
+*(Skill name unchanged for now — a rename is a separate decision for Shane; content below reflects the corrected program.)*
+
 **When to use:** When planning any acquisition — whether for FEMA response, training academy, leasing, owner-op site work, or ShaneBrain tech servers.
 
 **What it does:**
 - Takes a mission type: `fema`, `training`, `leasing`, `owner-op`, or `tech`
-- Returns a prioritized equipment target list with GSAxcess/GovDeals price ranges
-- Runs flywheel acquisition math (buy price → Year 1 revenue → Day 366 sale → ROI)
+- Returns a prioritized equipment target list with VOSB surplus program (PPMS/ADECA)/GovDeals price ranges
+- Runs flywheel acquisition math (buy price → Cycle 1 revenue → Month 18 sale → ROI)
 - Returns a pre-buy inspection checklist (hours, undercarriage, hydraulics, transport cost)
-- Routes IT/server acquisitions correctly to GovDeals.com and DLA — not GSAxcess
+- Routes IT/server acquisitions correctly to GovDeals.com and DLA — not the VOSB surplus program
 
-**Example trigger:** *"Scout equipment for FEMA response"* or *"What should we bid on at GSAxcess for the training academy?"*
+**Example trigger:** *"Scout equipment for FEMA response"* or *"What should we apply for through ADECA for the training academy?"*
 
-**Key rule it enforces:** Tech/server acquisitions are NEVER routed through GSAxcess — federal IT surplus for for-profit buyers goes through GovDeals.com and DLA Disposition Services (dla.mil).
+**Key rule it enforces:** Tech/server acquisitions are NEVER routed through the VOSB surplus property program — federal IT surplus for for-profit buyers goes through GovDeals.com and DLA Disposition Services (dla.mil).
 
-**Price benchmarks it uses:**
-| Equipment | GSAxcess Target | Market Value | Day 366 Sale |
+**Price benchmarks it uses (illustrative — unverified against a real ADECA quote):**
+| Equipment | Surplus Program Target | Market Value | Month 18 Sale |
 |---|---|---|---|
 | Cat 320 Excavator | $25K–$45K | $85K–$120K | $75K–$105K |
 | Dozer (Cat D6) | $20K–$40K | $70K–$100K | $60K–$90K |

@@ -4,6 +4,8 @@
 
 Source of truth for numbers/strategy: [`CLAUDE.md`](../CLAUDE.md). This doc doesn't change the strategy — it only resequences execution for parallelism. Legal and tax items are flagged for the attorney and CPA, not final advice.
 
+> ⚠️ **Corrected 2026-09-01:** GSAxcess.gov was decommissioned in 2023 — acquisition now goes through PPMS.gov via ADECA (Alabama's State Agency for Surplus Property), and the mandatory hold period is 18 months, not the "Day 366" figure referenced below. See CLAUDE.md's Acquisition Program Correction section.
+
 ---
 
 ## Track 0 — Foundation (blocks everything, do first, ~1–2 weeks)
@@ -13,7 +15,7 @@ Owner: Josh (legal identity) + Shane (admin/paperwork support)
 - [ ] Get EIN (IRS.gov)
 - [ ] Open business bank account
 - [ ] Draft & sign LLC Operating Agreement — Option B (Josh 51%/Shane 49% ownership, 50/50 profit) — attorney, $500–$2,000, **before** first machine purchase
-- [ ] Attorney review — GSAxcess 1-year no-sell/no-rent restriction
+- [ ] Attorney review — the 18-month mandatory-use restriction (41 CFR Part 102-37, property $5,000+)
 - [ ] Register on SAM.gov
 - [ ] File VetCert (veteransbusinesscertification.va.gov) — 60–90 day clock, file Day 1, don't wait on anything else
 - [ ] General liability + equipment insurance quotes
@@ -26,11 +28,11 @@ Owner: Josh (legal identity) + Shane (admin/paperwork support)
 Owner: Josh (equipment/ops)
 
 1. Build excavation services rate sheet
-2. Identify first GSAxcess acquisition target (Cat 320 class, ~$34,500 at 15% of market)
+2. Identify first acquisition target via ADECA/PPMS.gov (Cat 320 class, ~$34,500 illustrative estimate — unverified, get a real ADECA quote)
 3. Arrange storage + transport/lowboy contact
-4. Submit GSAxcess bid
+4. Submit acquisition request through ADECA
 5. Line up first 2–3 local site-services customers before the machine even lands
-6. Track hours/maintenance from Day 1 — feeds both Section 179 and the Day 366 sale
+6. Track hours/maintenance from Day 1 — feeds both Section 179 and the Month-18 sale (title vests at 18 months, not the old "Day 366" assumption)
 
 Target: machine acquired Week 6–8, revenue starts immediately after.
 
@@ -81,7 +83,7 @@ Can run in parallel with Tracks A–C starting Week 1 — the capability stateme
 ## Track E — Tech Independence / ShaneBrain (Shane's track, doesn't block the business)
 Owner: Shane
 
-- [ ] Source Dell PowerEdge R740xd / HP DL380 Gen10 via GovDeals.com / DLA Disposition Services (NOT GSAxcess — GSAxcess doesn't prioritize for-profit buyers on IT hardware)
+- [ ] Source Dell PowerEdge R740xd / HP DL380 Gen10 via GovDeals.com / DLA Disposition Services (NOT the VOSB surplus property program — that channel doesn't prioritize for-profit buyers on IT hardware)
 - [ ] Source NVIDIA A10 24GB commercially (eBay/Lambda resellers)
 - [ ] Stand up ShaneBrain independence stack (~$3,800–$8,800 total)
 
